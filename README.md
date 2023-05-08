@@ -29,7 +29,7 @@ Our codes are based on the official imagenet example by PyTorch, pytorch-image-m
 ## Main results on CIFAR10/CIFAR100
 
 | Model                      | T      |  Param.     | CIFAR10 Top-1 Acc |CIFAR100 Top-1 Acc|
-| :---:                      | :---:  | :---:       |  :---:            |:---: |
+| :---                      | :---:  | :---:       |  :---:            |:---: |
 | CML + Spikformer-4-256     | 4      |  4.15M      | 94.82             |77.64  |
 | CML + Spikformer-2-384     | 4      |  5.76M      | 95.63             |78.75  |
 | CML + Spikformer-4-384     | 4      |  9.32M      | 95.93             |79.65  |
@@ -42,7 +42,7 @@ Our codes are based on the official imagenet example by PyTorch, pytorch-image-m
 ## Main results on CIFAR10-DVS/DVS128
 
 | Model                     | T      |  Param.     |  CIFAR10 DVS Top-1 Acc  | DVS 128 Top-1 Acc|
-| :---:                     | :---:  | :---:       | :---:                   |:---:             |
+| :---                     | :---:  | :---:       | :---:                   |:---:             |
 | CML + Spikformer-2-256    | 10     |  2.57M      | 79.2                    | 97.6             |
 | CML + Spikformer-2-256    | 16     |  2.57M      | 80.9                    | 98.6             |
 | CML + Spikingformer-2-256 | 10     |  2.57M      | 80.5                    | 97.2             |
