@@ -16,33 +16,28 @@ Our codes are based on the official imagenet example by PyTorch, pytorch-image-m
 
 ## Main results on ImageNet-1K
 
-| Model               | Resolution| T |  Param.     | FLOPs   |  Power |Top-1 Acc|
-| :---:               | :---:     | :---:  | :---:       |  :---:  |  :---:              |:---: |
-| Spikingformer-8-384 | 224x224   | 4 |  16.81M     | 3.88G   | 4.69 mJ   |72.45  |
-| Spikingformer-8-512 | 224x224   | 4 |  29.68M     | 6.54G  | 7.46 mJ   |74.79  |
-| Spikingformer-8-768 | 224x224   | 4  |  66.34M     | 12.54G  | 13.68 mJ  |75.85  |
+| Model                     | Resolution| T     |  Param.     |Top-1 Acc|
+| :---:                     | :---:     | :---: | :---:       |:---:    |
+| CML + Spikingformer-8-384 | 224x224   | 4     |  16.81M     |74.35    |
+| CML + Spikingformer-8-512 | 224x224   | 4     |  29.68M     |76.54    |
+| CML + Spikingformer-8-768 | 224x224   | 4     |  66.34M     |77.64    |
 
-<!-- 
-| Spikformer-8-384 | 224x224    |  16.81M     | 6.82G   | 12.43  mJ              |70.24  |
-| Spikformer-8-512 | 224x224    |  29.68M     | 11.09G  | 18.82  mJ             |73.38  |
-| Spikformer-8-768 | 224x224    |  66.34M     | 22.09G  | 32.07  mJ             |74.81  |
--->
 
 ## Main results on CIFAR10/CIFAR100
 
-| Model                | T      |  Param.     | CIFAR10 Top-1 Acc |CIFAR100 Top-1 Acc|
-| :---:                | :---:  | :---:       |  :---:    |:---: |
-| Spikingformer-4-256  | 4      |  4.15M     | 94.77     |77.43  |
-| Spikingformer-2-384  | 4      |  5.76M     | 95.22     |78.34  |
-| Spikingformer-4-384  | 4      |  9.32M     | 95.61     |79.09  |
-| Spikingformer-4-384-400E  | 4      |  9.32M     | 95.81     |79.21  |
+| Model                      | T      |  Param.     | CIFAR10 Top-1 Acc |CIFAR100 Top-1 Acc|
+| :---:                      | :---:  | :---:       |  :---:            |:---: |
+| CML + Spikingformer-4-256  | 4      |  4.15M      | 94.94             |78.19  |
+| CML + Spikingformer-2-384  | 4      |  5.76M      | 95.54             |78.87  |
+| CML + Spikingformer-4-384  | 4      |  9.32M      | 95.81             |79.98  |
+| CML + Spikingformer-4-384-400E  | 4      |  9.32M     | 95.95         |80.75  |
 
 ## Main results on CIFAR10-DVS/DVS128
 
-| Model               | T      |  Param.     |  CIFAR10 DVS Top-1 Acc  | DVS 128 Top-1 Acc|
-| :---:               | :---:  | :---:       | :---:                   |:---:            |
-| Spikingformer-2-256 | 10     |  2.57M      | 79.9                    | 96.2            |
-| Spikingformer-2-256 | 16     |  2.57M      | 81.3                    | 98.3            |
+| Model                     | T      |  Param.     |  CIFAR10 DVS Top-1 Acc  | DVS 128 Top-1 Acc|
+| :---:                     | :---:  | :---:       | :---:                   |:---:             |
+| CML + Spikingformer-2-256 | 10     |  2.57M      | 80.5                    | 97.2             |
+| CML + Spikingformer-2-256 | 16     |  2.57M      | 81.4                    | 98.6             |
 
 
 ## Requirements
