@@ -17,7 +17,7 @@ Our codes are based on the official imagenet example by PyTorch, pytorch-image-m
 ## Main results on ImageNet-1K
 
 | Model                     | Resolution| T     |  Param.     |Top-1 Acc|
-| :---:                     | :---:     | :---: | :---:       |:---:    |
+| :---                     | :---:     | :---: | :---:       |:---:    |
 | CML + Spikformer-8-384    | 224x224   | 4     |  16.81M     |72.73    |
 | CML + Spikformer-8-512    | 224x224   | 4     |  29.68M     |75.61    |
 | CML + Spikformer-8-768    | 224x224   | 4     |  66.34M     |77.34    |
