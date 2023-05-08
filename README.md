@@ -20,7 +20,7 @@ Our codes are based on the official imagenet example by PyTorch, pytorch-image-m
 | :---:               | :---:     | :---:  | :---:       |  :---:  |  :---:              |:---: |
 | Spikingformer-8-384 | 224x224   | 4 |  16.81M     | 3.88G   | 4.69 mJ   |72.45  |
 | Spikingformer-8-512 | 224x224   | 4 |  29.68M     | 6.54G  | 7.46 mJ   |74.79  |
-| Spikingformer-8-768 | 224x224   | 4  |  66.34M     | 13.68G  | 13.68 mJ  |75.85  |
+| Spikingformer-8-768 | 224x224   | 4  |  66.34M     | 12.54G  | 13.68 mJ  |75.85  |
 
 <!-- 
 | Spikformer-8-384 | 224x224    |  16.81M     | 6.82G   | 12.43  mJ              |70.24  |
