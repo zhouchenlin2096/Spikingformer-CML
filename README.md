@@ -1,6 +1,5 @@
 # Enhancing the Performance of Transformer-based Spiking Neural Networks by Improved Downsampling with Precise Gradient Backpropagation, [Arxiv 2023]()
-Spikingformer is a pure event-driven transformer-based spiking neural network (75.85% top-1 accuracy on ImageNet, + 1.04% and significantly reduces energy consumption by 57.34% compared with Spikformer). To our best knowledge, this is the first time that a pure event-driven transformer-based SNN has been developed in in 2023/04.
-
+Our models achieve the state-of-the-art performance on above all datasets (eg. 77.64 % on ImageNet, 96.04 % on CIFAR10, 80.75 % on CIFAR10, 81.4% on CIFAR10-DVS) in directly trained SNNs in 2023/04.
 
 ## Reference
 If you find this repo useful, please consider citing:
