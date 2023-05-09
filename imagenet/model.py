@@ -128,54 +128,55 @@ class SpikingTokenizer(nn.Module):
         self.num_patches = self.H * self.W
         self.proj_conv = nn.Conv2d(in_channels, embed_dims//8, kernel_size=3, stride=1, padding=1, bias=False)
         self.proj_bn = nn.BatchNorm2d(embed_dims//8)
+        self.maxpool = torch.nn.MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
 
         self.proj1_lif = MultiStepLIFNode(tau=2.0, detach_reset=True, backend='cupy')
-        self.maxpool1 = torch.nn.MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
         self.proj1_conv = nn.Conv2d(embed_dims//8, embed_dims//4, kernel_size=3, stride=1, padding=1, bias=False)
         self.proj1_bn = nn.BatchNorm2d(embed_dims//4)
+        self.maxpool1 = torch.nn.MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
 
         self.proj2_lif = MultiStepLIFNode(tau=2.0, detach_reset=True, backend='cupy')
-        self.maxpool2 = torch.nn.MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
         self.proj2_conv = nn.Conv2d(embed_dims//4, embed_dims//2, kernel_size=3, stride=1, padding=1, bias=False)
         self.proj2_bn = nn.BatchNorm2d(embed_dims//2)
+        self.maxpool2 = torch.nn.MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
 
         self.proj3_lif = MultiStepLIFNode(tau=2.0, detach_reset=True, backend='cupy')
-        self.maxpool3 = torch.nn.MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
         self.proj3_conv = nn.Conv2d(embed_dims//2, embed_dims, kernel_size=3, stride=1, padding=1, bias=False)
         self.proj3_bn = nn.BatchNorm2d(embed_dims)
+        self.maxpool3 = torch.nn.MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
 
         self.proj4_lif = MultiStepLIFNode(tau=2.0, detach_reset=True, backend='cupy')
-        self.maxpool4 = torch.nn.MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
         self.proj4_conv = nn.Conv2d(embed_dims, embed_dims, kernel_size=3, stride=1, padding=1, bias=False)
         self.proj4_bn = nn.BatchNorm2d(embed_dims)
 
     def forward(self, x):
         T, B, C, H, W = x.shape
         x = self.proj_conv(x.flatten(0, 1))
-        x = self.proj_bn(x).reshape(T, B, -1, H, W).contiguous()
+        x = self.proj_bn(x)
+        x = self.maxpool(x).reshape(T, B, -1, H//2, W//2).contiguous()
 
         x = self.proj1_lif(x).flatten(0,1).contiguous()
-        x = self.maxpool1(x)
         x = self.proj1_conv(x)
-        x = self.proj1_bn(x).reshape(T, B, -1, H//2, W//2).contiguous()
+        x = self.proj1_bn(x)
+        x = self.maxpool1(x).reshape(T, B, -1, H//4, W//4).contiguous()
 
         x = self.proj2_lif(x).flatten(0, 1).contiguous()
-        x = self.maxpool2(x)
         x = self.proj2_conv(x)
-        x = self.proj2_bn(x).reshape(T, B, -1, H//4, W//4).contiguous()
+        x = self.proj2_bn(x)
+        x = self.maxpool2(x).reshape(T, B, -1, H//8, W//8).contiguous()
 
         x = self.proj3_lif(x).flatten(0, 1).contiguous()
-        x = self.maxpool3(x)
         x = self.proj3_conv(x)
-        x = self.proj3_bn(x).reshape(T, B, -1, H//8, W//8).contiguous()
+        x = self.proj3_bn(x)
+        x = self.maxpool3(x).reshape(T, B, -1, H//16, W//16).contiguous()
 
         x = self.proj4_lif(x).flatten(0, 1).contiguous()
-        x = self.maxpool4(x)
         x = self.proj4_conv(x)
         x = self.proj4_bn(x).reshape(T, B, -1, H//16, W//16).contiguous()
 
         H, W = H // self.patch_size[0], W // self.patch_size[1]
         return x, (H, W)
+
 
 class vit_snn(nn.Module):
     def __init__(self,
@@ -274,4 +275,3 @@ if __name__ == '__main__':
     y = model(x)
     print(y.shape)
     print('Test Good!')
-
