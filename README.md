@@ -1,5 +1,5 @@
 # Enhancing the Performance of Transformer-based Spiking Neural Networks by Improved Downsampling with Precise Gradient Backpropagation, [Arxiv 2023]()
-Our models achieve the state-of-the-art performance on several datasets (eg. 77.64 % on ImageNet, 96.04 % on CIFAR10, 80.75 % on CIFAR10, 81.4% on CIFAR10-DVS) in directly trained SNNs in 2023/05.
+Our models achieve the state-of-the-art performance on several datasets (eg. 77.64 % on ImageNet, 96.04 % on CIFAR10, 80.75 % on CIFAR100, 81.4% on CIFAR10-DVS) in directly trained SNNs in 2023/05.
 
 ## Reference
 If you find this repo useful, please consider citing:
