@@ -63,6 +63,7 @@ class SpikingSelfAttention(nn.Module):
         self.proj_conv = nn.Conv1d(dim, dim, kernel_size=1, stride=1)
         self.proj_bn = nn.BatchNorm1d(dim)
 
+
     def forward(self, x):
         T, B, C, H, W = x.shape
         x = self.proj_lif(x)
@@ -123,54 +124,54 @@ class SpikingTokenizer(nn.Module):
         self.C = in_channels
         self.H, self.W = self.image_size[0] // patch_size[0], self.image_size[1] // patch_size[1]
         self.num_patches = self.H * self.W
+        self.proj_conv = nn.Conv2d(in_channels, embed_dims // 8, kernel_size=3, stride=1, padding=1, bias=False)
+        self.proj_bn = nn.BatchNorm2d(embed_dims // 8)
 
-        self.block0_conv = nn.Conv2d(in_channels, embed_dims // 8, kernel_size=3, stride=1, padding=1, bias=False)
-        self.block0_bn = nn.BatchNorm2d(embed_dims // 8)
+        self.proj1_lif = MultiStepLIFNode(tau=2.0, detach_reset=True, backend='cupy')
+        self.proj1_conv = nn.Conv2d(embed_dims // 8, embed_dims // 4, kernel_size=3, stride=1, padding=1, bias=False)
+        self.proj1_bn = nn.BatchNorm2d(embed_dims // 4)
 
-        self.block1_lif = MultiStepLIFNode(tau=2.0, detach_reset=True, backend='cupy')
-        self.block1_conv = nn.Conv2d(embed_dims // 8, embed_dims // 4, kernel_size=3, stride=1, padding=1, bias=False)
-        self.block1_bn = nn.BatchNorm2d(embed_dims // 4)
+        self.proj2_lif = MultiStepLIFNode(tau=2.0, detach_reset=True, backend='cupy')
+        self.proj2_conv = nn.Conv2d(embed_dims // 4, embed_dims // 2, kernel_size=3, stride=1, padding=1, bias=False)
+        self.proj2_bn = nn.BatchNorm2d(embed_dims // 2)
+        self.proj2_mp = torch.nn.MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
 
-        self.block2_lif = MultiStepLIFNode(tau=2.0, detach_reset=True, backend='cupy')
-        self.block2_conv = nn.Conv2d(embed_dims // 4, embed_dims // 2, kernel_size=3, stride=1, padding=1, bias=False)
-        self.block2_bn = nn.BatchNorm2d(embed_dims // 2)
+        self.proj3_lif = MultiStepLIFNode(tau=2.0, detach_reset=True, backend='cupy')
+        self.proj3_conv = nn.Conv2d(embed_dims // 2, embed_dims // 1, kernel_size=3, stride=1, padding=1, bias=False)
+        self.proj3_bn = nn.BatchNorm2d(embed_dims // 1)
+        self.proj3_mp = torch.nn.MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
 
-        self.block3_lif = MultiStepLIFNode(tau=2.0, detach_reset=True, backend='cupy')
-        self.block3_mp = torch.nn.MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
-        self.block3_conv = nn.Conv2d(embed_dims // 2, embed_dims // 1, kernel_size=3, stride=1, padding=1, bias=False)
-        self.block3_bn = nn.BatchNorm2d(embed_dims // 1)
-
-        self.block4_lif = MultiStepLIFNode(tau=2.0, detach_reset=True, backend='cupy')
-        self.block4_mp = torch.nn.MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
-        self.block4_conv = nn.Conv2d(embed_dims, embed_dims, kernel_size=3, stride=1, padding=1, bias=False)
-        self.block4_bn = nn.BatchNorm2d(embed_dims)
+        self.proj4_lif = MultiStepLIFNode(tau=2.0, detach_reset=True, backend='cupy')
+        self.proj4_conv = nn.Conv2d(embed_dims, embed_dims, kernel_size=3, stride=1, padding=1, bias=False)
+        self.proj4_bn = nn.BatchNorm2d(embed_dims)
 
     def forward(self, x):
         T, B, C, H, W = x.shape
 
-        x = self.block0_conv(x.flatten(0, 1))
-        x = self.block0_bn(x).reshape(T, B, -1, H, W)
+        x = self.proj_conv(x.flatten(0, 1))
+        x = self.proj_bn(x).reshape(T, B, -1, H, W)
 
-        x = self.block1_lif(x).flatten(0, 1)
-        x = self.block1_conv(x)
-        x = self.block1_bn(x).reshape(T, B, -1, H, W)
+        x = self.proj1_lif(x).flatten(0, 1)
+        x = self.proj1_conv(x)
+        x = self.proj1_bn(x).reshape(T, B, -1, H, W)
 
-        x = self.block2_lif(x).flatten(0, 1)
-        x = self.block2_conv(x)
-        x = self.block2_bn(x).reshape(T, B, -1, H, W)
+        x = self.proj2_lif(x).flatten(0, 1)
+        x = self.proj2_conv(x)
+        x = self.proj2_bn(x)
+        x = self.proj2_mp(x).reshape(T, B, -1, int(H / 2), int(W / 2))
 
-        x = self.block3_lif(x).flatten(0, 1)
-        x = self.block3_mp(x)
-        x = self.block3_conv(x)
-        x = self.block3_bn(x).reshape(T, B, -1, int(H / 2), int(W / 2))
+        x = self.proj3_lif(x).flatten(0, 1)
+        x = self.proj3_conv(x)
+        x = self.proj3_bn(x)
+        x = self.proj3_mp(x).reshape(T, B, -1, int(H / 4), int(W / 4))
 
-        x = self.block4_lif(x).flatten(0, 1)
-        x = self.block4_mp(x)
-        x = self.block4_conv(x)
-        x = self.block4_bn(x).reshape(T, B, -1, int(H / 4), int(W / 4))
+        x = self.proj4_lif(x).flatten(0, 1)
+        x = self.proj4_conv(x)
+        x = self.proj4_bn(x).reshape(T, B, -1, int(H / 4), int(W / 4))
 
         H, W = H // self.patch_size[0], W // self.patch_size[1]
         return x, (H, W)
+
 
 
 class vit_snn(nn.Module):
@@ -254,8 +255,19 @@ if __name__ == '__main__':
         T=4,
     ).cuda()
 
-    # print the output
+
     model.eval()
     y = model(input)
     print(y.shape)
     print('Test Good!')
+
+
+
+
+
+
+
+
+
+
+
