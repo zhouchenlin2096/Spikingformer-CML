@@ -1,5 +1,5 @@
 # Enhancing the Performance of Transformer-based Spiking Neural Networks by SNN-optimized Downsampling with Precise Gradient Backpropagation, [Arxiv 2023](https://arxiv.org/abs/2305.05954)
-Our models achieve the state-of-the-art performance on several datasets (eg. 77.64 % on ImageNet, 96.04 % on CIFAR10, 80.75 % on CIFAR100, 81.4% on CIFAR10-DVS) in directly trained SNNs in 2023/05.
+Our models achieve the state-of-the-art performance on several datasets (eg. 77.64 % on ImageNet, 96.04 % on CIFAR10, 80.37 % on CIFAR100, 81.4% on CIFAR10-DVS) in directly trained SNNs in 2023/05.
 
 ## Reference
 If you find this repo useful, please consider citing:
@@ -38,7 +38,7 @@ Our codes are based on the official imagenet example by PyTorch, pytorch-image-m
 | CML + Spikingformer-4-256  | 4      |  4.15M      | 94.94             |78.19  |
 | CML + Spikingformer-2-384  | 4      |  5.76M      | 95.54             |78.87  |
 | CML + Spikingformer-4-384  | 4      |  9.32M      | 95.81             |79.98  |
-| CML + Spikingformer-4-384-400E  | 4      |  9.32M     | 95.95         |80.75  |
+| CML + Spikingformer-4-384-400E  | 4      |  9.32M     | 95.95         |80.37  |
 
 ## Main results on CIFAR10-DVS/DVS128
 
