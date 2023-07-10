@@ -17,7 +17,6 @@ If you find this repo useful, please consider citing:
       primaryClass={cs.NE}
 }
 ```
-Our codes are based on the official imagenet example by PyTorch, pytorch-image-models by Ross Wightman and SpikingJelly by Wei Fang.
 
 ## Main results on ImageNet-1K
 
