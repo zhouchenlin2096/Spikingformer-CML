@@ -110,10 +110,11 @@ cd cifar10-dvs
 python train.py
 ```
 ## Acknowledgement
-Related project: [Spikformer](https://github.com/ZK-Zhou/spikformer), [pytorch-image-models](https://github.com/huggingface/pytorch-image-models), [Spikingjelly](https://github.com/fangwei123456/spikingjelly).
 
 
-## Contact Information
+
+## Acknowledgement & Contact Information
+Related project: [spikformer](https://github.com/ZK-Zhou/spikformer), [pytorch-image-models](https://github.com/huggingface/pytorch-image-models), [spikingjelly](https://github.com/fangwei123456/spikingjelly).
 
 For help or issues using this git, please submit a GitHub issue.
 
