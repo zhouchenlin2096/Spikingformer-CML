@@ -109,9 +109,6 @@ python train.py
 cd cifar10-dvs
 python train.py
 ```
-## Acknowledgement
-
-
 
 ## Acknowledgement & Contact Information
 Related project: [spikformer](https://github.com/ZK-Zhou/spikformer), [pytorch-image-models](https://github.com/huggingface/pytorch-image-models), [spikingjelly](https://github.com/fangwei123456/spikingjelly).
