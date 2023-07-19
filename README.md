@@ -111,7 +111,7 @@ python train.py
 ```
 
 ## Acknowledgement & Contact Information
-Related project:[Spikingformer](https://github.com/zhouchenlin2096/Spikingformer), [spikformer](https://github.com/ZK-Zhou/spikformer), [pytorch-image-models](https://github.com/huggingface/pytorch-image-models), [spikingjelly](https://github.com/fangwei123456/spikingjelly).
+Related project: [Spikingformer](https://github.com/zhouchenlin2096/Spikingformer), [spikformer](https://github.com/ZK-Zhou/spikformer), [pytorch-image-models](https://github.com/huggingface/pytorch-image-models), [spikingjelly](https://github.com/fangwei123456/spikingjelly).
 
 For help or issues using this git, please submit a GitHub issue.
 
