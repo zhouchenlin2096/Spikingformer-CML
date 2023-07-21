@@ -1,7 +1,9 @@
 dataset: imagenet
 num_classes: 1000
 img_size: 224
+dim: 768
 patch_size: 16
+num_heads: 8
 mlp_ratio: 4
 mean:
     - 0.485
@@ -27,8 +29,8 @@ cutmix: 1.0
 reprob: 0.25
 remode: const
 amp: True
-batch_size: 36
-val_batch_size: 36
+batch_size: 24
+val_batch_size: 24
 lr: 5e-4
 min_lr: 0.00001
 sched: cosine
@@ -40,3 +42,5 @@ warmup_lr: 0.000001
 opt: adamw
 smoothing: 0.1
 workers: 8
+depths: 8
+#resume: /media/data/models/Spikingformer-CML-git-model/CML_768_model_best.pth.tar
