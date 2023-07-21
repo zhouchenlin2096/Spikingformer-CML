@@ -2,7 +2,7 @@
 Our models achieve the state-of-the-art performance on several datasets (eg. **77.64 %** on ImageNet, **96.04 %** on CIFAR10, **80.37 %** on CIFAR100, **81.4% on** CIFAR10-DVS) in directly trained SNNs in 2023/05.
 
 
-In addition, the pre-trained models on ImageNet will be uploaded soon, and the results of Spikingformer-CML (8-768) on ImageNet with 288 * 288 resolution as input will be updated soon.
+In addition, the trained models on ImageNet will be uploaded soon, and the results of Spikingformer-CML (8-768) on ImageNet with 288 * 288 resolution as input will be updated soon.
 
 <br>
 <br>
