@@ -25,16 +25,17 @@ If you find this repo useful, please consider citing:
 
 ## Main results on ImageNet-1K
 
-| Model                     | Resolution| T     |  Param.     |Top-1 Acc|
-| :---                     | :---:     | :---: | :---:       |:---:    |
-| CML + Spikformer-8-384    | 224x224   | 4     |  16.81M     |72.73    |
-| CML + Spikformer-8-512    | 224x224   | 4     |  29.68M     |75.61    |
-| CML + Spikformer-8-768    | 224x224   | 4     |  66.34M     |77.34    |
-| CML + Spikingformer-8-384 | 224x224   | 4     |  16.81M     |74.35    |
-| CML + Spikingformer-8-512 | 224x224   | 4     |  29.68M     |76.54    |
-| CML + Spikingformer-8-768 | 224x224   | 4     |  66.34M     |77.64    |
-| CML + Spikingformer-8-768 | 288x288   | 4     |  66.34M     |78.46    |
+| Model                     | Resolution| T     |  Param.     |Top-1 Acc| Download |
+| :---                     | :---:     | :---: | :---:        |:---:    | :---:    |
+| CML + Spikformer-8-384    | 224x224   | 4     |  16.81M     |72.73    |     -    |
+| CML + Spikformer-8-512    | 224x224   | 4     |  29.68M     |75.61    |     -    |
+| CML + Spikformer-8-768    | 224x224   | 4     |  66.34M     |77.34    |     -    |
+| CML + Spikingformer-8-384 | 224x224   | 4     |  16.81M     |74.35    |     -    |
+| CML + Spikingformer-8-512 | 224x224   | 4     |  29.68M     |76.54    |     -    |
+| CML + Spikingformer-8-768 | 224x224   | 4     |  66.34M     |77.64    | [here](https://pan.baidu.com/s/1uTq6aPMknwb2PjDZ3J4g5g) |
+| CML + Spikingformer-8-768 | 288x288   | 4     |  66.34M     |78.46    |     -    |
 
+Download password: abcd
 
 ## Main results on CIFAR10/CIFAR100
 
