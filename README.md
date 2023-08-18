@@ -33,6 +33,7 @@ If you find this repo useful, please consider citing:
 | CML + Spikingformer-8-384 | 224x224   | 4     |  16.81M     |74.35    |
 | CML + Spikingformer-8-512 | 224x224   | 4     |  29.68M     |76.54    |
 | CML + Spikingformer-8-768 | 224x224   | 4     |  66.34M     |77.64    |
+| CML + Spikingformer-8-768 | 288x288   | 4     |  66.34M     |78.46    |
 
 
 ## Main results on CIFAR10/CIFAR100
