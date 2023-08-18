@@ -111,7 +111,7 @@ parser.add_argument('-vb', '--val-batch-size', type=int, default=16, metavar='N'
 
 # Test or resume
 parser.add_argument('--resume',
-                    default='/media/data/models/Spikingformer-CML-git-model/CML_768_model_best.pth.tar',
+                    default='/media/data/spike-transformer-network/spikingformer_cml_github/imagenet/output/train/Spikingformer-cml-models/checkpoint-306.pth.tar',
                     type=str, metavar='PATH',
                     help='Test model / Resume full model and optimizer state from checkpoint (default: none)')
 parser.add_argument('--no-resume-opt', action='store_true', default=True,
