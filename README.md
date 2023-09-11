@@ -41,16 +41,18 @@ Download password: abcd
 
 ## Main results on CIFAR10/CIFAR100
 
-| Model                      | T      |  Param.     | CIFAR10 Top-1 Acc |CIFAR100 Top-1 Acc|
-| :---                      | :---:  | :---:       |  :---:            |:---: |
-| CML + Spikformer-4-256     | 4      |  4.15M      | 94.82             |77.64  |
-| CML + Spikformer-2-384     | 4      |  5.76M      | 95.63             |78.75  |
-| CML + Spikformer-4-384     | 4      |  9.32M      | 95.93             |79.65  |
-| CML + Spikformer-4-384-400E  | 4         |  9.32M | 96.04             |80.02  |
-| CML + Spikingformer-4-256  | 4      |  4.15M      | 94.94             |78.19  |
-| CML + Spikingformer-2-384  | 4      |  5.76M      | 95.54             |78.87  |
-| CML + Spikingformer-4-384  | 4      |  9.32M      | 95.81             |79.98  |
-| CML + Spikingformer-4-384-400E  | 4      |  9.32M     | 95.95         |80.37  |
+| Model                      | T      |  Param.     | CIFAR10 Top-1 Acc | Download |CIFAR100 Top-1 Acc|
+| :---                      | :---:  | :---:       |  :---:          | :---:  |:---: |
+| CML + Spikformer-4-256     | 4      |  4.15M      | 94.82          |     -      |77.64  |
+| CML + Spikformer-2-384     | 4      |  5.76M      | 95.63          |     -      |78.75  |
+| CML + Spikformer-4-384     | 4      |  9.32M      | 95.93          |     -      |79.65  |
+| CML + Spikformer-4-384-400E  | 4         |  9.32M | 96.04          |     -      |80.02  |
+| CML + Spikingformer-4-256  | 4      |  4.15M      | 94.94          |     -      |78.19  |
+| CML + Spikingformer-2-384  | 4      |  5.76M      | 95.54          |     -      |78.87  |
+| CML + Spikingformer-4-384  | 4      |  9.32M      | 95.81          |     -      |79.98  |
+| CML + Spikingformer-4-384-400E  | 4      |  9.32M     | 95.95      |  [here](https://pan.baidu.com/s/1HRLjzLHEu5ANtmtJyinYcQ)     |80.37  |
+
+Download password: abcd
 
 ## Main results on CIFAR10-DVS/DVS128
 
