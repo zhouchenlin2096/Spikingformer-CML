@@ -1,0 +1,1070 @@
+Not using distributed mode
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Loading data
+The directory [/dataset/frames_number_16_split_by_number] already exists.
+Took 336.40430450439453
+Creating data loaders
+Creating model
+number of params: 2568714
+purge_step_train=0, purge_step_te=0
+Start training
+Epoch: [0]  [  0/562]  eta: 3:55:45  lr: 1e-05  img/s: 0.6655407191864902  loss: 2.3144 (2.3144)  acc1: 12.5000 (12.5000)  acc5: 37.5000 (37.5000)  time: 25.1691  data: 1.1285  max mem: 2659
+Epoch: [0]  [256/562]  eta: 0:01:43  lr: 1e-05  img/s: 56.508302086657636  loss: 2.2452 (2.2560)  acc1: 6.2500 (16.1235)  acc5: 68.7500 (64.6887)  time: 0.2501  data: 0.0002  max mem: 2688
+Epoch: [0]  [512/562]  eta: 0:00:14  lr: 1e-05  img/s: 133.80240533384375  loss: 2.1893 (2.2271)  acc1: 25.0000 (18.2139)  acc5: 75.0000 (67.9581)  time: 0.1911  data: 0.0002  max mem: 2688
+Epoch: [0] Total time: 0:02:39
+Test:  [ 0/63]  eta: 0:01:33  loss: 2.0318 (2.0318)  acc1: 31.2500 (31.2500)  acc5: 68.7500 (68.7500)  time: 1.4914  data: 0.6948  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 26.5, Acc@5 = 77.0, loss = 2.076081994980101
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:02:45 max_test_acc1 26.5 test_acc5_at_max_test_acc1 77.0
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [1]  [  0/562]  eta: 0:07:33  lr: 0.00010899999999999999  img/s: 105.16998772917682  loss: 2.1134 (2.1134)  acc1: 25.0000 (25.0000)  acc5: 81.2500 (81.2500)  time: 0.8066  data: 0.6544  max mem: 2688
+Epoch: [1]  [256/562]  eta: 0:01:15  lr: 0.00010899999999999999  img/s: 55.975410772717304  loss: 1.9310 (2.0664)  acc1: 31.2500 (27.3346)  acc5: 81.2500 (79.4747)  time: 0.2599  data: 0.0002  max mem: 2688
+Epoch: [1]  [512/562]  eta: 0:00:12  lr: 0.00010899999999999999  img/s: 46.09388035169587  loss: 1.9255 (2.0039)  acc1: 37.5000 (31.2744)  acc5: 87.5000 (82.3465)  time: 0.2813  data: 0.0002  max mem: 2688
+Epoch: [1] Total time: 0:02:19
+Test:  [ 0/63]  eta: 0:00:49  loss: 1.0832 (1.0832)  acc1: 56.2500 (56.2500)  acc5: 93.7500 (93.7500)  time: 0.7926  data: 0.7395  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 30.0, Acc@5 = 76.1, loss = 2.1093787986134727
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:05:09 max_test_acc1 30.0 test_acc5_at_max_test_acc1 76.1
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [2]  [  0/562]  eta: 0:07:58  lr: 0.000208  img/s: 134.79708587509114  loss: 1.9526 (1.9526)  acc1: 12.5000 (12.5000)  acc5: 87.5000 (87.5000)  time: 0.8513  data: 0.7325  max mem: 2688
+Epoch: [2]  [256/562]  eta: 0:01:17  lr: 0.000208  img/s: 55.67610906098176  loss: 1.9626 (1.9301)  acc1: 31.2500 (35.7247)  acc5: 87.5000 (85.5058)  time: 0.2485  data: 0.0002  max mem: 2688
+Epoch: [2]  [512/562]  eta: 0:00:12  lr: 0.000208  img/s: 145.06825305554236  loss: 1.7590 (1.8861)  acc1: 43.7500 (38.3285)  acc5: 87.5000 (86.5375)  time: 0.2370  data: 0.0002  max mem: 2688
+Epoch: [2] Total time: 0:02:18
+Test:  [ 0/63]  eta: 0:00:50  loss: 2.3082 (2.3082)  acc1: 6.2500 (6.2500)  acc5: 75.0000 (75.0000)  time: 0.7972  data: 0.7549  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 44.4, Acc@5 = 84.9, loss = 1.6469419910794212
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:07:33 max_test_acc1 44.4 test_acc5_at_max_test_acc1 84.9
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [3]  [  0/562]  eta: 0:07:50  lr: 0.000307  img/s: 95.29774695328896  loss: 1.4938 (1.4938)  acc1: 56.2500 (56.2500)  acc5: 93.7500 (93.7500)  time: 0.8380  data: 0.6701  max mem: 2688
+Epoch: [3]  [256/562]  eta: 0:01:16  lr: 0.000307  img/s: 56.14258835851887  loss: 1.7651 (1.7880)  acc1: 43.7500 (44.9903)  acc5: 87.5000 (89.4455)  time: 0.2538  data: 0.0002  max mem: 2688
+Epoch: [3]  [512/562]  eta: 0:00:12  lr: 0.000307  img/s: 159.29904385723373  loss: 1.7331 (1.7852)  acc1: 50.0000 (44.5785)  acc5: 93.7500 (89.4615)  time: 0.1738  data: 0.0002  max mem: 2688
+Epoch: [3] Total time: 0:02:16
+Test:  [ 0/63]  eta: 0:00:47  loss: 0.8793 (0.8793)  acc1: 75.0000 (75.0000)  acc5: 93.7500 (93.7500)  time: 0.7529  data: 0.7064  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 34.8, Acc@5 = 83.9, loss = 1.942334012379722
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:09:55 max_test_acc1 44.4 test_acc5_at_max_test_acc1 84.9
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [4]  [  0/562]  eta: 0:09:43  lr: 0.000406  img/s: 46.70128832601127  loss: 1.6085 (1.6085)  acc1: 50.0000 (50.0000)  acc5: 100.0000 (100.0000)  time: 1.0390  data: 0.6963  max mem: 2688
+Epoch: [4]  [256/562]  eta: 0:01:14  lr: 0.000406  img/s: 55.32296927219098  loss: 1.6584 (1.7371)  acc1: 50.0000 (47.7870)  acc5: 87.5000 (90.5885)  time: 0.2559  data: 0.0002  max mem: 2688
+Epoch: [4]  [512/562]  eta: 0:00:12  lr: 0.000406  img/s: 154.75566132588023  loss: 1.5994 (1.7245)  acc1: 50.0000 (48.2822)  acc5: 93.7500 (90.7895)  time: 0.2528  data: 0.0002  max mem: 2688
+Epoch: [4] Total time: 0:02:17
+Test:  [ 0/63]  eta: 0:00:53  loss: 1.1014 (1.1014)  acc1: 62.5000 (62.5000)  acc5: 93.7500 (93.7500)  time: 0.8427  data: 0.7916  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 42.1, Acc@5 = 87.5, loss = 1.694248102014027
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:12:18 max_test_acc1 44.4 test_acc5_at_max_test_acc1 84.9
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [5]  [  0/562]  eta: 0:07:17  lr: 0.000505  img/s: 104.18382367780868  loss: 1.5299 (1.5299)  acc1: 50.0000 (50.0000)  acc5: 93.7500 (93.7500)  time: 0.7790  data: 0.6254  max mem: 2688
+Epoch: [5]  [256/562]  eta: 0:01:15  lr: 0.000505  img/s: 56.787795706021925  loss: 1.7831 (1.6694)  acc1: 50.0000 (51.9942)  acc5: 93.7500 (92.5097)  time: 0.2636  data: 0.0002  max mem: 2688
+Epoch: [5]  [512/562]  eta: 0:00:12  lr: 0.000505  img/s: 47.63182833797523  loss: 1.5520 (1.6682)  acc1: 50.0000 (51.9737)  acc5: 93.7500 (92.4220)  time: 0.2406  data: 0.0002  max mem: 2688
+Epoch: [5] Total time: 0:02:16
+Test:  [ 0/63]  eta: 0:00:45  loss: 1.6262 (1.6262)  acc1: 43.7500 (43.7500)  acc5: 81.2500 (81.2500)  time: 0.7219  data: 0.6798  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 49.6, Acc@5 = 90.8, loss = 1.459093469475943
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:14:40 max_test_acc1 49.6 test_acc5_at_max_test_acc1 90.8
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [6]  [  0/562]  eta: 0:07:23  lr: 0.0006039999999999999  img/s: 103.99928093453715  loss: 2.2326 (2.2326)  acc1: 31.2500 (31.2500)  acc5: 75.0000 (75.0000)  time: 0.7896  data: 0.6357  max mem: 2688
+Epoch: [6]  [256/562]  eta: 0:01:12  lr: 0.0006039999999999999  img/s: 57.37511787704196  loss: 1.5720 (1.5962)  acc1: 50.0000 (54.7179)  acc5: 93.7500 (92.8259)  time: 0.2326  data: 0.0002  max mem: 2688
+Epoch: [6]  [512/562]  eta: 0:00:12  lr: 0.0006039999999999999  img/s: 129.27552469106075  loss: 1.6264 (1.6119)  acc1: 50.0000 (54.6662)  acc5: 93.7500 (92.4464)  time: 0.2138  data: 0.0002  max mem: 2688
+Epoch: [6] Total time: 0:02:14
+Test:  [ 0/63]  eta: 0:00:43  loss: 1.6147 (1.6147)  acc1: 50.0000 (50.0000)  acc5: 87.5000 (87.5000)  time: 0.6982  data: 0.6417  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 53.7, Acc@5 = 89.5, loss = 1.4002952854784707
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:17:00 max_test_acc1 53.7 test_acc5_at_max_test_acc1 89.5
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [7]  [  0/562]  eta: 0:09:10  lr: 0.000703  img/s: 42.688569180379595  loss: 2.1720 (2.1720)  acc1: 31.2500 (31.2500)  acc5: 81.2500 (81.2500)  time: 0.9797  data: 0.6048  max mem: 2688
+Epoch: [7]  [256/562]  eta: 0:01:14  lr: 0.000703  img/s: 59.3538134431455  loss: 1.3981 (1.5846)  acc1: 62.5000 (56.3473)  acc5: 93.7500 (93.0691)  time: 0.2489  data: 0.0002  max mem: 2688
+Epoch: [7]  [512/562]  eta: 0:00:12  lr: 0.000703  img/s: 65.13842659548654  loss: 1.5780 (1.5814)  acc1: 56.2500 (56.8957)  acc5: 87.5000 (93.1043)  time: 0.2038  data: 0.0002  max mem: 2688
+Epoch: [7] Total time: 0:02:13
+Test:  [ 0/63]  eta: 0:00:49  loss: 1.4212 (1.4212)  acc1: 43.7500 (43.7500)  acc5: 100.0000 (100.0000)  time: 0.7873  data: 0.7280  max mem: 2688
+Test: Total time: 0:00:04
+ * Acc@1 = 54.4, Acc@5 = 92.3, loss = 1.3540598120954301
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:19:19 max_test_acc1 54.4 test_acc5_at_max_test_acc1 92.3
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [8]  [  0/562]  eta: 0:09:18  lr: 0.000802  img/s: 46.79990487833283  loss: 2.0231 (2.0231)  acc1: 43.7500 (43.7500)  acc5: 81.2500 (81.2500)  time: 0.9940  data: 0.6521  max mem: 2688
+Epoch: [8]  [256/562]  eta: 0:01:15  lr: 0.000802  img/s: 59.459674211111555  loss: 1.5233 (1.5175)  acc1: 56.2500 (60.8706)  acc5: 93.7500 (94.6741)  time: 0.2400  data: 0.0002  max mem: 2688
+Epoch: [8]  [512/562]  eta: 0:00:12  lr: 0.000802  img/s: 51.7503049857262  loss: 1.5310 (1.5263)  acc1: 62.5000 (60.0512)  acc5: 93.7500 (94.0180)  time: 0.2585  data: 0.0002  max mem: 2688
+Epoch: [8] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:41  loss: 1.7093 (1.7093)  acc1: 56.2500 (56.2500)  acc5: 81.2500 (81.2500)  time: 0.6587  data: 0.6075  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 57.4, Acc@5 = 95.3, loss = 1.2258554365899827
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:21:40 max_test_acc1 57.4 test_acc5_at_max_test_acc1 95.3
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [9]  [  0/562]  eta: 0:07:36  lr: 0.000901  img/s: 127.19600001516295  loss: 1.9238 (1.9238)  acc1: 62.5000 (62.5000)  acc5: 100.0000 (100.0000)  time: 0.8125  data: 0.6867  max mem: 2688
+Epoch: [9]  [256/562]  eta: 0:01:13  lr: 0.000901  img/s: 55.89037937975703  loss: 1.5627 (1.5106)  acc1: 62.5000 (60.5545)  acc5: 93.7500 (94.1148)  time: 0.2552  data: 0.0002  max mem: 2688
+Epoch: [9]  [512/562]  eta: 0:00:12  lr: 0.000901  img/s: 56.619625431762536  loss: 1.4620 (1.5230)  acc1: 56.2500 (60.2705)  acc5: 93.7500 (94.0424)  time: 0.2654  data: 0.0002  max mem: 2688
+Epoch: [9] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:49  loss: 1.0576 (1.0576)  acc1: 56.2500 (56.2500)  acc5: 100.0000 (100.0000)  time: 0.7930  data: 0.7507  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 65.9, Acc@5 = 95.5, loss = 1.0533351060890017
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:24:02 max_test_acc1 65.9 test_acc5_at_max_test_acc1 95.5
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [10]  [  0/562]  eta: 0:09:06  lr: 0.0009737304141000774  img/s: 46.919596307055535  loss: 1.2505 (1.2505)  acc1: 62.5000 (62.5000)  acc5: 100.0000 (100.0000)  time: 0.9721  data: 0.6311  max mem: 2688
+Epoch: [10]  [256/562]  eta: 0:01:16  lr: 0.0009737304141000774  img/s: 137.77055507425487  loss: 1.4298 (1.4733)  acc1: 68.7500 (62.5973)  acc5: 100.0000 (95.3307)  time: 0.2479  data: 0.0002  max mem: 2688
+Epoch: [10]  [512/562]  eta: 0:00:12  lr: 0.0009737304141000774  img/s: 156.89538727702055  loss: 1.2921 (1.4625)  acc1: 56.2500 (62.6706)  acc5: 93.7500 (94.8709)  time: 0.2610  data: 0.0002  max mem: 2688
+Epoch: [10] Total time: 0:02:17
+Test:  [ 0/63]  eta: 0:00:49  loss: 1.4773 (1.4773)  acc1: 43.7500 (43.7500)  acc5: 93.7500 (93.7500)  time: 0.7885  data: 0.7361  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 59.6, Acc@5 = 95.2, loss = 1.1874118075957374
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:26:25 max_test_acc1 65.9 test_acc5_at_max_test_acc1 95.5
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [11]  [  0/562]  eta: 0:09:50  lr: 0.0009682734337448762  img/s: 51.853589749335306  loss: 1.2053 (1.2053)  acc1: 75.0000 (75.0000)  acc5: 93.7500 (93.7500)  time: 1.0504  data: 0.7418  max mem: 2688
+Epoch: [11]  [256/562]  eta: 0:01:13  lr: 0.0009682734337448762  img/s: 46.83514670515342  loss: 1.4918 (1.4696)  acc1: 68.7500 (63.0350)  acc5: 93.7500 (94.8687)  time: 0.1948  data: 0.0002  max mem: 2688
+Epoch: [11]  [512/562]  eta: 0:00:12  lr: 0.0009682734337448762  img/s: 56.43507291861136  loss: 1.3092 (1.4587)  acc1: 62.5000 (63.4137)  acc5: 93.7500 (94.9196)  time: 0.2330  data: 0.0002  max mem: 2688
+Epoch: [11] Total time: 0:02:16
+Test:  [ 0/63]  eta: 0:00:48  loss: 1.8370 (1.8370)  acc1: 50.0000 (50.0000)  acc5: 93.7500 (93.7500)  time: 0.7741  data: 0.7317  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 62.9, Acc@5 = 96.2, loss = 1.1051062605683766
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:28:47 max_test_acc1 65.9 test_acc5_at_max_test_acc1 95.5
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [12]  [  0/562]  eta: 0:09:40  lr: 0.000962320368593087  img/s: 47.35136492919754  loss: 2.0639 (2.0639)  acc1: 50.0000 (50.0000)  acc5: 81.2500 (81.2500)  time: 1.0325  data: 0.6945  max mem: 2688
+Epoch: [12]  [256/562]  eta: 0:01:13  lr: 0.000962320368593087  img/s: 56.430564676777976  loss: 1.3190 (1.3833)  acc1: 68.7500 (66.7802)  acc5: 100.0000 (96.0117)  time: 0.2375  data: 0.0002  max mem: 2688
+Epoch: [12]  [512/562]  eta: 0:00:11  lr: 0.000962320368593087  img/s: 52.85931433747514  loss: 1.3584 (1.4024)  acc1: 62.5000 (66.1550)  acc5: 93.7500 (95.8821)  time: 0.2464  data: 0.0002  max mem: 2688
+Epoch: [12] Total time: 0:02:14
+Test:  [ 0/63]  eta: 0:00:55  loss: 1.7017 (1.7017)  acc1: 43.7500 (43.7500)  acc5: 93.7500 (93.7500)  time: 0.8859  data: 0.8437  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 65.2, Acc@5 = 96.1, loss = 1.0400263804291923
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:31:08 max_test_acc1 65.9 test_acc5_at_max_test_acc1 95.5
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [13]  [  0/562]  eta: 0:08:44  lr: 0.0009558775933359821  img/s: 112.2021043057513  loss: 1.0913 (1.0913)  acc1: 68.7500 (68.7500)  acc5: 100.0000 (100.0000)  time: 0.9334  data: 0.7908  max mem: 2688
+Epoch: [13]  [256/562]  eta: 0:01:13  lr: 0.0009558775933359821  img/s: 53.21623396190506  loss: 1.2279 (1.3999)  acc1: 75.0000 (66.6586)  acc5: 93.7500 (96.2549)  time: 0.2643  data: 0.0003  max mem: 2688
+Epoch: [13]  [512/562]  eta: 0:00:12  lr: 0.0009558775933359821  img/s: 138.54389981564327  loss: 1.2596 (1.3851)  acc1: 68.7500 (66.9225)  acc5: 100.0000 (96.0283)  time: 0.2505  data: 0.0002  max mem: 2688
+Epoch: [13] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:47  loss: 1.8004 (1.8004)  acc1: 43.7500 (43.7500)  acc5: 93.7500 (93.7500)  time: 0.7580  data: 0.7077  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 62.3, Acc@5 = 95.8, loss = 1.150673930134092
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:33:29 max_test_acc1 65.9 test_acc5_at_max_test_acc1 95.5
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [14]  [  0/562]  eta: 0:09:08  lr: 0.0009489520070586807  img/s: 47.31991298798825  loss: 0.9326 (0.9326)  acc1: 87.5000 (87.5000)  acc5: 100.0000 (100.0000)  time: 0.9758  data: 0.6376  max mem: 2688
+Epoch: [14]  [256/562]  eta: 0:01:16  lr: 0.0009489520070586807  img/s: 133.40025126027703  loss: 1.2864 (1.3439)  acc1: 68.7500 (68.6770)  acc5: 93.7500 (95.8658)  time: 0.2518  data: 0.0002  max mem: 2688
+Epoch: [14]  [512/562]  eta: 0:00:12  lr: 0.0009489520070586807  img/s: 49.495203803325694  loss: 1.2844 (1.3633)  acc1: 75.0000 (67.8850)  acc5: 93.7500 (95.8699)  time: 0.1978  data: 0.0002  max mem: 2688
+Epoch: [14] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:49  loss: 1.2655 (1.2655)  acc1: 56.2500 (56.2500)  acc5: 93.7500 (93.7500)  time: 0.7886  data: 0.7361  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 68.2, Acc@5 = 96.8, loss = 0.9646441349907527
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:35:49 max_test_acc1 68.2 test_acc5_at_max_test_acc1 96.8
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [15]  [  0/562]  eta: 0:10:17  lr: 0.0009415510258524358  img/s: 44.53639423638468  loss: 1.5380 (1.5380)  acc1: 62.5000 (62.5000)  acc5: 100.0000 (100.0000)  time: 1.0988  data: 0.7395  max mem: 2688
+Epoch: [15]  [256/562]  eta: 0:01:15  lr: 0.0009415510258524358  img/s: 52.183821419601266  loss: 1.2525 (1.3279)  acc1: 68.7500 (68.9689)  acc5: 100.0000 (96.3278)  time: 0.2747  data: 0.0002  max mem: 2688
+Epoch: [15]  [512/562]  eta: 0:00:12  lr: 0.0009415510258524358  img/s: 49.370454619022254  loss: 1.2843 (1.3195)  acc1: 75.0000 (69.9805)  acc5: 100.0000 (96.3816)  time: 0.2422  data: 0.0002  max mem: 2688
+Epoch: [15] Total time: 0:02:16
+Test:  [ 0/63]  eta: 0:00:46  loss: 1.4784 (1.4784)  acc1: 56.2500 (56.2500)  acc5: 93.7500 (93.7500)  time: 0.7347  data: 0.6927  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 67.7, Acc@5 = 96.4, loss = 0.9778755997854566
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:38:12 max_test_acc1 68.2 test_acc5_at_max_test_acc1 96.8
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [16]  [  0/562]  eta: 0:10:12  lr: 0.0009336825748732972  img/s: 45.99531334709127  loss: 1.4241 (1.4241)  acc1: 62.5000 (62.5000)  acc5: 93.7500 (93.7500)  time: 1.0906  data: 0.7427  max mem: 2688
+Epoch: [16]  [256/562]  eta: 0:01:14  lr: 0.0009336825748732972  img/s: 60.369784910446825  loss: 1.1861 (1.2622)  acc1: 68.7500 (71.3765)  acc5: 100.0000 (96.7412)  time: 0.2203  data: 0.0002  max mem: 2688
+Epoch: [16]  [512/562]  eta: 0:00:12  lr: 0.0009336825748732972  img/s: 115.0292403073669  loss: 1.1448 (1.3081)  acc1: 75.0000 (70.4069)  acc5: 100.0000 (96.4059)  time: 0.2288  data: 0.0002  max mem: 2688
+Epoch: [16] Total time: 0:02:17
+Test:  [ 0/63]  eta: 0:00:48  loss: 2.1708 (2.1708)  acc1: 37.5000 (37.5000)  acc5: 87.5000 (87.5000)  time: 0.7745  data: 0.7223  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 63.0, Acc@5 = 95.7, loss = 1.0726354666172513
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:40:34 max_test_acc1 68.2 test_acc5_at_max_test_acc1 96.8
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [17]  [  0/562]  eta: 0:10:25  lr: 0.0009253550798556566  img/s: 38.12221697708595  loss: 0.9697 (0.9697)  acc1: 81.2500 (81.2500)  acc5: 100.0000 (100.0000)  time: 1.1126  data: 0.6928  max mem: 2688
+Epoch: [17]  [256/562]  eta: 0:01:16  lr: 0.0009253550798556566  img/s: 53.54248366013072  loss: 1.2188 (1.3163)  acc1: 62.5000 (70.0875)  acc5: 100.0000 (96.5953)  time: 0.2643  data: 0.0002  max mem: 2688
+Epoch: [17]  [512/562]  eta: 0:00:12  lr: 0.0009253550798556566  img/s: 50.690473187072996  loss: 1.1850 (1.3019)  acc1: 68.7500 (70.6262)  acc5: 100.0000 (96.5887)  time: 0.2698  data: 0.0002  max mem: 2688
+Epoch: [17] Total time: 0:02:17
+Test:  [ 0/63]  eta: 0:00:45  loss: 1.4396 (1.4396)  acc1: 68.7500 (68.7500)  acc5: 87.5000 (87.5000)  time: 0.7219  data: 0.6715  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 67.9, Acc@5 = 96.4, loss = 0.9893851185601855
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:42:57 max_test_acc1 68.2 test_acc5_at_max_test_acc1 96.8
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [18]  [  0/562]  eta: 0:09:13  lr: 0.0009165774580897599  img/s: 139.45452429637757  loss: 1.0759 (1.0759)  acc1: 75.0000 (75.0000)  acc5: 100.0000 (100.0000)  time: 0.9851  data: 0.8703  max mem: 2688
+Epoch: [18]  [256/562]  eta: 0:01:13  lr: 0.0009165774580897599  img/s: 47.33386421136751  loss: 1.1642 (1.2739)  acc1: 75.0000 (72.7626)  acc5: 100.0000 (97.3492)  time: 0.2506  data: 0.0002  max mem: 2688
+Epoch: [18]  [512/562]  eta: 0:00:12  lr: 0.0009165774580897599  img/s: 52.83130853187724  loss: 1.2251 (1.2819)  acc1: 75.0000 (72.9167)  acc5: 100.0000 (97.1369)  time: 0.2609  data: 0.0002  max mem: 2688
+Epoch: [18] Total time: 0:02:16
+Test:  [ 0/63]  eta: 0:00:47  loss: 1.6243 (1.6243)  acc1: 37.5000 (37.5000)  acc5: 87.5000 (87.5000)  time: 0.7601  data: 0.7179  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 69.5, Acc@5 = 96.3, loss = 0.9235188511628953
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:45:19 max_test_acc1 69.5 test_acc5_at_max_test_acc1 96.3
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [19]  [  0/562]  eta: 0:10:08  lr: 0.0009073591088728496  img/s: 49.68450729251499  loss: 1.9565 (1.9565)  acc1: 62.5000 (62.5000)  acc5: 100.0000 (100.0000)  time: 1.0836  data: 0.7615  max mem: 2688
+Epoch: [19]  [256/562]  eta: 0:01:10  lr: 0.0009073591088728496  img/s: 54.6921134772581  loss: 1.1459 (1.2524)  acc1: 75.0000 (75.3161)  acc5: 100.0000 (97.5195)  time: 0.2097  data: 0.0002  max mem: 2688
+Epoch: [19]  [512/562]  eta: 0:00:11  lr: 0.0009073591088728496  img/s: 107.8683055339901  loss: 1.0956 (1.2645)  acc1: 68.7500 (73.7817)  acc5: 100.0000 (97.4659)  time: 0.2233  data: 0.0002  max mem: 2688
+Epoch: [19] Total time: 0:02:11
+Test:  [ 0/63]  eta: 0:00:45  loss: 1.4303 (1.4303)  acc1: 50.0000 (50.0000)  acc5: 93.7500 (93.7500)  time: 0.7217  data: 0.6681  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 73.9, Acc@5 = 97.7, loss = 0.8573517340516287
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:47:36 max_test_acc1 73.9 test_acc5_at_max_test_acc1 97.7
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [20]  [  0/562]  eta: 0:10:04  lr: 0.0008977099034441614  img/s: 53.125028399532944  loss: 1.1600 (1.1600)  acc1: 75.0000 (75.0000)  acc5: 100.0000 (100.0000)  time: 1.0756  data: 0.7743  max mem: 2688
+Epoch: [20]  [256/562]  eta: 0:01:14  lr: 0.0008977099034441614  img/s: 54.420373074961255  loss: 1.1428 (1.2139)  acc1: 75.0000 (75.5837)  acc5: 100.0000 (97.5681)  time: 0.2400  data: 0.0002  max mem: 2688
+Epoch: [20]  [512/562]  eta: 0:00:12  lr: 0.0008977099034441614  img/s: 119.9602163646309  loss: 1.2730 (1.2395)  acc1: 68.7500 (74.3177)  acc5: 93.7500 (97.4781)  time: 0.2406  data: 0.0002  max mem: 2688
+Epoch: [20] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:47  loss: 1.4981 (1.4981)  acc1: 50.0000 (50.0000)  acc5: 87.5000 (87.5000)  time: 0.7544  data: 0.7060  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 73.0, Acc@5 = 97.6, loss = 0.8335938510440645
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:49:57 max_test_acc1 73.9 test_acc5_at_max_test_acc1 97.7
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [21]  [  0/562]  eta: 0:09:58  lr: 0.0008876401744145548  img/s: 47.32879008751496  loss: 0.9591 (0.9591)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 1.0645  data: 0.7264  max mem: 2688
+Epoch: [21]  [256/562]  eta: 0:01:13  lr: 0.0008876401744145548  img/s: 49.99967515679645  loss: 1.0616 (1.2325)  acc1: 75.0000 (76.1187)  acc5: 100.0000 (97.4708)  time: 0.2670  data: 0.0002  max mem: 2688
+Epoch: [21]  [512/562]  eta: 0:00:11  lr: 0.0008876401744145548  img/s: 58.97824157320158  loss: 1.1067 (1.2243)  acc1: 81.2500 (76.3158)  acc5: 100.0000 (97.2466)  time: 0.2483  data: 0.0002  max mem: 2688
+Epoch: [21] Total time: 0:02:14
+Test:  [ 0/63]  eta: 0:00:54  loss: 1.3949 (1.3949)  acc1: 50.0000 (50.0000)  acc5: 87.5000 (87.5000)  time: 0.8572  data: 0.8150  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 68.3, Acc@5 = 96.1, loss = 0.9632010138224042
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:52:17 max_test_acc1 73.9 test_acc5_at_max_test_acc1 97.7
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [22]  [  0/562]  eta: 0:10:32  lr: 0.0008771607047020939  img/s: 49.474988572860916  loss: 2.1294 (2.1294)  acc1: 37.5000 (37.5000)  acc5: 68.7500 (68.7500)  time: 1.1246  data: 0.8011  max mem: 2688
+Epoch: [22]  [256/562]  eta: 0:01:13  lr: 0.0008771607047020939  img/s: 145.2770918978129  loss: 1.1539 (1.2093)  acc1: 75.0000 (75.6323)  acc5: 100.0000 (97.2276)  time: 0.2322  data: 0.0002  max mem: 2688
+Epoch: [22]  [512/562]  eta: 0:00:11  lr: 0.0008771607047020939  img/s: 60.27727837777634  loss: 1.0034 (1.2115)  acc1: 81.2500 (75.8041)  acc5: 100.0000 (97.4293)  time: 0.2110  data: 0.0002  max mem: 2688
+Epoch: [22] Total time: 0:02:14
+Test:  [ 0/63]  eta: 0:00:42  loss: 1.1437 (1.1437)  acc1: 50.0000 (50.0000)  acc5: 100.0000 (100.0000)  time: 0.6778  data: 0.6327  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 70.0, Acc@5 = 97.1, loss = 0.9652196008061605
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:54:37 max_test_acc1 73.9 test_acc5_at_max_test_acc1 97.7
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [23]  [  0/562]  eta: 0:06:59  lr: 0.0008662827159854287  img/s: 121.87651235857109  loss: 0.9089 (0.9089)  acc1: 87.5000 (87.5000)  acc5: 100.0000 (100.0000)  time: 0.7470  data: 0.6156  max mem: 2688
+Epoch: [23]  [256/562]  eta: 0:01:13  lr: 0.0008662827159854287  img/s: 57.354964095919705  loss: 1.0830 (1.1876)  acc1: 68.7500 (77.0185)  acc5: 100.0000 (97.4951)  time: 0.2525  data: 0.0002  max mem: 2688
+Epoch: [23]  [512/562]  eta: 0:00:12  lr: 0.0008662827159854287  img/s: 48.13745840533272  loss: 1.3006 (1.1924)  acc1: 62.5000 (76.7788)  acc5: 100.0000 (97.5999)  time: 0.2662  data: 0.0002  max mem: 2688
+Epoch: [23] Total time: 0:02:14
+Test:  [ 0/63]  eta: 0:00:53  loss: 1.2868 (1.2868)  acc1: 62.5000 (62.5000)  acc5: 87.5000 (87.5000)  time: 0.8457  data: 0.7837  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 73.7, Acc@5 = 97.0, loss = 0.7982515645405602
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:56:57 max_test_acc1 73.9 test_acc5_at_max_test_acc1 97.7
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [24]  [  0/562]  eta: 0:09:46  lr: 0.000855017856687341  img/s: 38.9666684473224  loss: 0.8588 (0.8588)  acc1: 81.2500 (81.2500)  acc5: 100.0000 (100.0000)  time: 1.0428  data: 0.6322  max mem: 2688
+Epoch: [24]  [256/562]  eta: 0:01:16  lr: 0.000855017856687341  img/s: 52.679314835471494  loss: 1.1246 (1.2283)  acc1: 75.0000 (76.1430)  acc5: 100.0000 (97.1060)  time: 0.2964  data: 0.0002  max mem: 2688
+Epoch: [24]  [512/562]  eta: 0:00:12  lr: 0.000855017856687341  img/s: 133.07778370478482  loss: 1.0630 (1.2082)  acc1: 75.0000 (76.8884)  acc5: 100.0000 (97.3562)  time: 0.2293  data: 0.0002  max mem: 2688
+Epoch: [24] Total time: 0:02:19
+Test:  [ 0/63]  eta: 0:02:34  loss: 0.6789 (0.6789)  acc1: 75.0000 (75.0000)  acc5: 100.0000 (100.0000)  time: 2.4492  data: 2.3760  max mem: 2688
+Test: Total time: 0:00:06
+ * Acc@1 = 65.7, Acc@5 = 96.2, loss = 1.0302287992976962
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 0:59:24 max_test_acc1 73.9 test_acc5_at_max_test_acc1 97.7
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [25]  [  0/562]  eta: 0:09:41  lr: 0.0008433781895013212  img/s: 48.75304866088488  loss: 1.4078 (1.4078)  acc1: 62.5000 (62.5000)  acc5: 100.0000 (100.0000)  time: 1.0339  data: 0.7056  max mem: 2688
+Epoch: [25]  [256/562]  eta: 0:01:12  lr: 0.0008433781895013212  img/s: 50.16982522872475  loss: 1.1529 (1.1217)  acc1: 81.2500 (80.4961)  acc5: 100.0000 (98.5409)  time: 0.2111  data: 0.0002  max mem: 2688
+Epoch: [25]  [512/562]  eta: 0:00:11  lr: 0.0008433781895013212  img/s: 137.7798892568465  loss: 1.0102 (1.1383)  acc1: 81.2500 (79.3494)  acc5: 100.0000 (98.1847)  time: 0.1947  data: 0.0002  max mem: 2688
+Epoch: [25] Total time: 0:02:13
+Test:  [ 0/63]  eta: 0:00:45  loss: 0.7646 (0.7646)  acc1: 81.2500 (81.2500)  acc5: 93.7500 (93.7500)  time: 0.7201  data: 0.6693  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 71.4, Acc@5 = 96.6, loss = 0.8915626084993756
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:01:42 max_test_acc1 73.9 test_acc5_at_max_test_acc1 97.7
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [26]  [  0/562]  eta: 0:09:36  lr: 0.0008313761784745341  img/s: 48.821359251553204  loss: 1.0806 (1.0806)  acc1: 87.5000 (87.5000)  acc5: 100.0000 (100.0000)  time: 1.0253  data: 0.6976  max mem: 2688
+Epoch: [26]  [256/562]  eta: 0:01:16  lr: 0.0008313761784745341  img/s: 59.20750415544725  loss: 1.1156 (1.1075)  acc1: 75.0000 (81.3473)  acc5: 100.0000 (98.2733)  time: 0.2620  data: 0.0002  max mem: 2688
+Epoch: [26]  [512/562]  eta: 0:00:12  lr: 0.0008313761784745341  img/s: 56.89964516607669  loss: 1.1276 (1.1355)  acc1: 75.0000 (80.3850)  acc5: 100.0000 (98.2212)  time: 0.2295  data: 0.0002  max mem: 2688
+Epoch: [26] Total time: 0:02:18
+Test:  [ 0/63]  eta: 0:00:50  loss: 1.5566 (1.5566)  acc1: 43.7500 (43.7500)  acc5: 100.0000 (100.0000)  time: 0.8094  data: 0.7595  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 67.2, Acc@5 = 97.1, loss = 0.9767822930737148
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:04:06 max_test_acc1 73.9 test_acc5_at_max_test_acc1 97.7
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [27]  [  0/562]  eta: 0:07:24  lr: 0.0008190246756610046  img/s: 95.96947687097887  loss: 0.8221 (0.8221)  acc1: 93.7500 (93.7500)  acc5: 93.7500 (93.7500)  time: 0.7917  data: 0.6250  max mem: 2688
+Epoch: [27]  [256/562]  eta: 0:01:12  lr: 0.0008190246756610046  img/s: 137.08639796379026  loss: 0.8964 (1.1527)  acc1: 87.5000 (79.6206)  acc5: 100.0000 (97.9086)  time: 0.2802  data: 0.0002  max mem: 2688
+Epoch: [27]  [512/562]  eta: 0:00:12  lr: 0.0008190246756610046  img/s: 60.204438391901554  loss: 1.2189 (1.1842)  acc1: 75.0000 (78.4113)  acc5: 100.0000 (97.7705)  time: 0.2434  data: 0.0002  max mem: 2688
+Epoch: [27] Total time: 0:02:21
+Test:  [ 0/63]  eta: 0:01:23  loss: 1.3434 (1.3434)  acc1: 50.0000 (50.0000)  acc5: 93.7500 (93.7500)  time: 1.3226  data: 1.0289  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 72.9, Acc@5 = 97.7, loss = 0.8156900746481759
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:06:34 max_test_acc1 73.9 test_acc5_at_max_test_acc1 97.7
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [28]  [  0/562]  eta: 0:08:01  lr: 0.0008063369073593168  img/s: 117.24775668800493  loss: 1.4385 (1.4385)  acc1: 68.7500 (68.7500)  acc5: 100.0000 (100.0000)  time: 0.8566  data: 0.7201  max mem: 2688
+Epoch: [28]  [256/562]  eta: 0:01:14  lr: 0.0008063369073593168  img/s: 56.92348746449114  loss: 0.9762 (1.1139)  acc1: 81.2500 (80.7150)  acc5: 100.0000 (98.6625)  time: 0.2052  data: 0.0002  max mem: 2688
+Epoch: [28]  [512/562]  eta: 0:00:12  lr: 0.0008063369073593168  img/s: 119.30634391244675  loss: 0.9971 (1.1370)  acc1: 81.2500 (79.8977)  acc5: 100.0000 (97.9898)  time: 0.2389  data: 0.0002  max mem: 2688
+Epoch: [28] Total time: 0:02:17
+Test:  [ 0/63]  eta: 0:00:48  loss: 1.8328 (1.8328)  acc1: 50.0000 (50.0000)  acc5: 93.7500 (93.7500)  time: 0.7683  data: 0.6552  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 70.2, Acc@5 = 97.3, loss = 0.9168887346509903
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:08:57 max_test_acc1 73.9 test_acc5_at_max_test_acc1 97.7
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [29]  [  0/562]  eta: 0:10:27  lr: 0.0007933264599495621  img/s: 52.79988418604505  loss: 0.8176 (0.8176)  acc1: 93.7500 (93.7500)  acc5: 93.7500 (93.7500)  time: 1.1173  data: 0.8142  max mem: 2688
+Epoch: [29]  [256/562]  eta: 0:01:14  lr: 0.0007933264599495621  img/s: 56.51448845142964  loss: 0.9282 (1.1413)  acc1: 81.2500 (79.9611)  acc5: 100.0000 (97.9572)  time: 0.2158  data: 0.0002  max mem: 2688
+Epoch: [29]  [512/562]  eta: 0:00:12  lr: 0.0007933264599495621  img/s: 46.553203769270894  loss: 0.9512 (1.1412)  acc1: 81.2500 (79.5687)  acc5: 100.0000 (98.0385)  time: 0.2360  data: 0.0002  max mem: 2688
+Epoch: [29] Total time: 0:02:16
+Test:  [ 0/63]  eta: 0:00:44  loss: 0.7906 (0.7906)  acc1: 81.2500 (81.2500)  acc5: 93.7500 (93.7500)  time: 0.7092  data: 0.6669  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 69.9, Acc@5 = 96.6, loss = 0.9202286984239306
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:11:19 max_test_acc1 73.9 test_acc5_at_max_test_acc1 97.7
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [30]  [  0/562]  eta: 0:08:14  lr: 0.0007800072653447032  img/s: 126.1489865239548  loss: 1.2503 (1.2503)  acc1: 75.0000 (75.0000)  acc5: 100.0000 (100.0000)  time: 0.8794  data: 0.7525  max mem: 2688
+Epoch: [30]  [256/562]  eta: 0:01:11  lr: 0.0007800072653447032  img/s: 137.22571568787828  loss: 0.9317 (1.1034)  acc1: 87.5000 (81.7121)  acc5: 100.0000 (98.5409)  time: 0.1958  data: 0.0002  max mem: 2688
+Epoch: [30]  [512/562]  eta: 0:00:12  lr: 0.0007800072653447032  img/s: 48.3588719963451  loss: 1.1766 (1.1224)  acc1: 81.2500 (80.6774)  acc5: 100.0000 (98.1603)  time: 0.2594  data: 0.0002  max mem: 2688
+Epoch: [30] Total time: 0:02:14
+Test:  [ 0/63]  eta: 0:00:49  loss: 1.4828 (1.4828)  acc1: 37.5000 (37.5000)  acc5: 81.2500 (81.2500)  time: 0.7786  data: 0.7302  max mem: 2688
+Test: Total time: 0:00:04
+ * Acc@1 = 69.5, Acc@5 = 97.0, loss = 0.9115421894996886
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:13:38 max_test_acc1 73.9 test_acc5_at_max_test_acc1 97.7
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [31]  [  0/562]  eta: 0:08:32  lr: 0.0007663935860719322  img/s: 116.7372575760475  loss: 1.0830 (1.0830)  acc1: 87.5000 (87.5000)  acc5: 100.0000 (100.0000)  time: 0.9123  data: 0.7752  max mem: 2688
+Epoch: [31]  [256/562]  eta: 0:01:11  lr: 0.0007663935860719322  img/s: 109.66826707804539  loss: 0.9507 (1.0774)  acc1: 87.5000 (82.7091)  acc5: 100.0000 (98.5895)  time: 0.2143  data: 0.0002  max mem: 2688
+Epoch: [31]  [512/562]  eta: 0:00:11  lr: 0.0007663935860719322  img/s: 54.287950233180844  loss: 0.9420 (1.1003)  acc1: 81.2500 (81.3840)  acc5: 100.0000 (98.4527)  time: 0.2333  data: 0.0002  max mem: 2688
+Epoch: [31] Total time: 0:02:12
+Test:  [ 0/63]  eta: 0:00:49  loss: 0.9265 (0.9265)  acc1: 81.2500 (81.2500)  acc5: 93.7500 (93.7500)  time: 0.7811  data: 0.7301  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 74.0, Acc@5 = 97.5, loss = 0.838363589275451
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:15:55 max_test_acc1 74.0 test_acc5_at_max_test_acc1 97.5
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [32]  [  0/562]  eta: 0:07:20  lr: 0.0007525  img/s: 110.9578548115619  loss: 0.8613 (0.8613)  acc1: 87.5000 (87.5000)  acc5: 93.7500 (93.7500)  time: 0.7835  data: 0.6392  max mem: 2688
+Epoch: [32]  [256/562]  eta: 0:01:14  lr: 0.0007525  img/s: 48.18505211340014  loss: 0.7943 (1.1106)  acc1: 87.5000 (83.6333)  acc5: 100.0000 (98.5409)  time: 0.2706  data: 0.0008  max mem: 2688
+Epoch: [32]  [512/562]  eta: 0:00:12  lr: 0.0007525  img/s: 131.87328474382429  loss: 0.9316 (1.0997)  acc1: 81.2500 (82.8095)  acc5: 100.0000 (98.3553)  time: 0.2321  data: 0.0002  max mem: 2688
+Epoch: [32] Total time: 0:02:16
+Test:  [ 0/63]  eta: 0:00:45  loss: 0.7316 (0.7316)  acc1: 87.5000 (87.5000)  acc5: 93.7500 (93.7500)  time: 0.7174  data: 0.6626  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 75.4, Acc@5 = 97.9, loss = 0.7640555264457823
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:18:18 max_test_acc1 75.4 test_acc5_at_max_test_acc1 97.9
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [33]  [  0/562]  eta: 0:10:25  lr: 0.0007383413847288688  img/s: 43.09007075212741  loss: 1.1839 (1.1839)  acc1: 87.5000 (87.5000)  acc5: 93.7500 (93.7500)  time: 1.1129  data: 0.7415  max mem: 2688
+Epoch: [33]  [256/562]  eta: 0:01:15  lr: 0.0007383413847288688  img/s: 53.216487160740144  loss: 1.1859 (1.1212)  acc1: 81.2500 (82.0768)  acc5: 100.0000 (98.0788)  time: 0.2360  data: 0.0002  max mem: 2688
+Epoch: [33]  [512/562]  eta: 0:00:12  lr: 0.0007383413847288688  img/s: 50.14006281996491  loss: 1.0339 (1.0883)  acc1: 81.2500 (82.6754)  acc5: 100.0000 (98.5015)  time: 0.2264  data: 0.0002  max mem: 2688
+Epoch: [33] Total time: 0:02:17
+Test:  [ 0/63]  eta: 0:00:53  loss: 1.1823 (1.1823)  acc1: 50.0000 (50.0000)  acc5: 93.7500 (93.7500)  time: 0.8555  data: 0.8132  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 74.1, Acc@5 = 97.7, loss = 0.8016656769646539
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:20:41 max_test_acc1 75.4 test_acc5_at_max_test_acc1 97.9
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [34]  [  0/562]  eta: 0:07:58  lr: 0.0007239329016584056  img/s: 123.9847690696089  loss: 0.7684 (0.7684)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 0.8513  data: 0.7222  max mem: 2688
+Epoch: [34]  [256/562]  eta: 0:01:14  lr: 0.0007239329016584056  img/s: 54.260121491042604  loss: 0.9682 (1.0791)  acc1: 81.2500 (83.4387)  acc5: 100.0000 (98.6625)  time: 0.2508  data: 0.0002  max mem: 2688
+Epoch: [34]  [512/562]  eta: 0:00:12  lr: 0.0007239329016584056  img/s: 57.37663856637199  loss: 1.1090 (1.0902)  acc1: 81.2500 (83.2846)  acc5: 100.0000 (98.4162)  time: 0.2364  data: 0.0002  max mem: 2688
+Epoch: [34] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:49  loss: 1.1009 (1.1009)  acc1: 75.0000 (75.0000)  acc5: 93.7500 (93.7500)  time: 0.7793  data: 0.7248  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 72.6, Acc@5 = 97.5, loss = 0.8185476752973738
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:23:02 max_test_acc1 75.4 test_acc5_at_max_test_acc1 97.9
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [35]  [  0/562]  eta: 0:07:23  lr: 0.0007092899797531754  img/s: 99.74267114532861  loss: 1.0082 (1.0082)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.7891  data: 0.6287  max mem: 2688
+Epoch: [35]  [256/562]  eta: 0:01:12  lr: 0.0007092899797531754  img/s: 55.39896349104406  loss: 0.9156 (1.0513)  acc1: 87.5000 (84.8006)  acc5: 100.0000 (98.7354)  time: 0.2535  data: 0.0002  max mem: 2688
+Epoch: [35]  [512/562]  eta: 0:00:12  lr: 0.0007092899797531754  img/s: 57.217746583588266  loss: 0.8910 (1.0526)  acc1: 87.5000 (84.1618)  acc5: 100.0000 (98.5746)  time: 0.2454  data: 0.0002  max mem: 2688
+Epoch: [35] Total time: 0:02:17
+Test:  [ 0/63]  eta: 0:00:54  loss: 0.9516 (0.9516)  acc1: 81.2500 (81.2500)  acc5: 87.5000 (87.5000)  time: 0.8684  data: 0.8263  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 69.6, Acc@5 = 96.2, loss = 1.0115890656671827
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:25:25 max_test_acc1 75.4 test_acc5_at_max_test_acc1 97.9
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [36]  [  0/562]  eta: 0:09:18  lr: 0.0006944282990207195  img/s: 41.810969599776705  loss: 0.9196 (0.9196)  acc1: 87.5000 (87.5000)  acc5: 100.0000 (100.0000)  time: 0.9930  data: 0.6103  max mem: 2688
+Epoch: [36]  [256/562]  eta: 0:01:16  lr: 0.0006944282990207195  img/s: 57.32223826159746  loss: 0.8576 (1.0071)  acc1: 87.5000 (85.8463)  acc5: 100.0000 (99.0029)  time: 0.2296  data: 0.0002  max mem: 2688
+Epoch: [36]  [512/562]  eta: 0:00:11  lr: 0.0006944282990207195  img/s: 131.1385938171728  loss: 0.9186 (1.0464)  acc1: 87.5000 (84.6735)  acc5: 100.0000 (98.8548)  time: 0.1832  data: 0.0003  max mem: 2688
+Epoch: [36] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:49  loss: 1.5985 (1.5985)  acc1: 50.0000 (50.0000)  acc5: 87.5000 (87.5000)  time: 0.7823  data: 0.7307  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 73.8, Acc@5 = 97.2, loss = 0.8247899772628905
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:27:46 max_test_acc1 75.4 test_acc5_at_max_test_acc1 97.9
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [37]  [  0/562]  eta: 0:09:51  lr: 0.0006793637737210106  img/s: 41.18113748019455  loss: 1.1840 (1.1840)  acc1: 87.5000 (87.5000)  acc5: 100.0000 (100.0000)  time: 1.0533  data: 0.6647  max mem: 2688
+Epoch: [37]  [256/562]  eta: 0:01:14  lr: 0.0006793637737210106  img/s: 54.722796740224176  loss: 0.9076 (1.0367)  acc1: 81.2500 (84.3385)  acc5: 100.0000 (98.8327)  time: 0.2480  data: 0.0002  max mem: 2688
+Epoch: [37]  [512/562]  eta: 0:00:11  lr: 0.0006793637737210106  img/s: 131.35343499646703  loss: 0.8843 (1.0646)  acc1: 81.2500 (84.2105)  acc5: 100.0000 (98.5502)  time: 0.2500  data: 0.0002  max mem: 2688
+Epoch: [37] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:43  loss: 1.6999 (1.6999)  acc1: 50.0000 (50.0000)  acc5: 81.2500 (81.2500)  time: 0.6856  data: 0.6412  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 73.1, Acc@5 = 97.4, loss = 0.8063334032656655
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:30:06 max_test_acc1 75.4 test_acc5_at_max_test_acc1 97.9
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [38]  [  0/562]  eta: 0:07:36  lr: 0.000664112535325065  img/s: 124.21540659902047  loss: 0.7408 (0.7408)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 0.8125  data: 0.6837  max mem: 2688
+Epoch: [38]  [256/562]  eta: 0:01:14  lr: 0.000664112535325065  img/s: 53.8483346532858  loss: 0.8362 (1.0706)  acc1: 87.5000 (85.5788)  acc5: 100.0000 (98.4193)  time: 0.2504  data: 0.0002  max mem: 2688
+Epoch: [38]  [512/562]  eta: 0:00:12  lr: 0.000664112535325065  img/s: 53.73205418294028  loss: 0.8854 (1.0642)  acc1: 87.5000 (85.1852)  acc5: 100.0000 (98.6355)  time: 0.2619  data: 0.0002  max mem: 2688
+Epoch: [38] Total time: 0:02:17
+Test:  [ 0/63]  eta: 0:00:49  loss: 1.3516 (1.3516)  acc1: 62.5000 (62.5000)  acc5: 93.7500 (93.7500)  time: 0.7802  data: 0.7284  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 73.0, Acc@5 = 97.2, loss = 0.8652970395864003
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:32:29 max_test_acc1 75.4 test_acc5_at_max_test_acc1 97.9
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [39]  [  0/562]  eta: 0:06:58  lr: 0.0006486909152409589  img/s: 120.22412118997202  loss: 0.7508 (0.7508)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 0.7443  data: 0.6111  max mem: 2688
+Epoch: [39]  [256/562]  eta: 0:01:18  lr: 0.0006486909152409589  img/s: 57.33002440689202  loss: 0.8169 (1.0113)  acc1: 93.7500 (86.6732)  acc5: 100.0000 (98.9056)  time: 0.2597  data: 0.0002  max mem: 2688
+Epoch: [39]  [512/562]  eta: 0:00:12  lr: 0.0006486909152409589  img/s: 46.394602068469666  loss: 0.8038 (1.0468)  acc1: 87.5000 (85.0512)  acc5: 100.0000 (98.8670)  time: 0.2709  data: 0.0002  max mem: 2688
+Epoch: [39] Total time: 0:02:20
+Test:  [ 0/63]  eta: 0:00:49  loss: 0.9133 (0.9133)  acc1: 68.7500 (68.7500)  acc5: 93.7500 (93.7500)  time: 0.7897  data: 0.7476  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 70.5, Acc@5 = 96.8, loss = 0.9509345870169382
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:34:55 max_test_acc1 75.4 test_acc5_at_max_test_acc1 97.9
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [40]  [  0/562]  eta: 0:08:35  lr: 0.0006331154273257478  img/s: 118.41876945446332  loss: 0.7141 (0.7141)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 0.9170  data: 0.7818  max mem: 2688
+Epoch: [40]  [256/562]  eta: 0:01:13  lr: 0.0006331154273257478  img/s: 142.50375111216812  loss: 0.7691 (1.0260)  acc1: 87.5000 (86.0165)  acc5: 100.0000 (98.6625)  time: 0.2402  data: 0.0002  max mem: 2688
+Epoch: [40]  [512/562]  eta: 0:00:12  lr: 0.0006331154273257478  img/s: 51.69350034316561  loss: 0.9031 (1.0586)  acc1: 81.2500 (85.4410)  acc5: 100.0000 (98.4405)  time: 0.2138  data: 0.0002  max mem: 2688
+Epoch: [40] Total time: 0:02:16
+Test:  [ 0/63]  eta: 0:00:39  loss: 1.2942 (1.2942)  acc1: 56.2500 (56.2500)  acc5: 87.5000 (87.5000)  time: 0.6279  data: 0.5769  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 75.1, Acc@5 = 97.8, loss = 0.8086340429763945
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:37:16 max_test_acc1 75.4 test_acc5_at_max_test_acc1 97.9
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [41]  [  0/562]  eta: 0:07:08  lr: 0.0006174027502020148  img/s: 87.94691905365364  loss: 0.8803 (0.8803)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 0.7618  data: 0.5798  max mem: 2688
+Epoch: [41]  [256/562]  eta: 0:01:14  lr: 0.0006174027502020148  img/s: 138.5584883221565  loss: 0.8392 (1.0158)  acc1: 93.7500 (86.9650)  acc5: 100.0000 (99.0029)  time: 0.2432  data: 0.0002  max mem: 2688
+Epoch: [41]  [512/562]  eta: 0:00:11  lr: 0.0006174027502020148  img/s: 56.45287564594674  loss: 0.7681 (1.0241)  acc1: 93.7500 (86.2451)  acc5: 100.0000 (98.8304)  time: 0.2354  data: 0.0002  max mem: 2688
+Epoch: [41] Total time: 0:02:14
+Test:  [ 0/63]  eta: 0:00:50  loss: 1.0040 (1.0040)  acc1: 62.5000 (62.5000)  acc5: 93.7500 (93.7500)  time: 0.7985  data: 0.7563  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 73.2, Acc@5 = 96.7, loss = 0.8652392058145433
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:39:36 max_test_acc1 75.4 test_acc5_at_max_test_acc1 97.9
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [42]  [  0/562]  eta: 0:09:42  lr: 0.0006015697093979835  img/s: 48.196783523042704  loss: 1.1895 (1.1895)  acc1: 87.5000 (87.5000)  acc5: 100.0000 (100.0000)  time: 1.0363  data: 0.7043  max mem: 2688
+Epoch: [42]  [256/562]  eta: 0:01:12  lr: 0.0006015697093979835  img/s: 55.64097984835483  loss: 0.8000 (0.9542)  acc1: 93.7500 (88.2539)  acc5: 100.0000 (99.1245)  time: 0.2296  data: 0.0004  max mem: 2688
+Epoch: [42]  [512/562]  eta: 0:00:11  lr: 0.0006015697093979835  img/s: 55.71216141276014  loss: 0.7859 (0.9840)  acc1: 87.5000 (87.2320)  acc5: 100.0000 (99.0132)  time: 0.2574  data: 0.0002  max mem: 2688
+Epoch: [42] Total time: 0:02:13
+Test:  [ 0/63]  eta: 0:00:48  loss: 0.7617 (0.7617)  acc1: 75.0000 (75.0000)  acc5: 93.7500 (93.7500)  time: 0.7657  data: 0.7176  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 72.9, Acc@5 = 97.0, loss = 0.8719159911076227
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:41:56 max_test_acc1 75.4 test_acc5_at_max_test_acc1 97.9
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [43]  [  0/562]  eta: 0:08:48  lr: 0.0005856332593303215  img/s: 44.662988058388315  loss: 0.9936 (0.9936)  acc1: 81.2500 (81.2500)  acc5: 100.0000 (100.0000)  time: 0.9399  data: 0.5816  max mem: 2688
+Epoch: [43]  [256/562]  eta: 0:01:15  lr: 0.0005856332593303215  img/s: 55.417399756063524  loss: 0.9689 (1.0167)  acc1: 87.5000 (86.6732)  acc5: 100.0000 (98.9786)  time: 0.2238  data: 0.0002  max mem: 2688
+Epoch: [43]  [512/562]  eta: 0:00:12  lr: 0.0005856332593303215  img/s: 131.61878350098945  loss: 0.9708 (1.0085)  acc1: 87.5000 (87.1711)  acc5: 100.0000 (98.9157)  time: 0.2516  data: 0.0002  max mem: 2688
+Epoch: [43] Total time: 0:02:17
+Test:  [ 0/63]  eta: 0:00:50  loss: 1.2338 (1.2338)  acc1: 56.2500 (56.2500)  acc5: 87.5000 (87.5000)  time: 0.8075  data: 0.7569  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 75.0, Acc@5 = 98.0, loss = 0.8002108188848647
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:44:18 max_test_acc1 75.4 test_acc5_at_max_test_acc1 97.9
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [44]  [  0/562]  eta: 0:07:01  lr: 0.0005696104651489257  img/s: 106.36802596875634  loss: 0.8664 (0.8664)  acc1: 87.5000 (87.5000)  acc5: 100.0000 (100.0000)  time: 0.7508  data: 0.6004  max mem: 2688
+Epoch: [44]  [256/562]  eta: 0:01:13  lr: 0.0005696104651489257  img/s: 58.90995341373641  loss: 0.8365 (1.0093)  acc1: 93.7500 (88.2782)  acc5: 100.0000 (99.3677)  time: 0.2583  data: 0.0002  max mem: 2688
+Epoch: [44]  [512/562]  eta: 0:00:11  lr: 0.0005696104651489257  img/s: 67.27820323754891  loss: 0.8816 (1.0202)  acc1: 87.5000 (86.9883)  acc5: 100.0000 (98.9766)  time: 0.1986  data: 0.0002  max mem: 2688
+Epoch: [44] Total time: 0:02:14
+Test:  [ 0/63]  eta: 0:00:50  loss: 1.2708 (1.2708)  acc1: 68.7500 (68.7500)  acc5: 87.5000 (87.5000)  time: 0.8082  data: 0.7563  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 77.1, Acc@5 = 97.4, loss = 0.7406133876906501
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:46:38 max_test_acc1 77.1 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [45]  [  0/562]  eta: 0:09:37  lr: 0.0005535184844631324  img/s: 51.19222774252261  loss: 0.6466 (0.6466)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 1.0275  data: 0.7149  max mem: 2688
+Epoch: [45]  [256/562]  eta: 0:01:14  lr: 0.0005535184844631324  img/s: 59.96976350370182  loss: 0.8125 (0.9817)  acc1: 87.5000 (87.6459)  acc5: 100.0000 (99.0516)  time: 0.1944  data: 0.0002  max mem: 2688
+Epoch: [45]  [512/562]  eta: 0:00:12  lr: 0.0005535184844631324  img/s: 54.26648359201523  loss: 0.7961 (0.9846)  acc1: 93.7500 (88.0726)  acc5: 100.0000 (99.0497)  time: 0.2443  data: 0.0002  max mem: 2688
+Epoch: [45] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:44  loss: 1.0085 (1.0085)  acc1: 62.5000 (62.5000)  acc5: 93.7500 (93.7500)  time: 0.7013  data: 0.6586  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 71.8, Acc@5 = 96.7, loss = 0.8799539421285901
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:48:59 max_test_acc1 77.1 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [46]  [  0/562]  eta: 0:07:56  lr: 0.000537374548968921  img/s: 101.71400163690927  loss: 0.6744 (0.6744)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 0.8481  data: 0.6907  max mem: 2688
+Epoch: [46]  [256/562]  eta: 0:01:15  lr: 0.000537374548968921  img/s: 55.20055801955701  loss: 0.8323 (0.9979)  acc1: 87.5000 (88.4971)  acc5: 100.0000 (99.0272)  time: 0.2574  data: 0.0002  max mem: 2688
+Epoch: [46]  [512/562]  eta: 0:00:12  lr: 0.000537374548968921  img/s: 53.047004821027556  loss: 0.9614 (0.9970)  acc1: 93.7500 (87.8289)  acc5: 100.0000 (98.9035)  time: 0.2504  data: 0.0002  max mem: 2688
+Epoch: [46] Total time: 0:02:17
+Test:  [ 0/63]  eta: 0:00:46  loss: 1.4241 (1.4241)  acc1: 56.2500 (56.2500)  acc5: 93.7500 (93.7500)  time: 0.7427  data: 0.6896  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 74.3, Acc@5 = 96.7, loss = 0.8173092918263541
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:51:21 max_test_acc1 77.1 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [47]  [  0/562]  eta: 0:10:27  lr: 0.0005211959459967793  img/s: 45.9640623576655  loss: 0.6941 (0.6941)  acc1: 87.5000 (87.5000)  acc5: 100.0000 (100.0000)  time: 1.1172  data: 0.7690  max mem: 2688
+Epoch: [47]  [256/562]  eta: 0:01:16  lr: 0.0005211959459967793  img/s: 125.79877104648503  loss: 0.8972 (0.9383)  acc1: 93.7500 (90.5156)  acc5: 100.0000 (99.3191)  time: 0.2573  data: 0.0002  max mem: 2688
+Epoch: [47]  [512/562]  eta: 0:00:12  lr: 0.0005211959459967793  img/s: 53.459226592571824  loss: 0.8353 (0.9538)  acc1: 87.5000 (89.6686)  acc5: 100.0000 (98.9766)  time: 0.1997  data: 0.0002  max mem: 2688
+Epoch: [47] Total time: 0:02:18
+Test:  [ 0/63]  eta: 0:00:43  loss: 0.8857 (0.8857)  acc1: 87.5000 (87.5000)  acc5: 93.7500 (93.7500)  time: 0.6968  data: 0.6432  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 76.1, Acc@5 = 96.8, loss = 0.7947522924532966
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:53:45 max_test_acc1 77.1 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [48]  [  0/562]  eta: 0:11:27  lr: 0.000505  img/s: 46.56790209125409  loss: 0.7149 (0.7149)  acc1: 87.5000 (87.5000)  acc5: 100.0000 (100.0000)  time: 1.2231  data: 0.8794  max mem: 2688
+Epoch: [48]  [256/562]  eta: 0:01:15  lr: 0.000505  img/s: 49.830083296578294  loss: 0.8349 (0.9830)  acc1: 87.5000 (88.5944)  acc5: 100.0000 (99.2461)  time: 0.2155  data: 0.0002  max mem: 2688
+Epoch: [48]  [512/562]  eta: 0:00:11  lr: 0.000505  img/s: 61.20904643246734  loss: 0.7540 (0.9725)  acc1: 93.7500 (88.6818)  acc5: 100.0000 (99.1228)  time: 0.2499  data: 0.0002  max mem: 2688
+Epoch: [48] Total time: 0:02:14
+Test:  [ 0/63]  eta: 0:00:50  loss: 0.9384 (0.9384)  acc1: 68.7500 (68.7500)  acc5: 93.7500 (93.7500)  time: 0.7950  data: 0.7421  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 76.1, Acc@5 = 97.8, loss = 0.7500813258072686
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:56:05 max_test_acc1 77.1 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [49]  [  0/562]  eta: 0:09:58  lr: 0.0004888040540032209  img/s: 50.098776362771744  loss: 0.8344 (0.8344)  acc1: 81.2500 (81.2500)  acc5: 100.0000 (100.0000)  time: 1.0648  data: 0.7453  max mem: 2688
+Epoch: [49]  [256/562]  eta: 0:01:12  lr: 0.0004888040540032209  img/s: 59.63790443554981  loss: 0.7050 (0.9689)  acc1: 93.7500 (90.0292)  acc5: 100.0000 (99.2704)  time: 0.2451  data: 0.0002  max mem: 2688
+Epoch: [49]  [512/562]  eta: 0:00:11  lr: 0.0004888040540032209  img/s: 140.2070946701181  loss: 0.7229 (0.9755)  acc1: 93.7500 (89.1204)  acc5: 100.0000 (98.9766)  time: 0.2071  data: 0.0002  max mem: 2688
+Epoch: [49] Total time: 0:02:14
+Test:  [ 0/63]  eta: 0:00:45  loss: 1.1051 (1.1051)  acc1: 68.7500 (68.7500)  acc5: 93.7500 (93.7500)  time: 0.7193  data: 0.6768  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 74.0, Acc@5 = 97.1, loss = 0.8336673710081313
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 1:58:25 max_test_acc1 77.1 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [50]  [  0/562]  eta: 0:09:55  lr: 0.0004726254510310792  img/s: 41.48902046294642  loss: 1.8197 (1.8197)  acc1: 56.2500 (56.2500)  acc5: 81.2500 (81.2500)  time: 1.0597  data: 0.6741  max mem: 2688
+Epoch: [50]  [256/562]  eta: 0:01:16  lr: 0.0004726254510310792  img/s: 55.49411269522706  loss: 0.6660 (0.9632)  acc1: 93.7500 (88.9591)  acc5: 100.0000 (99.1245)  time: 0.2597  data: 0.0002  max mem: 2688
+Epoch: [50]  [512/562]  eta: 0:00:12  lr: 0.0004726254510310792  img/s: 52.333781478004  loss: 0.9004 (0.9619)  acc1: 87.5000 (89.0107)  acc5: 100.0000 (99.0741)  time: 0.2699  data: 0.0002  max mem: 2688
+Epoch: [50] Total time: 0:02:20
+Test:  [ 0/63]  eta: 0:00:47  loss: 0.8800 (0.8800)  acc1: 68.7500 (68.7500)  acc5: 93.7500 (93.7500)  time: 0.7512  data: 0.6965  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 77.2, Acc@5 = 97.8, loss = 0.7531439550812282
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:00:51 max_test_acc1 77.2 test_acc5_at_max_test_acc1 97.8
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [51]  [  0/562]  eta: 0:09:05  lr: 0.0004564815155368676  img/s: 49.37532207440194  loss: 0.8894 (0.8894)  acc1: 87.5000 (87.5000)  acc5: 100.0000 (100.0000)  time: 0.9703  data: 0.6462  max mem: 2688
+Epoch: [51]  [256/562]  eta: 0:01:11  lr: 0.0004564815155368676  img/s: 103.34170634505104  loss: 0.7958 (0.9455)  acc1: 87.5000 (89.7617)  acc5: 100.0000 (99.0272)  time: 0.2237  data: 0.0002  max mem: 2688
+Epoch: [51]  [512/562]  eta: 0:00:11  lr: 0.0004564815155368676  img/s: 56.683565879818  loss: 0.7925 (0.9709)  acc1: 93.7500 (89.0473)  acc5: 100.0000 (98.9888)  time: 0.2779  data: 0.0002  max mem: 2688
+Epoch: [51] Total time: 0:02:13
+Test:  [ 0/63]  eta: 0:00:55  loss: 1.1173 (1.1173)  acc1: 68.7500 (68.7500)  acc5: 93.7500 (93.7500)  time: 0.8763  data: 0.8346  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 75.9, Acc@5 = 96.1, loss = 0.8123548745162903
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:03:09 max_test_acc1 77.2 test_acc5_at_max_test_acc1 97.8
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [52]  [  0/562]  eta: 0:09:15  lr: 0.00044038953485107447  img/s: 51.63980033195928  loss: 0.5886 (0.5886)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.9878  data: 0.6779  max mem: 2688
+Epoch: [52]  [256/562]  eta: 0:01:14  lr: 0.00044038953485107447  img/s: 134.09650475969724  loss: 0.6904 (0.9294)  acc1: 93.7500 (91.4397)  acc5: 100.0000 (99.1245)  time: 0.2396  data: 0.0002  max mem: 2688
+Epoch: [52]  [512/562]  eta: 0:00:12  lr: 0.00044038953485107447  img/s: 138.47414630925385  loss: 0.7721 (0.9362)  acc1: 93.7500 (90.7407)  acc5: 100.0000 (99.0375)  time: 0.2369  data: 0.0002  max mem: 2688
+Epoch: [52] Total time: 0:02:18
+Test:  [ 0/63]  eta: 0:01:47  loss: 0.9910 (0.9910)  acc1: 68.7500 (68.7500)  acc5: 93.7500 (93.7500)  time: 1.7010  data: 1.6551  max mem: 2688
+Test: Total time: 0:00:06
+ * Acc@1 = 75.7, Acc@5 = 97.1, loss = 0.790210777095386
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:05:34 max_test_acc1 77.2 test_acc5_at_max_test_acc1 97.8
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [53]  [  0/562]  eta: 0:10:32  lr: 0.00042436674066967866  img/s: 51.64818608746246  loss: 0.8857 (0.8857)  acc1: 81.2500 (81.2500)  acc5: 100.0000 (100.0000)  time: 1.1254  data: 0.8156  max mem: 2688
+Epoch: [53]  [256/562]  eta: 0:01:12  lr: 0.00042436674066967866  img/s: 117.51198866710676  loss: 0.8013 (0.9567)  acc1: 93.7500 (89.9562)  acc5: 100.0000 (99.0759)  time: 0.2432  data: 0.0002  max mem: 2688
+Epoch: [53]  [512/562]  eta: 0:00:11  lr: 0.00042436674066967866  img/s: 53.88140911382811  loss: 0.7730 (0.9449)  acc1: 93.7500 (90.5214)  acc5: 100.0000 (99.1959)  time: 0.2597  data: 0.0002  max mem: 2688
+Epoch: [53] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:46  loss: 1.2508 (1.2508)  acc1: 56.2500 (56.2500)  acc5: 93.7500 (93.7500)  time: 0.7459  data: 0.6911  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 76.6, Acc@5 = 97.6, loss = 0.7349540742616805
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:07:55 max_test_acc1 77.2 test_acc5_at_max_test_acc1 97.8
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [54]  [  0/562]  eta: 0:08:33  lr: 0.00040843029060201656  img/s: 103.6505568743986  loss: 0.6825 (0.6825)  acc1: 87.5000 (87.5000)  acc5: 100.0000 (100.0000)  time: 0.9144  data: 0.7600  max mem: 2688
+Epoch: [54]  [256/562]  eta: 0:01:15  lr: 0.00040843029060201656  img/s: 125.26924476915984  loss: 0.7518 (0.9403)  acc1: 93.7500 (90.2481)  acc5: 100.0000 (99.0759)  time: 0.2675  data: 0.0002  max mem: 2688
+Epoch: [54]  [512/562]  eta: 0:00:12  lr: 0.00040843029060201656  img/s: 125.55118107289987  loss: 0.8346 (0.9571)  acc1: 93.7500 (89.9245)  acc5: 100.0000 (99.0132)  time: 0.2579  data: 0.0002  max mem: 2688
+Epoch: [54] Total time: 0:02:16
+Test:  [ 0/63]  eta: 0:00:50  loss: 0.7230 (0.7230)  acc1: 81.2500 (81.2500)  acc5: 93.7500 (93.7500)  time: 0.8091  data: 0.7635  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 76.5, Acc@5 = 97.5, loss = 0.7675187881030734
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:10:17 max_test_acc1 77.2 test_acc5_at_max_test_acc1 97.8
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [55]  [  0/562]  eta: 0:07:51  lr: 0.0003925972497979852  img/s: 101.23970425618258  loss: 1.3321 (1.3321)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.8396  data: 0.6815  max mem: 2688
+Epoch: [55]  [256/562]  eta: 0:01:17  lr: 0.0003925972497979852  img/s: 64.30250957463424  loss: 0.7067 (0.9309)  acc1: 93.7500 (91.0506)  acc5: 100.0000 (99.2704)  time: 0.2415  data: 0.0002  max mem: 2688
+Epoch: [55]  [512/562]  eta: 0:00:12  lr: 0.0003925972497979852  img/s: 57.52906634342631  loss: 0.7717 (0.9443)  acc1: 93.7500 (90.7651)  acc5: 100.0000 (99.1350)  time: 0.2230  data: 0.0002  max mem: 2688
+Epoch: [55] Total time: 0:02:22
+Test:  [ 0/63]  eta: 0:01:05  loss: 1.0259 (1.0259)  acc1: 75.0000 (75.0000)  acc5: 93.7500 (93.7500)  time: 1.0393  data: 0.8011  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 77.2, Acc@5 = 97.0, loss = 0.7864334379869794
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:12:45 max_test_acc1 77.2 test_acc5_at_max_test_acc1 97.8
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [56]  [  0/562]  eta: 0:11:37  lr: 0.00037688457267425233  img/s: 33.71820130373223  loss: 0.5996 (0.5996)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 1.2414  data: 0.7668  max mem: 2688
+Epoch: [56]  [256/562]  eta: 0:01:14  lr: 0.00037688457267425233  img/s: 125.55165085161792  loss: 0.8500 (0.9245)  acc1: 93.7500 (90.9290)  acc5: 100.0000 (99.1975)  time: 0.2402  data: 0.0002  max mem: 2688
+Epoch: [56]  [512/562]  eta: 0:00:12  lr: 0.00037688457267425233  img/s: 48.761656747293216  loss: 0.9391 (0.9419)  acc1: 93.7500 (90.5458)  acc5: 100.0000 (99.1837)  time: 0.2605  data: 0.0006  max mem: 2688
+Epoch: [56] Total time: 0:02:17
+Test:  [ 0/63]  eta: 0:01:12  loss: 0.9195 (0.9195)  acc1: 68.7500 (68.7500)  acc5: 93.7500 (93.7500)  time: 1.1550  data: 0.7443  max mem: 2688
+Test: Total time: 0:00:06
+ * Acc@1 = 78.6, Acc@5 = 97.3, loss = 0.7586824910508262
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:15:08 max_test_acc1 78.6 test_acc5_at_max_test_acc1 97.3
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [57]  [  0/562]  eta: 0:07:59  lr: 0.00036130908475904124  img/s: 115.34894721463071  loss: 0.7394 (0.7394)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.8523  data: 0.7136  max mem: 2688
+Epoch: [57]  [256/562]  eta: 0:01:14  lr: 0.00036130908475904124  img/s: 133.10101052172274  loss: 0.6748 (0.9365)  acc1: 93.7500 (90.0535)  acc5: 100.0000 (98.9056)  time: 0.2525  data: 0.0002  max mem: 2688
+Epoch: [57]  [512/562]  eta: 0:00:12  lr: 0.00036130908475904124  img/s: 46.071381299823976  loss: 0.7057 (0.9342)  acc1: 93.7500 (90.9357)  acc5: 100.0000 (99.1106)  time: 0.2522  data: 0.0008  max mem: 2688
+Epoch: [57] Total time: 0:02:17
+Test:  [ 0/63]  eta: 0:00:45  loss: 1.0140 (1.0140)  acc1: 62.5000 (62.5000)  acc5: 93.7500 (93.7500)  time: 0.7223  data: 0.6807  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 77.1, Acc@5 = 97.2, loss = 0.7577681018719598
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:17:31 max_test_acc1 78.6 test_acc5_at_max_test_acc1 97.3
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [58]  [  0/562]  eta: 0:10:05  lr: 0.00034588746467493505  img/s: 56.79010239485487  loss: 0.6642 (0.6642)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 1.0769  data: 0.7951  max mem: 2688
+Epoch: [58]  [256/562]  eta: 0:01:12  lr: 0.00034588746467493505  img/s: 140.86663308144418  loss: 0.6968 (0.9640)  acc1: 93.7500 (90.6372)  acc5: 100.0000 (98.7597)  time: 0.2651  data: 0.0002  max mem: 2688
+Epoch: [58]  [512/562]  eta: 0:00:12  lr: 0.00034588746467493505  img/s: 54.21624171917919  loss: 0.6416 (0.9384)  acc1: 93.7500 (91.3621)  acc5: 100.0000 (99.0984)  time: 0.2556  data: 0.0002  max mem: 2688
+Epoch: [58] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:46  loss: 0.8413 (0.8413)  acc1: 81.2500 (81.2500)  acc5: 93.7500 (93.7500)  time: 0.7329  data: 0.6822  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 77.4, Acc@5 = 96.6, loss = 0.8044701549741957
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:19:52 max_test_acc1 78.6 test_acc5_at_max_test_acc1 97.3
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [59]  [  0/562]  eta: 0:07:24  lr: 0.00033063622627898945  img/s: 106.88269302439662  loss: 0.7024 (0.7024)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 0.7905  data: 0.6408  max mem: 2688
+Epoch: [59]  [256/562]  eta: 0:01:16  lr: 0.00033063622627898945  img/s: 49.57110334690018  loss: 0.6436 (0.9172)  acc1: 93.7500 (91.9747)  acc5: 100.0000 (99.2218)  time: 0.2634  data: 0.0002  max mem: 2688
+Epoch: [59]  [512/562]  eta: 0:00:12  lr: 0.00033063622627898945  img/s: 51.601522774334285  loss: 0.7048 (0.9119)  acc1: 87.5000 (91.9469)  acc5: 100.0000 (99.2325)  time: 0.2265  data: 0.0002  max mem: 2688
+Epoch: [59] Total time: 0:02:16
+Test:  [ 0/63]  eta: 0:01:00  loss: 0.9641 (0.9641)  acc1: 75.0000 (75.0000)  acc5: 93.7500 (93.7500)  time: 0.9625  data: 0.9199  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 77.1, Acc@5 = 97.2, loss = 0.8042861516513522
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:22:13 max_test_acc1 78.6 test_acc5_at_max_test_acc1 97.3
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [60]  [  0/562]  eta: 0:07:54  lr: 0.0003155717009792807  img/s: 110.04953050642335  loss: 0.7901 (0.7901)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 0.8438  data: 0.6983  max mem: 2688
+Epoch: [60]  [256/562]  eta: 0:01:14  lr: 0.0003155717009792807  img/s: 158.59955475097723  loss: 0.8435 (0.9363)  acc1: 93.7500 (91.6586)  acc5: 100.0000 (99.3191)  time: 0.2495  data: 0.0002  max mem: 2688
+Epoch: [60]  [512/562]  eta: 0:00:12  lr: 0.0003155717009792807  img/s: 54.8751155005405  loss: 0.6332 (0.9310)  acc1: 100.0000 (91.8494)  acc5: 100.0000 (99.2446)  time: 0.2287  data: 0.0002  max mem: 2688
+Epoch: [60] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:49  loss: 1.1095 (1.1095)  acc1: 68.7500 (68.7500)  acc5: 93.7500 (93.7500)  time: 0.7919  data: 0.7340  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 76.2, Acc@5 = 97.1, loss = 0.7947962444926066
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:24:34 max_test_acc1 78.6 test_acc5_at_max_test_acc1 97.3
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [61]  [  0/562]  eta: 0:09:44  lr: 0.00030071002024682466  img/s: 44.092349115345726  loss: 0.6482 (0.6482)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 1.0409  data: 0.6780  max mem: 2688
+Epoch: [61]  [256/562]  eta: 0:01:14  lr: 0.00030071002024682466  img/s: 52.959219684654116  loss: 0.8157 (0.9125)  acc1: 93.7500 (92.0477)  acc5: 100.0000 (99.2947)  time: 0.2084  data: 0.0003  max mem: 2688
+Epoch: [61]  [512/562]  eta: 0:00:12  lr: 0.00030071002024682466  img/s: 48.35197316279566  loss: 0.7201 (0.9270)  acc1: 93.7500 (91.5814)  acc5: 100.0000 (99.0984)  time: 0.2411  data: 0.0002  max mem: 2688
+Epoch: [61] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:46  loss: 0.6782 (0.6782)  acc1: 87.5000 (87.5000)  acc5: 93.7500 (93.7500)  time: 0.7434  data: 0.6903  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 77.4, Acc@5 = 97.6, loss = 0.7577328819131094
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:26:55 max_test_acc1 78.6 test_acc5_at_max_test_acc1 97.3
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [62]  [  0/562]  eta: 0:09:14  lr: 0.0002860670983415945  img/s: 41.3734312847867  loss: 0.6353 (0.6353)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 0.9858  data: 0.5991  max mem: 2688
+Epoch: [62]  [256/562]  eta: 0:01:15  lr: 0.0002860670983415945  img/s: 56.019379644361486  loss: 0.7911 (0.9137)  acc1: 87.5000 (91.4883)  acc5: 100.0000 (98.9543)  time: 0.2474  data: 0.0008  max mem: 2688
+Epoch: [62]  [512/562]  eta: 0:00:12  lr: 0.0002860670983415945  img/s: 52.68675931298004  loss: 0.7759 (0.9203)  acc1: 93.7500 (91.5936)  acc5: 100.0000 (99.1715)  time: 0.2953  data: 0.0002  max mem: 2688
+Epoch: [62] Total time: 0:02:21
+Test:  [ 0/63]  eta: 0:00:42  loss: 0.9915 (0.9915)  acc1: 56.2500 (56.2500)  acc5: 93.7500 (93.7500)  time: 0.6803  data: 0.5838  max mem: 2688
+Test: Total time: 0:00:04
+ * Acc@1 = 78.5, Acc@5 = 97.6, loss = 0.729813522526196
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:29:21 max_test_acc1 78.6 test_acc5_at_max_test_acc1 97.3
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [63]  [  0/562]  eta: 0:09:39  lr: 0.00027165861527113117  img/s: 49.54244917032895  loss: 0.9101 (0.9101)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 1.0309  data: 0.7079  max mem: 2688
+Epoch: [63]  [256/562]  eta: 0:01:15  lr: 0.00027165861527113117  img/s: 114.76603305714457  loss: 0.6755 (0.8653)  acc1: 93.7500 (93.4582)  acc5: 100.0000 (99.4407)  time: 0.2440  data: 0.0002  max mem: 2688
+Epoch: [63]  [512/562]  eta: 0:00:12  lr: 0.00027165861527113117  img/s: 53.35314320604473  loss: 0.6301 (0.8911)  acc1: 100.0000 (93.0068)  acc5: 100.0000 (99.4030)  time: 0.2605  data: 0.0002  max mem: 2688
+Epoch: [63] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:41  loss: 0.7688 (0.7688)  acc1: 81.2500 (81.2500)  acc5: 93.7500 (93.7500)  time: 0.6522  data: 0.5987  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 76.9, Acc@5 = 97.2, loss = 0.7780510191879575
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:31:42 max_test_acc1 78.6 test_acc5_at_max_test_acc1 97.3
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [64]  [  0/562]  eta: 0:09:34  lr: 0.00025750000000000013  img/s: 45.501020756166405  loss: 0.5343 (0.5343)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 1.0215  data: 0.6698  max mem: 2688
+Epoch: [64]  [256/562]  eta: 0:01:12  lr: 0.00025750000000000013  img/s: 49.308279316917044  loss: 0.8294 (0.9121)  acc1: 93.7500 (91.6099)  acc5: 100.0000 (99.0516)  time: 0.2221  data: 0.0002  max mem: 2688
+Epoch: [64]  [512/562]  eta: 0:00:11  lr: 0.00025750000000000013  img/s: 50.30340263941797  loss: 0.7420 (0.9149)  acc1: 93.7500 (91.6788)  acc5: 100.0000 (99.1837)  time: 0.2333  data: 0.0002  max mem: 2688
+Epoch: [64] Total time: 0:02:11
+Test:  [ 0/63]  eta: 0:00:53  loss: 0.8986 (0.8986)  acc1: 81.2500 (81.2500)  acc5: 93.7500 (93.7500)  time: 0.8531  data: 0.8001  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 78.1, Acc@5 = 98.0, loss = 0.7633166904487307
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:33:59 max_test_acc1 78.6 test_acc5_at_max_test_acc1 97.3
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [65]  [  0/562]  eta: 0:09:14  lr: 0.00024360641392806785  img/s: 46.35899504763431  loss: 0.7579 (0.7579)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 0.9858  data: 0.6406  max mem: 2688
+Epoch: [65]  [256/562]  eta: 0:01:12  lr: 0.00024360641392806785  img/s: 124.78846221789166  loss: 0.6238 (0.9067)  acc1: 100.0000 (93.0691)  acc5: 100.0000 (99.3677)  time: 0.2081  data: 0.0002  max mem: 2688
+Epoch: [65]  [512/562]  eta: 0:00:11  lr: 0.00024360641392806785  img/s: 137.9971951816346  loss: 0.8509 (0.9275)  acc1: 93.7500 (92.3246)  acc5: 100.0000 (99.2690)  time: 0.2124  data: 0.0002  max mem: 2688
+Epoch: [65] Total time: 0:02:14
+Test:  [ 0/63]  eta: 0:00:45  loss: 0.8877 (0.8877)  acc1: 75.0000 (75.0000)  acc5: 93.7500 (93.7500)  time: 0.7186  data: 0.6626  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 77.2, Acc@5 = 97.5, loss = 0.7850650239085394
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:36:19 max_test_acc1 78.6 test_acc5_at_max_test_acc1 97.3
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [66]  [  0/562]  eta: 0:07:55  lr: 0.00022999273465529687  img/s: 96.1329352914549  loss: 0.6498 (0.6498)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.8458  data: 0.6793  max mem: 2688
+Epoch: [66]  [256/562]  eta: 0:01:13  lr: 0.00022999273465529687  img/s: 133.49312730498852  loss: 0.7031 (0.8883)  acc1: 100.0000 (92.8502)  acc5: 100.0000 (99.3191)  time: 0.2317  data: 0.0002  max mem: 2688
+Epoch: [66]  [512/562]  eta: 0:00:12  lr: 0.00022999273465529687  img/s: 50.187759692960284  loss: 0.6862 (0.9224)  acc1: 93.7500 (92.2880)  acc5: 100.0000 (99.2690)  time: 0.2666  data: 0.0002  max mem: 2688
+Epoch: [66] Total time: 0:02:18
+Test:  [ 0/63]  eta: 0:00:42  loss: 0.9688 (0.9688)  acc1: 68.7500 (68.7500)  acc5: 93.7500 (93.7500)  time: 0.6759  data: 0.6298  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 77.2, Acc@5 = 97.3, loss = 0.7646186164920292
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:38:43 max_test_acc1 78.6 test_acc5_at_max_test_acc1 97.3
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [67]  [  0/562]  eta: 0:08:47  lr: 0.00021667354005043798  img/s: 46.854504908949494  loss: 0.6849 (0.6849)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 0.9381  data: 0.5965  max mem: 2688
+Epoch: [67]  [256/562]  eta: 0:01:11  lr: 0.00021667354005043798  img/s: 58.60079096252402  loss: 0.9916 (0.9111)  acc1: 93.7500 (92.4611)  acc5: 100.0000 (99.2947)  time: 0.2369  data: 0.0002  max mem: 2688
+Epoch: [67]  [512/562]  eta: 0:00:11  lr: 0.00021667354005043798  img/s: 59.061030764884535  loss: 0.6196 (0.8886)  acc1: 100.0000 (92.9946)  acc5: 100.0000 (99.4396)  time: 0.2356  data: 0.0002  max mem: 2688
+Epoch: [67] Total time: 0:02:13
+Test:  [ 0/63]  eta: 0:00:46  loss: 1.0195 (1.0195)  acc1: 68.7500 (68.7500)  acc5: 93.7500 (93.7500)  time: 0.7441  data: 0.6937  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 77.2, Acc@5 = 96.9, loss = 0.73127580918963
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:41:01 max_test_acc1 78.6 test_acc5_at_max_test_acc1 97.3
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [68]  [  0/562]  eta: 0:07:29  lr: 0.00020366309264068327  img/s: 125.34739429529888  loss: 0.5969 (0.5969)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.7991  data: 0.6714  max mem: 2688
+Epoch: [68]  [256/562]  eta: 0:01:13  lr: 0.00020366309264068327  img/s: 46.8717511026677  loss: 0.8293 (0.8800)  acc1: 100.0000 (94.0905)  acc5: 100.0000 (99.6352)  time: 0.2211  data: 0.0002  max mem: 2688
+Epoch: [68]  [512/562]  eta: 0:00:11  lr: 0.00020366309264068327  img/s: 55.889588087346134  loss: 1.2242 (0.8984)  acc1: 93.7500 (93.7135)  acc5: 100.0000 (99.5005)  time: 0.2338  data: 0.0002  max mem: 2688
+Epoch: [68] Total time: 0:02:11
+Test:  [ 0/63]  eta: 0:00:46  loss: 0.9884 (0.9884)  acc1: 75.0000 (75.0000)  acc5: 93.7500 (93.7500)  time: 0.7376  data: 0.6832  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 77.6, Acc@5 = 97.2, loss = 0.7614813863285004
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:43:19 max_test_acc1 78.6 test_acc5_at_max_test_acc1 97.3
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [69]  [  0/562]  eta: 0:10:18  lr: 0.00019097532433899554  img/s: 40.561612869690514  loss: 1.5060 (1.5060)  acc1: 87.5000 (87.5000)  acc5: 93.7500 (93.7500)  time: 1.1000  data: 0.7055  max mem: 2688
+Epoch: [69]  [256/562]  eta: 0:01:14  lr: 0.00019097532433899554  img/s: 50.31452848168411  loss: 0.6143 (0.8865)  acc1: 100.0000 (93.0691)  acc5: 100.0000 (99.3434)  time: 0.2544  data: 0.0002  max mem: 2688
+Epoch: [69]  [512/562]  eta: 0:00:12  lr: 0.00019097532433899554  img/s: 46.87705514067196  loss: 0.8296 (0.8608)  acc1: 100.0000 (93.5916)  acc5: 100.0000 (99.3177)  time: 0.2531  data: 0.0002  max mem: 2688
+Epoch: [69] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:48  loss: 0.7078 (0.7078)  acc1: 81.2500 (81.2500)  acc5: 93.7500 (93.7500)  time: 0.7719  data: 0.7170  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 78.5, Acc@5 = 97.0, loss = 0.7268535045404283
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:45:39 max_test_acc1 78.6 test_acc5_at_max_test_acc1 97.3
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [70]  [  0/562]  eta: 0:07:51  lr: 0.00017862382152546591  img/s: 99.83333159776201  loss: 0.5602 (0.5602)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.8390  data: 0.6787  max mem: 2688
+Epoch: [70]  [256/562]  eta: 0:01:13  lr: 0.00017862382152546591  img/s: 118.64256884691473  loss: 0.6553 (0.9015)  acc1: 100.0000 (92.8016)  acc5: 100.0000 (98.9786)  time: 0.2286  data: 0.0002  max mem: 2688
+Epoch: [70]  [512/562]  eta: 0:00:12  lr: 0.00017862382152546591  img/s: 50.39459084396411  loss: 0.6692 (0.8978)  acc1: 93.7500 (92.7753)  acc5: 100.0000 (99.1228)  time: 0.2394  data: 0.0002  max mem: 2688
+Epoch: [70] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:44  loss: 0.8890 (0.8890)  acc1: 68.7500 (68.7500)  acc5: 93.7500 (93.7500)  time: 0.7065  data: 0.6514  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 76.9, Acc@5 = 97.3, loss = 0.7955507728315535
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:48:00 max_test_acc1 78.6 test_acc5_at_max_test_acc1 97.3
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [71]  [  0/562]  eta: 0:06:53  lr: 0.00016662181049867869  img/s: 102.4490860183865  loss: 0.9201 (0.9201)  acc1: 87.5000 (87.5000)  acc5: 100.0000 (100.0000)  time: 0.7366  data: 0.5804  max mem: 2688
+Epoch: [71]  [256/562]  eta: 0:01:15  lr: 0.00016662181049867869  img/s: 144.08062296440542  loss: 0.6736 (0.8540)  acc1: 100.0000 (94.9173)  acc5: 100.0000 (99.6595)  time: 0.2601  data: 0.0002  max mem: 2688
+Epoch: [71]  [512/562]  eta: 0:00:12  lr: 0.00016662181049867869  img/s: 54.3214791622484  loss: 0.6684 (0.8634)  acc1: 93.7500 (94.3592)  acc5: 100.0000 (99.5858)  time: 0.2401  data: 0.0002  max mem: 2688
+Epoch: [71] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:45  loss: 0.7119 (0.7119)  acc1: 87.5000 (87.5000)  acc5: 93.7500 (93.7500)  time: 0.7277  data: 0.6838  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 73.6, Acc@5 = 96.8, loss = 0.8728396774284424
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:50:21 max_test_acc1 78.6 test_acc5_at_max_test_acc1 97.3
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [72]  [  0/562]  eta: 0:08:49  lr: 0.000154982143312659  img/s: 122.18806829975274  loss: 0.5523 (0.5523)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.9417  data: 0.8107  max mem: 2688
+Epoch: [72]  [256/562]  eta: 0:01:14  lr: 0.000154982143312659  img/s: 56.83738270898107  loss: 0.6545 (0.8714)  acc1: 100.0000 (93.6284)  acc5: 100.0000 (99.3434)  time: 0.2668  data: 0.0002  max mem: 2688
+Epoch: [72]  [512/562]  eta: 0:00:12  lr: 0.000154982143312659  img/s: 55.21672705969859  loss: 0.6938 (0.8893)  acc1: 100.0000 (93.0921)  acc5: 100.0000 (99.1594)  time: 0.2680  data: 0.0002  max mem: 2688
+Epoch: [72] Total time: 0:02:17
+Test:  [ 0/63]  eta: 0:00:54  loss: 0.8565 (0.8565)  acc1: 62.5000 (62.5000)  acc5: 93.7500 (93.7500)  time: 0.8605  data: 0.8062  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 79.2, Acc@5 = 97.4, loss = 0.6998085907054326
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:52:44 max_test_acc1 79.2 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [73]  [  0/562]  eta: 0:09:32  lr: 0.00014371728401457148  img/s: 53.273898840592366  loss: 0.6567 (0.6567)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 1.0190  data: 0.7187  max mem: 2688
+Epoch: [73]  [256/562]  eta: 0:01:13  lr: 0.00014371728401457148  img/s: 56.244694965214194  loss: 0.6055 (0.8711)  acc1: 100.0000 (93.0691)  acc5: 100.0000 (99.1975)  time: 0.2224  data: 0.0012  max mem: 2688
+Epoch: [73]  [512/562]  eta: 0:00:11  lr: 0.00014371728401457148  img/s: 56.08004933723976  loss: 0.6669 (0.8826)  acc1: 93.7500 (93.4454)  acc5: 100.0000 (99.2325)  time: 0.2363  data: 0.0002  max mem: 2688
+Epoch: [73] Total time: 0:02:13
+Test:  [ 0/63]  eta: 0:00:47  loss: 0.9764 (0.9764)  acc1: 81.2500 (81.2500)  acc5: 93.7500 (93.7500)  time: 0.7539  data: 0.7028  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 79.1, Acc@5 = 97.8, loss = 0.6789269719331984
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:55:03 max_test_acc1 79.2 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [74]  [  0/562]  eta: 0:09:01  lr: 0.00013283929529790624  img/s: 47.07629842571275  loss: 0.5453 (0.5453)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.9641  data: 0.6242  max mem: 2688
+Epoch: [74]  [256/562]  eta: 0:01:14  lr: 0.00013283929529790624  img/s: 49.75272528854252  loss: 0.6163 (0.9084)  acc1: 100.0000 (93.1420)  acc5: 100.0000 (99.1975)  time: 0.2538  data: 0.0002  max mem: 2688
+Epoch: [74]  [512/562]  eta: 0:00:12  lr: 0.00013283929529790624  img/s: 52.76899511538449  loss: 0.5952 (0.8933)  acc1: 100.0000 (93.8840)  acc5: 100.0000 (99.3177)  time: 0.2497  data: 0.0002  max mem: 2688
+Epoch: [74] Total time: 0:02:16
+Test:  [ 0/63]  eta: 0:00:48  loss: 0.9748 (0.9748)  acc1: 81.2500 (81.2500)  acc5: 93.7500 (93.7500)  time: 0.7689  data: 0.7272  max mem: 2688
+Test: Total time: 0:00:04
+ * Acc@1 = 78.6, Acc@5 = 97.5, loss = 0.6931492624774812
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:57:24 max_test_acc1 79.2 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [75]  [  0/562]  eta: 0:10:58  lr: 0.0001223598255854452  img/s: 52.5145464078065  loss: 0.6525 (0.6525)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 1.1723  data: 0.8675  max mem: 2688
+Epoch: [75]  [256/562]  eta: 0:01:13  lr: 0.0001223598255854452  img/s: 57.91487723840345  loss: 0.5674 (0.5884)  acc1: 100.0000 (98.2247)  acc5: 100.0000 (99.9270)  time: 0.2057  data: 0.0002  max mem: 2688
+Epoch: [75]  [512/562]  eta: 0:00:12  lr: 0.0001223598255854452  img/s: 65.53324811555765  loss: 0.5701 (0.5885)  acc1: 100.0000 (98.3065)  acc5: 100.0000 (99.9269)  time: 0.2517  data: 0.0002  max mem: 2688
+Epoch: [75] Total time: 0:02:16
+Test:  [ 0/63]  eta: 0:00:45  loss: 1.1741 (1.1741)  acc1: 62.5000 (62.5000)  acc5: 93.7500 (93.7500)  time: 0.7192  data: 0.6760  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 79.2, Acc@5 = 96.9, loss = 0.6857688769934669
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 2:59:46 max_test_acc1 79.2 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [76]  [  0/562]  eta: 0:09:19  lr: 0.00011229009655583865  img/s: 49.44334879553934  loss: 0.6018 (0.6018)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.9961  data: 0.6725  max mem: 2688
+Epoch: [76]  [256/562]  eta: 0:01:17  lr: 0.00011229009655583865  img/s: 54.51156776005732  loss: 0.5614 (0.5876)  acc1: 100.0000 (98.3706)  acc5: 100.0000 (99.9270)  time: 0.2246  data: 0.0002  max mem: 2688
+Epoch: [76]  [512/562]  eta: 0:00:12  lr: 0.00011229009655583865  img/s: 53.6002159699559  loss: 0.5804 (0.5902)  acc1: 100.0000 (98.2578)  acc5: 100.0000 (99.9391)  time: 0.2107  data: 0.0002  max mem: 2688
+Epoch: [76] Total time: 0:02:17
+Test:  [ 0/63]  eta: 0:00:45  loss: 1.0182 (1.0182)  acc1: 62.5000 (62.5000)  acc5: 93.7500 (93.7500)  time: 0.7275  data: 0.6792  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 80.3, Acc@5 = 98.2, loss = 0.653729414182996
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:02:09 max_test_acc1 80.3 test_acc5_at_max_test_acc1 98.2
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [77]  [  0/562]  eta: 0:08:09  lr: 0.00010264089112715051  img/s: 121.06170986549674  loss: 0.5807 (0.5807)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.8706  data: 0.7384  max mem: 2688
+Epoch: [77]  [256/562]  eta: 0:01:15  lr: 0.00010264089112715051  img/s: 136.28628117568454  loss: 0.5752 (0.5866)  acc1: 100.0000 (98.3706)  acc5: 100.0000 (99.9757)  time: 0.2378  data: 0.0002  max mem: 2688
+Epoch: [77]  [512/562]  eta: 0:00:11  lr: 0.00010264089112715051  img/s: 137.74991122359543  loss: 0.5643 (0.5829)  acc1: 100.0000 (98.4893)  acc5: 100.0000 (99.9635)  time: 0.2122  data: 0.0002  max mem: 2688
+Epoch: [77] Total time: 0:02:14
+Test:  [ 0/63]  eta: 0:00:52  loss: 0.8801 (0.8801)  acc1: 81.2500 (81.2500)  acc5: 93.7500 (93.7500)  time: 0.8338  data: 0.7814  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 80.0, Acc@5 = 97.2, loss = 0.6786865275057535
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:04:28 max_test_acc1 80.3 test_acc5_at_max_test_acc1 98.2
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [78]  [  0/562]  eta: 0:09:33  lr: 9.342254191024022e-05  img/s: 52.613646537875645  loss: 0.6566 (0.6566)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 1.0201  data: 0.7159  max mem: 2688
+Epoch: [78]  [256/562]  eta: 0:01:14  lr: 9.342254191024022e-05  img/s: 147.23862890893255  loss: 0.5477 (0.5801)  acc1: 100.0000 (98.3949)  acc5: 100.0000 (99.9757)  time: 0.2501  data: 0.0002  max mem: 2688
+Epoch: [78]  [512/562]  eta: 0:00:12  lr: 9.342254191024022e-05  img/s: 51.10906803386309  loss: 0.5917 (0.5818)  acc1: 100.0000 (98.2578)  acc5: 100.0000 (99.9635)  time: 0.2399  data: 0.0002  max mem: 2688
+Epoch: [78] Total time: 0:02:16
+Test:  [ 0/63]  eta: 0:00:42  loss: 0.9673 (0.9673)  acc1: 62.5000 (62.5000)  acc5: 93.7500 (93.7500)  time: 0.6722  data: 0.6254  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 79.8, Acc@5 = 97.7, loss = 0.6782007813453674
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:06:50 max_test_acc1 80.3 test_acc5_at_max_test_acc1 98.2
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [79]  [  0/562]  eta: 0:09:49  lr: 8.46449201443435e-05  img/s: 49.07261641689981  loss: 0.5667 (0.5667)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 1.0481  data: 0.7220  max mem: 2688
+Epoch: [79]  [256/562]  eta: 0:01:15  lr: 8.46449201443435e-05  img/s: 52.77820823168382  loss: 0.5510 (0.5781)  acc1: 100.0000 (98.5652)  acc5: 100.0000 (100.0000)  time: 0.2494  data: 0.0002  max mem: 2688
+Epoch: [79]  [512/562]  eta: 0:00:12  lr: 8.46449201443435e-05  img/s: 60.70651237851255  loss: 0.5617 (0.5803)  acc1: 100.0000 (98.4771)  acc5: 100.0000 (99.9513)  time: 0.2195  data: 0.0002  max mem: 2688
+Epoch: [79] Total time: 0:02:14
+Test:  [ 0/63]  eta: 0:01:03  loss: 0.9646 (0.9646)  acc1: 75.0000 (75.0000)  acc5: 87.5000 (87.5000)  time: 1.0058  data: 0.9560  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 79.5, Acc@5 = 97.0, loss = 0.6969723476777001
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:09:10 max_test_acc1 80.3 test_acc5_at_max_test_acc1 98.2
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [80]  [  0/562]  eta: 0:13:57  lr: 7.631742512670284e-05  img/s: 19.41959122963889  loss: 0.5333 (0.5333)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 1.4901  data: 0.6662  max mem: 2688
+Epoch: [80]  [256/562]  eta: 0:01:14  lr: 7.631742512670284e-05  img/s: 135.87760886995537  loss: 0.5577 (0.5814)  acc1: 100.0000 (98.3706)  acc5: 100.0000 (99.8541)  time: 0.1895  data: 0.0002  max mem: 2688
+Epoch: [80]  [512/562]  eta: 0:00:11  lr: 7.631742512670284e-05  img/s: 60.047032717283834  loss: 0.5516 (0.5773)  acc1: 100.0000 (98.6111)  acc5: 100.0000 (99.9025)  time: 0.2121  data: 0.0002  max mem: 2688
+Epoch: [80] Total time: 0:02:13
+Test:  [ 0/63]  eta: 0:01:38  loss: 1.1290 (1.1290)  acc1: 62.5000 (62.5000)  acc5: 93.7500 (93.7500)  time: 1.5589  data: 1.5043  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 80.3, Acc@5 = 97.2, loss = 0.6790373587892169
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:11:29 max_test_acc1 80.3 test_acc5_at_max_test_acc1 98.2
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [81]  [  0/562]  eta: 0:09:27  lr: 6.844897414756431e-05  img/s: 43.060486538477576  loss: 0.6478 (0.6478)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 1.0098  data: 0.6382  max mem: 2688
+Epoch: [81]  [256/562]  eta: 0:01:13  lr: 6.844897414756431e-05  img/s: 50.13388236753068  loss: 0.5768 (0.5831)  acc1: 100.0000 (98.0788)  acc5: 100.0000 (99.8298)  time: 0.2607  data: 0.0002  max mem: 2688
+Epoch: [81]  [512/562]  eta: 0:00:12  lr: 6.844897414756431e-05  img/s: 132.3059076346789  loss: 0.5565 (0.5815)  acc1: 100.0000 (98.3309)  acc5: 100.0000 (99.8904)  time: 0.2643  data: 0.0002  max mem: 2688
+Epoch: [81] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:44  loss: 1.2618 (1.2618)  acc1: 62.5000 (62.5000)  acc5: 87.5000 (87.5000)  time: 0.7140  data: 0.6709  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 79.1, Acc@5 = 97.6, loss = 0.6827592083386013
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:13:50 max_test_acc1 80.3 test_acc5_at_max_test_acc1 98.2
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [82]  [  0/562]  eta: 0:10:21  lr: 6.104799294131938e-05  img/s: 40.27222105868946  loss: 0.5595 (0.5595)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 1.1063  data: 0.7089  max mem: 2688
+Epoch: [82]  [256/562]  eta: 0:01:14  lr: 6.104799294131938e-05  img/s: 119.22304555992787  loss: 0.5553 (0.5717)  acc1: 100.0000 (98.8813)  acc5: 100.0000 (99.9514)  time: 0.2592  data: 0.0002  max mem: 2688
+Epoch: [82]  [512/562]  eta: 0:00:11  lr: 6.104799294131938e-05  img/s: 137.70722918761413  loss: 0.5697 (0.5752)  acc1: 100.0000 (98.7329)  acc5: 100.0000 (99.9391)  time: 0.2237  data: 0.0009  max mem: 2688
+Epoch: [82] Total time: 0:02:14
+Test:  [ 0/63]  eta: 0:00:50  loss: 0.9337 (0.9337)  acc1: 68.7500 (68.7500)  acc5: 93.7500 (93.7500)  time: 0.8027  data: 0.7523  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 80.9, Acc@5 = 97.4, loss = 0.6714620933173194
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:16:10 max_test_acc1 80.9 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [83]  [  0/562]  eta: 0:07:40  lr: 5.4122406664017925e-05  img/s: 112.56476902948773  loss: 0.5339 (0.5339)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.8200  data: 0.6778  max mem: 2688
+Epoch: [83]  [256/562]  eta: 0:01:13  lr: 5.4122406664017925e-05  img/s: 55.342815414443145  loss: 0.5537 (0.5745)  acc1: 100.0000 (98.7840)  acc5: 100.0000 (99.8784)  time: 0.2200  data: 0.0002  max mem: 2688
+Epoch: [83]  [512/562]  eta: 0:00:12  lr: 5.4122406664017925e-05  img/s: 135.19083160589926  loss: 0.5705 (0.5759)  acc1: 100.0000 (98.6842)  acc5: 100.0000 (99.8904)  time: 0.2530  data: 0.0002  max mem: 2688
+Epoch: [83] Total time: 0:02:19
+Test:  [ 0/63]  eta: 0:00:50  loss: 1.1500 (1.1500)  acc1: 62.5000 (62.5000)  acc5: 93.7500 (93.7500)  time: 0.8084  data: 0.7025  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 80.0, Acc@5 = 97.1, loss = 0.6878577896526882
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:18:35 max_test_acc1 80.9 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [84]  [  0/562]  eta: 0:11:06  lr: 4.7679631406913064e-05  img/s: 51.08432443624361  loss: 0.5924 (0.5924)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 1.1860  data: 0.8728  max mem: 2688
+Epoch: [84]  [256/562]  eta: 0:01:13  lr: 4.7679631406913064e-05  img/s: 56.51215650873423  loss: 0.5415 (0.5717)  acc1: 100.0000 (98.6625)  acc5: 100.0000 (99.9514)  time: 0.2090  data: 0.0002  max mem: 2688
+Epoch: [84]  [512/562]  eta: 0:00:12  lr: 4.7679631406913064e-05  img/s: 129.62911653296607  loss: 0.5362 (0.5731)  acc1: 100.0000 (98.5989)  acc5: 100.0000 (99.9635)  time: 0.2273  data: 0.0002  max mem: 2688
+Epoch: [84] Total time: 0:02:18
+Test:  [ 0/63]  eta: 0:00:58  loss: 1.0478 (1.0478)  acc1: 75.0000 (75.0000)  acc5: 93.7500 (93.7500)  time: 0.9315  data: 0.6884  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 81.4, Acc@5 = 97.4, loss = 0.6709590454896291
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:21:00 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [85]  [  0/562]  eta: 0:10:31  lr: 4.172656625512375e-05  img/s: 46.058417144920035  loss: 0.5334 (0.5334)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 1.1243  data: 0.7769  max mem: 2688
+Epoch: [85]  [256/562]  eta: 0:01:17  lr: 4.172656625512375e-05  img/s: 57.99796385760831  loss: 0.5555 (0.5718)  acc1: 100.0000 (98.7840)  acc5: 100.0000 (100.0000)  time: 0.2815  data: 0.0002  max mem: 2688
+Epoch: [85]  [512/562]  eta: 0:00:12  lr: 4.172656625512375e-05  img/s: 126.1065544197234  loss: 0.5356 (0.5716)  acc1: 100.0000 (98.7329)  acc5: 100.0000 (99.9878)  time: 0.2421  data: 0.0002  max mem: 2688
+Epoch: [85] Total time: 0:02:18
+Test:  [ 0/63]  eta: 0:00:45  loss: 1.0540 (1.0540)  acc1: 62.5000 (62.5000)  acc5: 93.7500 (93.7500)  time: 0.7280  data: 0.6823  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 79.6, Acc@5 = 97.4, loss = 0.6797770628380397
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:23:24 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [86]  [  0/562]  eta: 0:07:11  lr: 3.626958589992274e-05  img/s: 112.80089825391809  loss: 0.5593 (0.5593)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.7674  data: 0.6255  max mem: 2688
+Epoch: [86]  [256/562]  eta: 0:01:14  lr: 3.626958589992274e-05  img/s: 62.70139485169015  loss: 0.5474 (0.5757)  acc1: 100.0000 (98.6138)  acc5: 100.0000 (99.9270)  time: 0.2576  data: 0.0002  max mem: 2688
+Epoch: [86]  [512/562]  eta: 0:00:12  lr: 3.626958589992274e-05  img/s: 150.42075039057158  loss: 0.5408 (0.5750)  acc1: 100.0000 (98.6720)  acc5: 100.0000 (99.9391)  time: 0.2514  data: 0.0002  max mem: 2688
+Epoch: [86] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:39  loss: 0.7387 (0.7387)  acc1: 75.0000 (75.0000)  acc5: 93.7500 (93.7500)  time: 0.6317  data: 0.5898  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 80.7, Acc@5 = 97.0, loss = 0.6795243904704139
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:25:44 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [87]  [  0/562]  eta: 0:09:58  lr: 3.131453381255669e-05  img/s: 52.847284433608635  loss: 0.5395 (0.5395)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 1.0658  data: 0.7630  max mem: 2688
+Epoch: [87]  [256/562]  eta: 0:01:13  lr: 3.131453381255669e-05  img/s: 53.58348217885896  loss: 0.5442 (0.5731)  acc1: 100.0000 (98.5409)  acc5: 100.0000 (99.9514)  time: 0.2710  data: 0.0002  max mem: 2688
+Epoch: [87]  [512/562]  eta: 0:00:11  lr: 3.131453381255669e-05  img/s: 162.76036156646464  loss: 0.5452 (0.5713)  acc1: 100.0000 (98.7086)  acc5: 100.0000 (99.9635)  time: 0.2148  data: 0.0002  max mem: 2688
+Epoch: [87] Total time: 0:02:11
+Test:  [ 0/63]  eta: 0:00:55  loss: 1.0870 (1.0870)  acc1: 68.7500 (68.7500)  acc5: 93.7500 (93.7500)  time: 0.8807  data: 0.8384  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 79.4, Acc@5 = 97.9, loss = 0.6698619304668336
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:28:01 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [88]  [  0/562]  eta: 0:07:30  lr: 2.6866715986911242e-05  img/s: 107.71888282504013  loss: 0.5525 (0.5525)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.8020  data: 0.6534  max mem: 2688
+Epoch: [88]  [256/562]  eta: 0:01:17  lr: 2.6866715986911242e-05  img/s: 130.50334188331703  loss: 0.5458 (0.5674)  acc1: 100.0000 (98.8084)  acc5: 100.0000 (99.9514)  time: 0.2275  data: 0.0002  max mem: 2688
+Epoch: [88]  [512/562]  eta: 0:00:12  lr: 2.6866715986911242e-05  img/s: 54.419843508878344  loss: 0.5549 (0.5685)  acc1: 100.0000 (98.8304)  acc5: 100.0000 (99.9391)  time: 0.2467  data: 0.0002  max mem: 2688
+Epoch: [88] Total time: 0:02:16
+Test:  [ 0/63]  eta: 0:00:56  loss: 1.0639 (1.0639)  acc1: 62.5000 (62.5000)  acc5: 93.7500 (93.7500)  time: 0.9006  data: 0.8585  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 79.7, Acc@5 = 97.7, loss = 0.6667488913923975
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:30:23 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [89]  [  0/562]  eta: 0:10:47  lr: 2.293089525771985e-05  img/s: 47.47987607337396  loss: 0.6256 (0.6256)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 1.1526  data: 0.8156  max mem: 2688
+Epoch: [89]  [256/562]  eta: 0:01:17  lr: 2.293089525771985e-05  img/s: 153.63504705739606  loss: 0.5546 (0.5658)  acc1: 100.0000 (99.0516)  acc5: 100.0000 (99.9514)  time: 0.2662  data: 0.0002  max mem: 2688
+Epoch: [89]  [512/562]  eta: 0:00:12  lr: 2.293089525771985e-05  img/s: 144.75065409594558  loss: 0.5410 (0.5639)  acc1: 100.0000 (99.1350)  acc5: 100.0000 (99.9635)  time: 0.2140  data: 0.0002  max mem: 2688
+Epoch: [89] Total time: 0:02:19
+Test:  [ 0/63]  eta: 0:00:42  loss: 1.0305 (1.0305)  acc1: 62.5000 (62.5000)  acc5: 93.7500 (93.7500)  time: 0.6761  data: 0.6339  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 81.1, Acc@5 = 97.1, loss = 0.6636465487499086
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:32:48 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [90]  [  0/562]  eta: 0:09:03  lr: 1.9511286200400937e-05  img/s: 45.388141800609375  loss: 0.7333 (0.7333)  acc1: 93.7500 (93.7500)  acc5: 93.7500 (93.7500)  time: 0.9668  data: 0.6143  max mem: 2688
+Epoch: [90]  [256/562]  eta: 0:01:10  lr: 1.9511286200400937e-05  img/s: 51.278988859945855  loss: 0.5376 (0.5672)  acc1: 100.0000 (98.8327)  acc5: 100.0000 (99.9270)  time: 0.2659  data: 0.0002  max mem: 2688
+Epoch: [90]  [512/562]  eta: 0:00:11  lr: 1.9511286200400937e-05  img/s: 50.381273554451134  loss: 0.5448 (0.5692)  acc1: 100.0000 (98.7208)  acc5: 100.0000 (99.9391)  time: 0.2406  data: 0.0002  max mem: 2688
+Epoch: [90] Total time: 0:02:10
+Test:  [ 0/63]  eta: 0:00:51  loss: 1.0774 (1.0774)  acc1: 62.5000 (62.5000)  acc5: 93.7500 (93.7500)  time: 0.8177  data: 0.7400  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 80.1, Acc@5 = 97.5, loss = 0.6843742860688103
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:35:04 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [91]  [  0/562]  eta: 0:08:18  lr: 1.6611550617984906e-05  img/s: 127.05127384736551  loss: 0.5487 (0.5487)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.8868  data: 0.7609  max mem: 2688
+Epoch: [91]  [256/562]  eta: 0:01:16  lr: 1.6611550617984906e-05  img/s: 53.21007353279322  loss: 0.5739 (0.5665)  acc1: 100.0000 (99.0272)  acc5: 100.0000 (99.9757)  time: 0.2738  data: 0.0002  max mem: 2688
+Epoch: [91]  [512/562]  eta: 0:00:12  lr: 1.6611550617984906e-05  img/s: 52.13383652801882  loss: 0.5362 (0.5666)  acc1: 100.0000 (98.9035)  acc5: 100.0000 (99.9635)  time: 0.1954  data: 0.0002  max mem: 2688
+Epoch: [91] Total time: 0:02:16
+Test:  [ 0/63]  eta: 0:00:50  loss: 1.0626 (1.0626)  acc1: 75.0000 (75.0000)  acc5: 93.7500 (93.7500)  time: 0.8032  data: 0.7517  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 80.3, Acc@5 = 97.6, loss = 0.6665457690519
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:37:26 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [92]  [  0/562]  eta: 0:09:10  lr: 1.4234793619963862e-05  img/s: 50.14369688813903  loss: 0.5490 (0.5490)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.9794  data: 0.6602  max mem: 2688
+Epoch: [92]  [256/562]  eta: 0:01:12  lr: 1.4234793619963862e-05  img/s: 165.59622559567285  loss: 0.5675 (0.5731)  acc1: 100.0000 (98.6868)  acc5: 100.0000 (99.9270)  time: 0.2288  data: 0.0002  max mem: 2688
+Epoch: [92]  [512/562]  eta: 0:00:12  lr: 1.4234793619963862e-05  img/s: 107.41938447698791  loss: 0.5575 (0.5718)  acc1: 100.0000 (98.7329)  acc5: 100.0000 (99.9269)  time: 0.2871  data: 0.0002  max mem: 2688
+Epoch: [92] Total time: 0:02:17
+Test:  [ 0/63]  eta: 0:00:43  loss: 0.9694 (0.9694)  acc1: 75.0000 (75.0000)  acc5: 93.7500 (93.7500)  time: 0.6982  data: 0.6562  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 80.3, Acc@5 = 97.6, loss = 0.6480963102408818
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:39:48 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [93]  [  0/562]  eta: 0:08:59  lr: 1.2383560297262576e-05  img/s: 48.052494175031185  loss: 0.5671 (0.5671)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.9604  data: 0.6274  max mem: 2688
+Epoch: [93]  [256/562]  eta: 0:01:18  lr: 1.2383560297262576e-05  img/s: 59.00079741661634  loss: 0.5447 (0.5680)  acc1: 100.0000 (98.7111)  acc5: 100.0000 (99.9757)  time: 0.2441  data: 0.0002  max mem: 2688
+Epoch: [93]  [512/562]  eta: 0:00:12  lr: 1.2383560297262576e-05  img/s: 56.991117014229765  loss: 0.5540 (0.5709)  acc1: 100.0000 (98.5136)  acc5: 100.0000 (99.9756)  time: 0.2552  data: 0.0002  max mem: 2688
+Epoch: [93] Total time: 0:02:18
+Test:  [ 0/63]  eta: 0:00:44  loss: 0.9528 (0.9528)  acc1: 62.5000 (62.5000)  acc5: 93.7500 (93.7500)  time: 0.7077  data: 0.6656  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 80.9, Acc@5 = 97.9, loss = 0.653182463276954
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:42:12 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [94]  [  0/562]  eta: 0:10:18  lr: 1.1059832996891278e-05  img/s: 48.35308799243745  loss: 0.5364 (0.5364)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 1.0999  data: 0.7690  max mem: 2688
+Epoch: [94]  [256/562]  eta: 0:01:15  lr: 1.1059832996891278e-05  img/s: 46.11934880658753  loss: 0.5471 (0.5635)  acc1: 100.0000 (98.9786)  acc5: 100.0000 (99.9757)  time: 0.2350  data: 0.0002  max mem: 2688
+Epoch: [94]  [512/562]  eta: 0:00:12  lr: 1.1059832996891278e-05  img/s: 62.475261295496885  loss: 0.5456 (0.5673)  acc1: 100.0000 (98.7695)  acc5: 100.0000 (99.9635)  time: 0.2844  data: 0.0002  max mem: 2688
+Epoch: [94] Total time: 0:02:17
+Test:  [ 0/63]  eta: 0:00:45  loss: 1.0002 (1.0002)  acc1: 75.0000 (75.0000)  acc5: 93.7500 (93.7500)  time: 0.7217  data: 0.6657  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 80.8, Acc@5 = 97.6, loss = 0.6649347801530172
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:44:35 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [95]  [  0/562]  eta: 0:08:31  lr: 1.0265029199198986e-05  img/s: 51.92516645195235  loss: 0.5470 (0.5470)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.9103  data: 0.6021  max mem: 2688
+Epoch: [95]  [256/562]  eta: 0:01:13  lr: 1.0265029199198986e-05  img/s: 159.93647237706656  loss: 0.5464 (0.5615)  acc1: 100.0000 (99.1732)  acc5: 100.0000 (99.9757)  time: 0.2464  data: 0.0002  max mem: 2688
+Epoch: [95]  [512/562]  eta: 0:00:12  lr: 1.0265029199198986e-05  img/s: 57.23297138899976  loss: 0.5708 (0.5639)  acc1: 100.0000 (98.8913)  acc5: 100.0000 (99.9878)  time: 0.2488  data: 0.0002  max mem: 2688
+Epoch: [95] Total time: 0:02:14
+Test:  [ 0/63]  eta: 0:00:53  loss: 1.0435 (1.0435)  acc1: 75.0000 (75.0000)  acc5: 87.5000 (87.5000)  time: 0.8513  data: 0.8092  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 80.9, Acc@5 = 97.1, loss = 0.6731528980391366
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:46:54 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [96]  [  0/562]  eta: 0:07:58  lr: 1e-05  img/s: 92.38796719627854  loss: 0.5424 (0.5424)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.8513  data: 0.6781  max mem: 2688
+Epoch: [96]  [256/562]  eta: 0:01:10  lr: 1e-05  img/s: 158.26330497862196  loss: 0.5429 (0.5640)  acc1: 100.0000 (98.8570)  acc5: 100.0000 (99.9757)  time: 0.2095  data: 0.0002  max mem: 2688
+Epoch: [96]  [512/562]  eta: 0:00:11  lr: 1e-05  img/s: 117.78506275482354  loss: 0.5493 (0.5674)  acc1: 100.0000 (98.7939)  acc5: 100.0000 (99.9513)  time: 0.2458  data: 0.0002  max mem: 2688
+Epoch: [96] Total time: 0:02:12
+Test:  [ 0/63]  eta: 0:00:52  loss: 1.0992 (1.0992)  acc1: 68.7500 (68.7500)  acc5: 87.5000 (87.5000)  time: 0.8406  data: 0.7853  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 81.1, Acc@5 = 97.4, loss = 0.6715028342746553
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:49:12 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [97]  [  0/562]  eta: 0:07:51  lr: 1e-05  img/s: 118.64131036250652  loss: 0.5597 (0.5597)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.8386  data: 0.7037  max mem: 2688
+Epoch: [97]  [256/562]  eta: 0:01:14  lr: 1e-05  img/s: 126.2280004815216  loss: 0.5486 (0.5684)  acc1: 100.0000 (98.7354)  acc5: 100.0000 (99.9514)  time: 0.2443  data: 0.0002  max mem: 2688
+Epoch: [97]  [512/562]  eta: 0:00:12  lr: 1e-05  img/s: 51.31082530704058  loss: 0.5429 (0.5674)  acc1: 100.0000 (98.7329)  acc5: 100.0000 (99.9635)  time: 0.2360  data: 0.0002  max mem: 2688
+Epoch: [97] Total time: 0:02:18
+Test:  [ 0/63]  eta: 0:00:49  loss: 1.0456 (1.0456)  acc1: 68.7500 (68.7500)  acc5: 93.7500 (93.7500)  time: 0.7837  data: 0.7289  max mem: 2688
+Test: Total time: 0:00:04
+ * Acc@1 = 80.5, Acc@5 = 97.1, loss = 0.6820310924261336
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:51:36 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [98]  [  0/562]  eta: 0:10:32  lr: 1e-05  img/s: 48.35810536206862  loss: 0.5353 (0.5353)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 1.1252  data: 0.7943  max mem: 2688
+Epoch: [98]  [256/562]  eta: 0:01:13  lr: 1e-05  img/s: 58.079328826649615  loss: 0.5539 (0.5655)  acc1: 100.0000 (98.8570)  acc5: 100.0000 (99.9757)  time: 0.2598  data: 0.0002  max mem: 2688
+Epoch: [98]  [512/562]  eta: 0:00:11  lr: 1e-05  img/s: 50.363389526248916  loss: 0.5385 (0.5650)  acc1: 100.0000 (98.9522)  acc5: 100.0000 (99.9756)  time: 0.2465  data: 0.0002  max mem: 2688
+Epoch: [98] Total time: 0:02:14
+Test:  [ 0/63]  eta: 0:00:51  loss: 1.0137 (1.0137)  acc1: 75.0000 (75.0000)  acc5: 87.5000 (87.5000)  time: 0.8248  data: 0.7685  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 80.9, Acc@5 = 96.8, loss = 0.670185208557144
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:53:55 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [99]  [  0/562]  eta: 0:07:42  lr: 1e-05  img/s: 107.50370286120719  loss: 0.5305 (0.5305)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.8221  data: 0.6732  max mem: 2688
+Epoch: [99]  [256/562]  eta: 0:01:13  lr: 1e-05  img/s: 51.62577716918864  loss: 0.5410 (0.5636)  acc1: 100.0000 (98.9543)  acc5: 100.0000 (99.9270)  time: 0.2482  data: 0.0002  max mem: 2688
+Epoch: [99]  [512/562]  eta: 0:00:12  lr: 1e-05  img/s: 49.44225597833374  loss: 0.5508 (0.5657)  acc1: 100.0000 (98.8913)  acc5: 100.0000 (99.9147)  time: 0.2179  data: 0.0002  max mem: 2688
+Epoch: [99] Total time: 0:02:15
+Test:  [ 0/63]  eta: 0:00:51  loss: 0.9971 (0.9971)  acc1: 68.7500 (68.7500)  acc5: 93.7500 (93.7500)  time: 0.8241  data: 0.7603  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 80.5, Acc@5 = 97.5, loss = 0.685102913351286
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:56:16 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [100]  [  0/562]  eta: 0:08:24  lr: 1e-05  img/s: 102.64574458810232  loss: 0.5528 (0.5528)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.8977  data: 0.7418  max mem: 2688
+Epoch: [100]  [256/562]  eta: 0:01:13  lr: 1e-05  img/s: 51.25592038433044  loss: 0.5421 (0.5641)  acc1: 100.0000 (99.1002)  acc5: 100.0000 (99.9514)  time: 0.2598  data: 0.0002  max mem: 2688
+Epoch: [100]  [512/562]  eta: 0:00:11  lr: 1e-05  img/s: 137.24676408331885  loss: 0.5425 (0.5621)  acc1: 100.0000 (99.1106)  acc5: 100.0000 (99.9756)  time: 0.2191  data: 0.0002  max mem: 2688
+Epoch: [100] Total time: 0:02:13
+Test:  [ 0/63]  eta: 0:00:44  loss: 1.0101 (1.0101)  acc1: 68.7500 (68.7500)  acc5: 93.7500 (93.7500)  time: 0.7012  data: 0.6446  max mem: 2688
+Test: Total time: 0:00:04
+ * Acc@1 = 79.9, Acc@5 = 97.6, loss = 0.6688557938923911
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 3:58:34 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [101]  [  0/562]  eta: 0:10:21  lr: 1e-05  img/s: 48.877363155997244  loss: 0.5291 (0.5291)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 1.1060  data: 0.7786  max mem: 2688
+Epoch: [101]  [256/562]  eta: 0:01:13  lr: 1e-05  img/s: 51.26911661457669  loss: 0.5720 (0.5678)  acc1: 100.0000 (98.9300)  acc5: 100.0000 (99.9514)  time: 0.2401  data: 0.0002  max mem: 2688
+Epoch: [101]  [512/562]  eta: 0:00:12  lr: 1e-05  img/s: 51.25576379331151  loss: 0.5496 (0.5658)  acc1: 100.0000 (98.9401)  acc5: 100.0000 (99.9635)  time: 0.2547  data: 0.0002  max mem: 2688
+Epoch: [101] Total time: 0:02:16
+Test:  [ 0/63]  eta: 0:00:47  loss: 0.9115 (0.9115)  acc1: 75.0000 (75.0000)  acc5: 93.7500 (93.7500)  time: 0.7480  data: 0.6973  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 79.7, Acc@5 = 97.3, loss = 0.6853351252419608
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 4:00:55 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [102]  [  0/562]  eta: 0:10:01  lr: 1e-05  img/s: 50.116809765736726  loss: 0.6556 (0.6556)  acc1: 93.7500 (93.7500)  acc5: 100.0000 (100.0000)  time: 1.0706  data: 0.7513  max mem: 2688
+Epoch: [102]  [256/562]  eta: 0:01:15  lr: 1e-05  img/s: 54.15582065896749  loss: 0.5603 (0.5712)  acc1: 100.0000 (98.5652)  acc5: 100.0000 (99.9027)  time: 0.2404  data: 0.0002  max mem: 2688
+Epoch: [102]  [512/562]  eta: 0:00:12  lr: 1e-05  img/s: 138.61315101880635  loss: 0.5430 (0.5669)  acc1: 100.0000 (98.7817)  acc5: 100.0000 (99.9147)  time: 0.2171  data: 0.0002  max mem: 2688
+Epoch: [102] Total time: 0:02:16
+Test:  [ 0/63]  eta: 0:00:42  loss: 0.9417 (0.9417)  acc1: 62.5000 (62.5000)  acc5: 93.7500 (93.7500)  time: 0.6816  data: 0.6299  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 80.2, Acc@5 = 97.7, loss = 0.656484047571818
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 4:03:17 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [103]  [  0/562]  eta: 0:09:37  lr: 1e-05  img/s: 51.10303554580504  loss: 0.5432 (0.5432)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 1.0273  data: 0.7142  max mem: 2688
+Epoch: [103]  [256/562]  eta: 0:01:16  lr: 1e-05  img/s: 116.01537908334025  loss: 0.5434 (0.5629)  acc1: 100.0000 (99.0759)  acc5: 100.0000 (99.9514)  time: 0.2284  data: 0.0002  max mem: 2688
+Epoch: [103]  [512/562]  eta: 0:00:12  lr: 1e-05  img/s: 50.49131415819676  loss: 0.5624 (0.5657)  acc1: 100.0000 (99.0132)  acc5: 100.0000 (99.9391)  time: 0.2194  data: 0.0002  max mem: 2688
+Epoch: [103] Total time: 0:02:19
+Test:  [ 0/63]  eta: 0:00:44  loss: 0.8234 (0.8234)  acc1: 75.0000 (75.0000)  acc5: 93.7500 (93.7500)  time: 0.7065  data: 0.6574  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 81.2, Acc@5 = 97.5, loss = 0.6656498651182841
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 4:05:42 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [104]  [  0/562]  eta: 0:06:42  lr: 1e-05  img/s: 104.73012380243422  loss: 0.5459 (0.5459)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.7169  data: 0.5641  max mem: 2688
+Epoch: [104]  [256/562]  eta: 0:01:13  lr: 1e-05  img/s: 51.82928098881222  loss: 0.5540 (0.5674)  acc1: 100.0000 (98.5895)  acc5: 100.0000 (100.0000)  time: 0.2700  data: 0.0002  max mem: 2688
+Epoch: [104]  [512/562]  eta: 0:00:11  lr: 1e-05  img/s: 63.16990459874524  loss: 0.5424 (0.5672)  acc1: 100.0000 (98.7329)  acc5: 100.0000 (99.9391)  time: 0.2102  data: 0.0004  max mem: 2688
+Epoch: [104] Total time: 0:02:14
+Test:  [ 0/63]  eta: 0:00:58  loss: 1.2209 (1.2209)  acc1: 62.5000 (62.5000)  acc5: 93.7500 (93.7500)  time: 0.9322  data: 0.8898  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 80.1, Acc@5 = 98.0, loss = 0.6828590340557552
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 4:08:02 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
+Epoch: [105]  [  0/562]  eta: 0:09:05  lr: 1e-05  img/s: 54.00650728669644  loss: 0.5312 (0.5312)  acc1: 100.0000 (100.0000)  acc5: 100.0000 (100.0000)  time: 0.9700  data: 0.6737  max mem: 2688
+Epoch: [105]  [256/562]  eta: 0:01:14  lr: 1e-05  img/s: 138.29921441584028  loss: 0.5417 (0.5625)  acc1: 100.0000 (98.7597)  acc5: 100.0000 (100.0000)  time: 0.2611  data: 0.0002  max mem: 2688
+Epoch: [105]  [512/562]  eta: 0:00:12  lr: 1e-05  img/s: 153.75578283661426  loss: 0.5388 (0.5620)  acc1: 100.0000 (98.8791)  acc5: 100.0000 (99.9878)  time: 0.2295  data: 0.0002  max mem: 2688
+Epoch: [105] Total time: 0:02:14
+Test:  [ 0/63]  eta: 0:00:49  loss: 0.9894 (0.9894)  acc1: 75.0000 (75.0000)  acc5: 93.7500 (93.7500)  time: 0.7836  data: 0.7267  max mem: 2688
+Test: Total time: 0:00:05
+ * Acc@1 = 80.0, Acc@5 = 97.7, loss = 0.678202288254859
+Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='/dataset/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.001, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='SEWResNet', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+Training time 4:10:21 max_test_acc1 81.4 test_acc5_at_max_test_acc1 97.4
+./logs/SEWResNet_b16_T16_wd0.06_adamw_cnf_ADD/lr0.001
