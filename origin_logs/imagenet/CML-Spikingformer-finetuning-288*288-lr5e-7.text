@@ -1,0 +1,667 @@
+/userhome/miniconda3/lib/python3.8/site-packages/torch/distributed/launch.py:178: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+INFO:torch.distributed.distributed_c10d:Added key: store_based_barrier_key:1 to store for rank: 4
+Added key: store_based_barrier_key:1 to store for rank: 4
+INFO:torch.distributed.distributed_c10d:Added key: store_based_barrier_key:1 to store for rank: 1
+Added key: store_based_barrier_key:1 to store for rank: 1
+INFO:torch.distributed.distributed_c10d:Added key: store_based_barrier_key:1 to store for rank: 2
+Added key: store_based_barrier_key:1 to store for rank: 2
+INFO:torch.distributed.distributed_c10d:Added key: store_based_barrier_key:1 to store for rank: 0
+Added key: store_based_barrier_key:1 to store for rank: 0
+INFO:torch.distributed.distributed_c10d:Added key: store_based_barrier_key:1 to store for rank: 6
+Added key: store_based_barrier_key:1 to store for rank: 6
+INFO:torch.distributed.distributed_c10d:Added key: store_based_barrier_key:1 to store for rank: 7
+Added key: store_based_barrier_key:1 to store for rank: 7
+INFO:torch.distributed.distributed_c10d:Added key: store_based_barrier_key:1 to store for rank: 3
+Added key: store_based_barrier_key:1 to store for rank: 3
+INFO:torch.distributed.distributed_c10d:Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+INFO:torch.distributed.distributed_c10d:Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+INFO:torch.distributed.distributed_c10d:Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+INFO:torch.distributed.distributed_c10d:Added key: store_based_barrier_key:1 to store for rank: 5
+Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+INFO:train:Training in distributed mode with multiple processes, 1 GPU per process. Process 4, total 8.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 4, total 8.
+Added key: store_based_barrier_key:1 to store for rank: 5
+INFO:train:Training in distributed mode with multiple processes, 1 GPU per process. Process 6, total 8.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 6, total 8.
+INFO:torch.distributed.distributed_c10d:Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+INFO:train:Training in distributed mode with multiple processes, 1 GPU per process. Process 5, total 8.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 5, total 8.
+INFO:train:Training in distributed mode with multiple processes, 1 GPU per process. Process 2, total 8.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 2, total 8.
+INFO:torch.distributed.distributed_c10d:Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+INFO:torch.distributed.distributed_c10d:Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+INFO:train:Training in distributed mode with multiple processes, 1 GPU per process. Process 1, total 8.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 1, total 8.
+INFO:train:Training in distributed mode with multiple processes, 1 GPU per process. Process 0, total 8.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 0, total 8.
+INFO:torch.distributed.distributed_c10d:Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+INFO:train:Training in distributed mode with multiple processes, 1 GPU per process. Process 7, total 8.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 7, total 8.
+INFO:torch.distributed.distributed_c10d:Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+INFO:train:Training in distributed mode with multiple processes, 1 GPU per process. Process 3, total 8.
+Training in distributed mode with multiple processes, 1 GPU per process. Process 3, total 8.
+Creating modelCreating model
+
+Creating model
+Creating model
+Creating model
+Creating model
+Creating model
+Creating model
+number of params: 66363208
+number of params: 66363208
+number of params: 66363208
+number of params: 66363208
+number of params: 66363208
+number of params: 66363208
+INFO:train:Model vitsnn created, param count:66363208
+Model vitsnn created, param count:66363208
+INFO:timm.data.config:Data processing configuration for current model + dataset:
+Data processing configuration for current model + dataset:
+INFO:timm.data.config:	input_size: (3, 288, 288)
+	input_size: (3, 288, 288)
+number of params: 66363208
+INFO:timm.data.config:	interpolation: bicubic
+	interpolation: bicubic
+INFO:timm.data.config:	mean: (0.485, 0.456, 0.406)
+	mean: (0.485, 0.456, 0.406)
+INFO:timm.data.config:	std: (0.229, 0.224, 0.225)
+	std: (0.229, 0.224, 0.225)
+INFO:timm.data.config:	crop_pct: 1.0
+	crop_pct: 1.0
+number of params: 66363208
+INFO:train:Using native Torch AMP. Training in mixed precision.
+Using native Torch AMP. Training in mixed precision.
+INFO:timm.models.helpers:Restoring model state from checkpoint...
+Restoring model state from checkpoint...
+INFO:timm.models.helpers:Restoring optimizer state from checkpoint...
+Restoring optimizer state from checkpoint...
+INFO:timm.models.helpers:Restoring AMP loss scaler state from checkpoint...
+Restoring AMP loss scaler state from checkpoint...
+INFO:timm.models.helpers:Loaded checkpoint '/userhome/Spikingformer-CML/imagenet/output/train/20230518-192059-vitsnn-224/checkpoint-306.pth.tar' (epoch 306)
+Loaded checkpoint '/userhome/Spikingformer-CML/imagenet/output/train/20230518-192059-vitsnn-224/checkpoint-306.pth.tar' (epoch 306)
+INFO:train:Using native Torch DistributedDataParallel.
+Using native Torch DistributedDataParallel.
+INFO:train:Scheduled epochs: 320
+Scheduled epochs: 320
+INFO:train:Train: 307 [   0/8007 (  0%)]  Loss:  2.469448 (2.4694)  Time: 41.540s,    3.85/s  (41.540s,    3.85/s)  LR: 6.154e-07  Data: 3.065 (3.065)
+Train: 307 [   0/8007 (  0%)]  Loss:  2.469448 (2.4694)  Time: 41.540s,    3.85/s  (41.540s,    3.85/s)  LR: 6.154e-07  Data: 3.065 (3.065)
+INFO:train:Train: 307 [1000/8007 ( 12%)]  Loss:  2.344905 (2.4072)  Time: 0.606s,  264.19/s  (0.646s,  247.62/s)  LR: 6.154e-07  Data: 0.004 (0.008)
+Train: 307 [1000/8007 ( 12%)]  Loss:  2.344905 (2.4072)  Time: 0.606s,  264.19/s  (0.646s,  247.62/s)  LR: 6.154e-07  Data: 0.004 (0.008)
+INFO:train:Train: 307 [2000/8007 ( 25%)]  Loss:  2.608548 (2.4743)  Time: 0.611s,  261.97/s  (0.626s,  255.74/s)  LR: 6.154e-07  Data: 0.004 (0.006)
+Train: 307 [2000/8007 ( 25%)]  Loss:  2.608548 (2.4743)  Time: 0.611s,  261.97/s  (0.626s,  255.74/s)  LR: 6.154e-07  Data: 0.004 (0.006)
+INFO:train:Train: 307 [3000/8007 ( 37%)]  Loss:  2.487464 (2.4776)  Time: 0.605s,  264.43/s  (0.619s,  258.54/s)  LR: 6.154e-07  Data: 0.004 (0.006)
+Train: 307 [3000/8007 ( 37%)]  Loss:  2.487464 (2.4776)  Time: 0.605s,  264.43/s  (0.619s,  258.54/s)  LR: 6.154e-07  Data: 0.004 (0.006)
+INFO:train:Train: 307 [4000/8007 ( 50%)]  Loss:  2.271612 (2.4364)  Time: 0.601s,  266.18/s  (0.615s,  259.96/s)  LR: 6.154e-07  Data: 0.005 (0.005)
+Train: 307 [4000/8007 ( 50%)]  Loss:  2.271612 (2.4364)  Time: 0.601s,  266.18/s  (0.615s,  259.96/s)  LR: 6.154e-07  Data: 0.005 (0.005)
+INFO:train:Train: 307 [5000/8007 ( 62%)]  Loss:  2.337771 (2.4200)  Time: 0.612s,  261.23/s  (0.613s,  260.89/s)  LR: 6.154e-07  Data: 0.004 (0.005)
+Train: 307 [5000/8007 ( 62%)]  Loss:  2.337771 (2.4200)  Time: 0.612s,  261.23/s  (0.613s,  260.89/s)  LR: 6.154e-07  Data: 0.004 (0.005)
+INFO:train:Train: 307 [6000/8007 ( 75%)]  Loss:  2.330062 (2.4071)  Time: 0.601s,  266.05/s  (0.612s,  261.53/s)  LR: 6.154e-07  Data: 0.004 (0.005)
+Train: 307 [6000/8007 ( 75%)]  Loss:  2.330062 (2.4071)  Time: 0.601s,  266.05/s  (0.612s,  261.53/s)  LR: 6.154e-07  Data: 0.004 (0.005)
+INFO:train:Train: 307 [7000/8007 ( 87%)]  Loss:  2.506906 (2.4196)  Time: 0.600s,  266.64/s  (0.611s,  261.92/s)  LR: 6.154e-07  Data: 0.004 (0.005)
+Train: 307 [7000/8007 ( 87%)]  Loss:  2.506906 (2.4196)  Time: 0.600s,  266.64/s  (0.611s,  261.92/s)  LR: 6.154e-07  Data: 0.004 (0.005)
+INFO:train:Train: 307 [8000/8007 (100%)]  Loss:  2.407026 (2.4182)  Time: 0.601s,  266.44/s  (0.610s,  262.25/s)  LR: 6.154e-07  Data: 0.004 (0.005)
+Train: 307 [8000/8007 (100%)]  Loss:  2.407026 (2.4182)  Time: 0.601s,  266.44/s  (0.610s,  262.25/s)  LR: 6.154e-07  Data: 0.004 (0.005)
+INFO:train:Train: 307 [8006/8007 (100%)]  Loss:  2.390206 (2.4154)  Time: 0.602s,  265.59/s  (0.610s,  262.26/s)  LR: 6.154e-07  Data: 0.000 (0.005)
+Train: 307 [8006/8007 (100%)]  Loss:  2.390206 (2.4154)  Time: 0.602s,  265.59/s  (0.610s,  262.26/s)  LR: 6.154e-07  Data: 0.000 (0.005)
+INFO:train:Test: [   0/312]  Time: 4.161 (4.161)  Loss:  0.5522 (0.5522)  Acc@1: 94.3750 (94.3750)  Acc@5: 99.3750 (99.3750)
+Test: [   0/312]  Time: 4.161 (4.161)  Loss:  0.5522 (0.5522)  Acc@1: 94.3750 (94.3750)  Acc@5: 99.3750 (99.3750)
+INFO:train:Test: [ 312/312]  Time: 1.862 (0.256)  Loss:  2.2070 (1.1208)  Acc@1: 46.2500 (78.0420)  Acc@5: 87.5000 (93.8960)
+Test: [ 312/312]  Time: 1.862 (0.256)  Loss:  2.2070 (1.1208)  Acc@1: 46.2500 (78.0420)  Acc@5: 87.5000 (93.8960)
+INFO:timm.utils.checkpoint_saver:Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+
+Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+
+INFO:train:*** Best metric: 78.042 (epoch 307)
+*** Best metric: 78.042 (epoch 307)
+INFO:train:Train: 308 [   0/8007 (  0%)]  Loss:  2.455844 (2.4558)  Time: 0.984s,  162.67/s  (0.984s,  162.67/s)  LR: 5.513e-07  Data: 0.379 (0.379)
+Train: 308 [   0/8007 (  0%)]  Loss:  2.455844 (2.4558)  Time: 0.984s,  162.67/s  (0.984s,  162.67/s)  LR: 5.513e-07  Data: 0.379 (0.379)
+INFO:train:Train: 308 [1000/8007 ( 12%)]  Loss:  2.525223 (2.4905)  Time: 0.603s,  265.41/s  (0.605s,  264.28/s)  LR: 5.513e-07  Data: 0.004 (0.005)
+Train: 308 [1000/8007 ( 12%)]  Loss:  2.525223 (2.4905)  Time: 0.603s,  265.41/s  (0.605s,  264.28/s)  LR: 5.513e-07  Data: 0.004 (0.005)
+INFO:train:Train: 308 [2000/8007 ( 25%)]  Loss:  2.396803 (2.4593)  Time: 0.601s,  266.42/s  (0.605s,  264.50/s)  LR: 5.513e-07  Data: 0.004 (0.005)
+Train: 308 [2000/8007 ( 25%)]  Loss:  2.396803 (2.4593)  Time: 0.601s,  266.42/s  (0.605s,  264.50/s)  LR: 5.513e-07  Data: 0.004 (0.005)
+INFO:train:Train: 308 [3000/8007 ( 37%)]  Loss:  2.562372 (2.4851)  Time: 0.607s,  263.60/s  (0.605s,  264.44/s)  LR: 5.513e-07  Data: 0.005 (0.005)
+Train: 308 [3000/8007 ( 37%)]  Loss:  2.562372 (2.4851)  Time: 0.607s,  263.60/s  (0.605s,  264.44/s)  LR: 5.513e-07  Data: 0.005 (0.005)
+INFO:train:Train: 308 [4000/8007 ( 50%)]  Loss:  2.287645 (2.4456)  Time: 0.607s,  263.78/s  (0.605s,  264.48/s)  LR: 5.513e-07  Data: 0.004 (0.005)
+Train: 308 [4000/8007 ( 50%)]  Loss:  2.287645 (2.4456)  Time: 0.607s,  263.78/s  (0.605s,  264.48/s)  LR: 5.513e-07  Data: 0.004 (0.005)
+INFO:train:Train: 308 [5000/8007 ( 62%)]  Loss:  2.541622 (2.4616)  Time: 0.646s,  247.71/s  (0.605s,  264.48/s)  LR: 5.513e-07  Data: 0.004 (0.005)
+Train: 308 [5000/8007 ( 62%)]  Loss:  2.541622 (2.4616)  Time: 0.646s,  247.71/s  (0.605s,  264.48/s)  LR: 5.513e-07  Data: 0.004 (0.005)
+INFO:train:Train: 308 [6000/8007 ( 75%)]  Loss:  2.343102 (2.4447)  Time: 0.599s,  267.31/s  (0.605s,  264.48/s)  LR: 5.513e-07  Data: 0.004 (0.005)
+Train: 308 [6000/8007 ( 75%)]  Loss:  2.343102 (2.4447)  Time: 0.599s,  267.31/s  (0.605s,  264.48/s)  LR: 5.513e-07  Data: 0.004 (0.005)
+INFO:train:Train: 308 [7000/8007 ( 87%)]  Loss:  2.532855 (2.4557)  Time: 0.600s,  266.54/s  (0.605s,  264.51/s)  LR: 5.513e-07  Data: 0.004 (0.005)
+Train: 308 [7000/8007 ( 87%)]  Loss:  2.532855 (2.4557)  Time: 0.600s,  266.54/s  (0.605s,  264.51/s)  LR: 5.513e-07  Data: 0.004 (0.005)
+INFO:train:Train: 308 [8000/8007 (100%)]  Loss:  2.575451 (2.4690)  Time: 0.608s,  263.17/s  (0.605s,  264.52/s)  LR: 5.513e-07  Data: 0.005 (0.005)
+Train: 308 [8000/8007 (100%)]  Loss:  2.575451 (2.4690)  Time: 0.608s,  263.17/s  (0.605s,  264.52/s)  LR: 5.513e-07  Data: 0.005 (0.005)
+INFO:train:Train: 308 [8006/8007 (100%)]  Loss:  2.600244 (2.4821)  Time: 0.608s,  263.29/s  (0.605s,  264.52/s)  LR: 5.513e-07  Data: 0.000 (0.005)
+Train: 308 [8006/8007 (100%)]  Loss:  2.600244 (2.4821)  Time: 0.608s,  263.29/s  (0.605s,  264.52/s)  LR: 5.513e-07  Data: 0.000 (0.005)
+INFO:train:Test: [   0/312]  Time: 1.068 (1.068)  Loss:  0.6016 (0.6016)  Acc@1: 93.1250 (93.1250)  Acc@5: 99.3750 (99.3750)
+Test: [   0/312]  Time: 1.068 (1.068)  Loss:  0.6016 (0.6016)  Acc@1: 93.1250 (93.1250)  Acc@5: 99.3750 (99.3750)
+INFO:train:Test: [ 312/312]  Time: 0.126 (0.242)  Loss:  2.1270 (1.2056)  Acc@1: 46.2500 (77.8980)  Acc@5: 87.5000 (93.8400)
+Test: [ 312/312]  Time: 0.126 (0.242)  Loss:  2.1270 (1.2056)  Acc@1: 46.2500 (77.8980)  Acc@5: 87.5000 (93.8400)
+INFO:timm.utils.checkpoint_saver:Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+
+Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+
+INFO:train:*** Best metric: 78.042 (epoch 307)
+*** Best metric: 78.042 (epoch 307)
+INFO:train:Train: 309 [   0/8007 (  0%)]  Loss:  2.657434 (2.6574)  Time: 0.990s,  161.56/s  (0.990s,  161.56/s)  LR: 5.128e-07  Data: 0.378 (0.378)
+Train: 309 [   0/8007 (  0%)]  Loss:  2.657434 (2.6574)  Time: 0.990s,  161.56/s  (0.990s,  161.56/s)  LR: 5.128e-07  Data: 0.378 (0.378)
+INFO:train:Train: 309 [1000/8007 ( 12%)]  Loss:  2.178602 (2.4180)  Time: 0.603s,  265.41/s  (0.606s,  264.14/s)  LR: 5.128e-07  Data: 0.004 (0.005)
+Train: 309 [1000/8007 ( 12%)]  Loss:  2.178602 (2.4180)  Time: 0.603s,  265.41/s  (0.606s,  264.14/s)  LR: 5.128e-07  Data: 0.004 (0.005)
+INFO:train:Train: 309 [2000/8007 ( 25%)]  Loss:  1.775941 (2.2040)  Time: 0.605s,  264.25/s  (0.605s,  264.27/s)  LR: 5.128e-07  Data: 0.005 (0.005)
+Train: 309 [2000/8007 ( 25%)]  Loss:  1.775941 (2.2040)  Time: 0.605s,  264.25/s  (0.605s,  264.27/s)  LR: 5.128e-07  Data: 0.005 (0.005)
+INFO:train:Train: 309 [3000/8007 ( 37%)]  Loss:  2.526149 (2.2845)  Time: 0.611s,  261.93/s  (0.605s,  264.30/s)  LR: 5.128e-07  Data: 0.004 (0.005)
+Train: 309 [3000/8007 ( 37%)]  Loss:  2.526149 (2.2845)  Time: 0.611s,  261.93/s  (0.605s,  264.30/s)  LR: 5.128e-07  Data: 0.004 (0.005)
+INFO:train:Train: 309 [4000/8007 ( 50%)]  Loss:  2.448369 (2.3173)  Time: 0.605s,  264.47/s  (0.605s,  264.37/s)  LR: 5.128e-07  Data: 0.004 (0.005)
+Train: 309 [4000/8007 ( 50%)]  Loss:  2.448369 (2.3173)  Time: 0.605s,  264.47/s  (0.605s,  264.37/s)  LR: 5.128e-07  Data: 0.004 (0.005)
+INFO:train:Train: 309 [5000/8007 ( 62%)]  Loss:  2.271252 (2.3096)  Time: 0.605s,  264.34/s  (0.605s,  264.33/s)  LR: 5.128e-07  Data: 0.006 (0.005)
+Train: 309 [5000/8007 ( 62%)]  Loss:  2.271252 (2.3096)  Time: 0.605s,  264.34/s  (0.605s,  264.33/s)  LR: 5.128e-07  Data: 0.006 (0.005)
+INFO:train:Train: 309 [6000/8007 ( 75%)]  Loss:  2.466909 (2.3321)  Time: 0.600s,  266.83/s  (0.605s,  264.37/s)  LR: 5.128e-07  Data: 0.006 (0.005)
+Train: 309 [6000/8007 ( 75%)]  Loss:  2.466909 (2.3321)  Time: 0.600s,  266.83/s  (0.605s,  264.37/s)  LR: 5.128e-07  Data: 0.006 (0.005)
+INFO:train:Train: 309 [7000/8007 ( 87%)]  Loss:  2.127995 (2.3066)  Time: 0.602s,  265.77/s  (0.605s,  264.33/s)  LR: 5.128e-07  Data: 0.004 (0.005)
+Train: 309 [7000/8007 ( 87%)]  Loss:  2.127995 (2.3066)  Time: 0.602s,  265.77/s  (0.605s,  264.33/s)  LR: 5.128e-07  Data: 0.004 (0.005)
+INFO:train:Train: 309 [8000/8007 (100%)]  Loss:  2.593274 (2.3384)  Time: 0.602s,  265.90/s  (0.605s,  264.41/s)  LR: 5.128e-07  Data: 0.004 (0.005)
+Train: 309 [8000/8007 (100%)]  Loss:  2.593274 (2.3384)  Time: 0.602s,  265.90/s  (0.605s,  264.41/s)  LR: 5.128e-07  Data: 0.004 (0.005)
+INFO:train:Train: 309 [8006/8007 (100%)]  Loss:  2.326097 (2.3372)  Time: 0.594s,  269.49/s  (0.605s,  264.41/s)  LR: 5.128e-07  Data: 0.000 (0.005)
+Train: 309 [8006/8007 (100%)]  Loss:  2.326097 (2.3372)  Time: 0.594s,  269.49/s  (0.605s,  264.41/s)  LR: 5.128e-07  Data: 0.000 (0.005)
+INFO:train:Test: [   0/312]  Time: 1.123 (1.123)  Loss:  0.6138 (0.6138)  Acc@1: 91.8750 (91.8750)  Acc@5: 99.3750 (99.3750)
+Test: [   0/312]  Time: 1.123 (1.123)  Loss:  0.6138 (0.6138)  Acc@1: 91.8750 (91.8750)  Acc@5: 99.3750 (99.3750)
+INFO:train:Test: [ 312/312]  Time: 0.158 (0.241)  Loss:  2.2383 (1.1897)  Acc@1: 41.2500 (78.1140)  Acc@5: 88.7500 (93.8580)
+Test: [ 312/312]  Time: 0.158 (0.241)  Loss:  2.2383 (1.1897)  Acc@1: 41.2500 (78.1140)  Acc@5: 88.7500 (93.8580)
+INFO:timm.utils.checkpoint_saver:Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+
+Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+
+INFO:train:*** Best metric: 78.114 (epoch 309)
+*** Best metric: 78.114 (epoch 309)
+INFO:train:Train: 310 [   0/8007 (  0%)]  Loss:  2.400191 (2.4002)  Time: 0.958s,  166.94/s  (0.958s,  166.94/s)  LR: 5.000e-07  Data: 0.355 (0.355)
+Train: 310 [   0/8007 (  0%)]  Loss:  2.400191 (2.4002)  Time: 0.958s,  166.94/s  (0.958s,  166.94/s)  LR: 5.000e-07  Data: 0.355 (0.355)
+INFO:train:Train: 310 [1000/8007 ( 12%)]  Loss:  2.584080 (2.4921)  Time: 0.597s,  267.99/s  (0.605s,  264.46/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 310 [1000/8007 ( 12%)]  Loss:  2.584080 (2.4921)  Time: 0.597s,  267.99/s  (0.605s,  264.46/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 310 [2000/8007 ( 25%)]  Loss:  2.467498 (2.4839)  Time: 0.608s,  263.22/s  (0.605s,  264.29/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+Train: 310 [2000/8007 ( 25%)]  Loss:  2.467498 (2.4839)  Time: 0.608s,  263.22/s  (0.605s,  264.29/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+INFO:train:Train: 310 [3000/8007 ( 37%)]  Loss:  2.617529 (2.5173)  Time: 0.601s,  266.39/s  (0.605s,  264.35/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 310 [3000/8007 ( 37%)]  Loss:  2.617529 (2.5173)  Time: 0.601s,  266.39/s  (0.605s,  264.35/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 310 [4000/8007 ( 50%)]  Loss:  2.311922 (2.4762)  Time: 0.603s,  265.31/s  (0.605s,  264.43/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 310 [4000/8007 ( 50%)]  Loss:  2.311922 (2.4762)  Time: 0.603s,  265.31/s  (0.605s,  264.43/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 310 [5000/8007 ( 62%)]  Loss:  2.426206 (2.4679)  Time: 0.598s,  267.45/s  (0.605s,  264.50/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 310 [5000/8007 ( 62%)]  Loss:  2.426206 (2.4679)  Time: 0.598s,  267.45/s  (0.605s,  264.50/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 310 [6000/8007 ( 75%)]  Loss:  2.286654 (2.4420)  Time: 0.608s,  262.95/s  (0.605s,  264.44/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 310 [6000/8007 ( 75%)]  Loss:  2.286654 (2.4420)  Time: 0.608s,  262.95/s  (0.605s,  264.44/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 310 [7000/8007 ( 87%)]  Loss:  2.354298 (2.4310)  Time: 0.609s,  262.78/s  (0.605s,  264.44/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 310 [7000/8007 ( 87%)]  Loss:  2.354298 (2.4310)  Time: 0.609s,  262.78/s  (0.605s,  264.44/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 310 [8000/8007 (100%)]  Loss:  2.511853 (2.4400)  Time: 0.600s,  266.80/s  (0.605s,  264.49/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 310 [8000/8007 (100%)]  Loss:  2.511853 (2.4400)  Time: 0.600s,  266.80/s  (0.605s,  264.49/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 310 [8006/8007 (100%)]  Loss:  2.236922 (2.4197)  Time: 0.598s,  267.43/s  (0.605s,  264.49/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+Train: 310 [8006/8007 (100%)]  Loss:  2.236922 (2.4197)  Time: 0.598s,  267.43/s  (0.605s,  264.49/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+INFO:train:Test: [   0/312]  Time: 1.081 (1.081)  Loss:  0.6030 (0.6030)  Acc@1: 91.2500 (91.2500)  Acc@5: 98.7500 (98.7500)
+Test: [   0/312]  Time: 1.081 (1.081)  Loss:  0.6030 (0.6030)  Acc@1: 91.2500 (91.2500)  Acc@5: 98.7500 (98.7500)
+INFO:train:Test: [ 312/312]  Time: 0.098 (0.241)  Loss:  2.1582 (1.1517)  Acc@1: 43.7500 (78.2060)  Acc@5: 88.7500 (93.8860)
+Test: [ 312/312]  Time: 0.098 (0.241)  Loss:  2.1582 (1.1517)  Acc@1: 43.7500 (78.2060)  Acc@5: 88.7500 (93.8860)
+INFO:timm.utils.checkpoint_saver:Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+
+Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+
+INFO:train:*** Best metric: 78.206 (epoch 310)
+*** Best metric: 78.206 (epoch 310)
+INFO:train:Train: 311 [   0/8007 (  0%)]  Loss:  2.316484 (2.3165)  Time: 1.072s,  149.27/s  (1.072s,  149.27/s)  LR: 5.000e-07  Data: 0.469 (0.469)
+Train: 311 [   0/8007 (  0%)]  Loss:  2.316484 (2.3165)  Time: 1.072s,  149.27/s  (1.072s,  149.27/s)  LR: 5.000e-07  Data: 0.469 (0.469)
+INFO:train:Train: 311 [1000/8007 ( 12%)]  Loss:  2.577285 (2.4469)  Time: 0.615s,  260.14/s  (0.604s,  264.81/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 311 [1000/8007 ( 12%)]  Loss:  2.577285 (2.4469)  Time: 0.615s,  260.14/s  (0.604s,  264.81/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 311 [2000/8007 ( 25%)]  Loss:  2.303397 (2.3991)  Time: 0.611s,  262.04/s  (0.604s,  264.79/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 311 [2000/8007 ( 25%)]  Loss:  2.303397 (2.3991)  Time: 0.611s,  262.04/s  (0.604s,  264.79/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 311 [3000/8007 ( 37%)]  Loss:  2.506908 (2.4260)  Time: 0.605s,  264.39/s  (0.604s,  264.75/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+Train: 311 [3000/8007 ( 37%)]  Loss:  2.506908 (2.4260)  Time: 0.605s,  264.39/s  (0.604s,  264.75/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+INFO:train:Train: 311 [4000/8007 ( 50%)]  Loss:  2.640604 (2.4689)  Time: 0.603s,  265.46/s  (0.604s,  264.77/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+Train: 311 [4000/8007 ( 50%)]  Loss:  2.640604 (2.4689)  Time: 0.603s,  265.46/s  (0.604s,  264.77/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+INFO:train:Train: 311 [5000/8007 ( 62%)]  Loss:  2.418275 (2.4605)  Time: 0.601s,  266.02/s  (0.604s,  264.78/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 311 [5000/8007 ( 62%)]  Loss:  2.418275 (2.4605)  Time: 0.601s,  266.02/s  (0.604s,  264.78/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 311 [6000/8007 ( 75%)]  Loss:  2.458749 (2.4602)  Time: 0.603s,  265.31/s  (0.604s,  264.72/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+Train: 311 [6000/8007 ( 75%)]  Loss:  2.458749 (2.4602)  Time: 0.603s,  265.31/s  (0.604s,  264.72/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+INFO:train:Train: 311 [7000/8007 ( 87%)]  Loss:  2.476661 (2.4623)  Time: 0.619s,  258.67/s  (0.604s,  264.73/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+Train: 311 [7000/8007 ( 87%)]  Loss:  2.476661 (2.4623)  Time: 0.619s,  258.67/s  (0.604s,  264.73/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+INFO:train:Train: 311 [8000/8007 (100%)]  Loss:  1.985187 (2.4093)  Time: 0.623s,  256.75/s  (0.604s,  264.71/s)  LR: 5.000e-07  Data: 0.006 (0.005)
+Train: 311 [8000/8007 (100%)]  Loss:  1.985187 (2.4093)  Time: 0.623s,  256.75/s  (0.604s,  264.71/s)  LR: 5.000e-07  Data: 0.006 (0.005)
+INFO:train:Train: 311 [8006/8007 (100%)]  Loss:  2.557660 (2.4241)  Time: 0.603s,  265.52/s  (0.604s,  264.71/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+Train: 311 [8006/8007 (100%)]  Loss:  2.557660 (2.4241)  Time: 0.603s,  265.52/s  (0.604s,  264.71/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+INFO:train:Test: [   0/312]  Time: 1.048 (1.048)  Loss:  0.5195 (0.5195)  Acc@1: 91.8750 (91.8750)  Acc@5: 99.3750 (99.3750)
+Test: [   0/312]  Time: 1.048 (1.048)  Loss:  0.5195 (0.5195)  Acc@1: 91.8750 (91.8750)  Acc@5: 99.3750 (99.3750)
+INFO:train:Test: [ 312/312]  Time: 0.184 (0.242)  Loss:  1.9531 (1.0772)  Acc@1: 48.7500 (77.4140)  Acc@5: 90.0000 (93.5940)
+Test: [ 312/312]  Time: 0.184 (0.242)  Loss:  1.9531 (1.0772)  Acc@1: 48.7500 (77.4140)  Acc@5: 90.0000 (93.5940)
+INFO:timm.utils.checkpoint_saver:Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-311.pth.tar', 77.414)
+
+Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-311.pth.tar', 77.414)
+
+INFO:train:*** Best metric: 78.206 (epoch 310)
+*** Best metric: 78.206 (epoch 310)
+INFO:train:Train: 312 [   0/8007 (  0%)]  Loss:  2.570244 (2.5702)  Time: 1.473s,  108.60/s  (1.473s,  108.60/s)  LR: 5.000e-07  Data: 0.863 (0.863)
+Train: 312 [   0/8007 (  0%)]  Loss:  2.570244 (2.5702)  Time: 1.473s,  108.60/s  (1.473s,  108.60/s)  LR: 5.000e-07  Data: 0.863 (0.863)
+INFO:train:Train: 312 [1000/8007 ( 12%)]  Loss:  2.499434 (2.5348)  Time: 0.605s,  264.42/s  (0.606s,  264.03/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 312 [1000/8007 ( 12%)]  Loss:  2.499434 (2.5348)  Time: 0.605s,  264.42/s  (0.606s,  264.03/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 312 [2000/8007 ( 25%)]  Loss:  2.386438 (2.4854)  Time: 0.595s,  268.91/s  (0.606s,  264.09/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 312 [2000/8007 ( 25%)]  Loss:  2.386438 (2.4854)  Time: 0.595s,  268.91/s  (0.606s,  264.09/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 312 [3000/8007 ( 37%)]  Loss:  2.313982 (2.4425)  Time: 0.603s,  265.22/s  (0.606s,  264.18/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 312 [3000/8007 ( 37%)]  Loss:  2.313982 (2.4425)  Time: 0.603s,  265.22/s  (0.606s,  264.18/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 312 [4000/8007 ( 50%)]  Loss:  2.177676 (2.3896)  Time: 0.601s,  266.09/s  (0.606s,  264.17/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 312 [4000/8007 ( 50%)]  Loss:  2.177676 (2.3896)  Time: 0.601s,  266.09/s  (0.606s,  264.17/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 312 [5000/8007 ( 62%)]  Loss:  2.671607 (2.4366)  Time: 0.604s,  265.02/s  (0.606s,  264.15/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 312 [5000/8007 ( 62%)]  Loss:  2.671607 (2.4366)  Time: 0.604s,  265.02/s  (0.606s,  264.15/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 312 [6000/8007 ( 75%)]  Loss:  2.552589 (2.4531)  Time: 0.607s,  263.70/s  (0.606s,  264.15/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 312 [6000/8007 ( 75%)]  Loss:  2.552589 (2.4531)  Time: 0.607s,  263.70/s  (0.606s,  264.15/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 312 [7000/8007 ( 87%)]  Loss:  2.268898 (2.4301)  Time: 0.605s,  264.39/s  (0.606s,  264.18/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 312 [7000/8007 ( 87%)]  Loss:  2.268898 (2.4301)  Time: 0.605s,  264.39/s  (0.606s,  264.18/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 312 [8000/8007 (100%)]  Loss:  2.356138 (2.4219)  Time: 0.606s,  263.99/s  (0.606s,  264.19/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+Train: 312 [8000/8007 (100%)]  Loss:  2.356138 (2.4219)  Time: 0.606s,  263.99/s  (0.606s,  264.19/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+INFO:train:Train: 312 [8006/8007 (100%)]  Loss:  2.351600 (2.4149)  Time: 0.599s,  267.33/s  (0.606s,  264.19/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+Train: 312 [8006/8007 (100%)]  Loss:  2.351600 (2.4149)  Time: 0.599s,  267.33/s  (0.606s,  264.19/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+INFO:train:Test: [   0/312]  Time: 1.116 (1.116)  Loss:  0.5977 (0.5977)  Acc@1: 94.3750 (94.3750)  Acc@5: 98.7500 (98.7500)
+Test: [   0/312]  Time: 1.116 (1.116)  Loss:  0.5977 (0.5977)  Acc@1: 94.3750 (94.3750)  Acc@5: 98.7500 (98.7500)
+INFO:train:Test: [ 312/312]  Time: 0.192 (0.241)  Loss:  2.2129 (1.1796)  Acc@1: 47.5000 (78.2960)  Acc@5: 88.7500 (94.0580)
+Test: [ 312/312]  Time: 0.192 (0.241)  Loss:  2.2129 (1.1796)  Acc@1: 47.5000 (78.2960)  Acc@5: 88.7500 (94.0580)
+INFO:timm.utils.checkpoint_saver:Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-312.pth.tar', 78.296)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-311.pth.tar', 77.414)
+
+Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-312.pth.tar', 78.296)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-311.pth.tar', 77.414)
+
+INFO:train:*** Best metric: 78.296 (epoch 312)
+*** Best metric: 78.296 (epoch 312)
+INFO:train:Train: 313 [   0/8007 (  0%)]  Loss:  2.340845 (2.3408)  Time: 1.041s,  153.74/s  (1.041s,  153.74/s)  LR: 5.000e-07  Data: 0.424 (0.424)
+Train: 313 [   0/8007 (  0%)]  Loss:  2.340845 (2.3408)  Time: 1.041s,  153.74/s  (1.041s,  153.74/s)  LR: 5.000e-07  Data: 0.424 (0.424)
+INFO:train:Train: 313 [1000/8007 ( 12%)]  Loss:  2.359857 (2.3504)  Time: 0.606s,  264.22/s  (0.607s,  263.46/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+Train: 313 [1000/8007 ( 12%)]  Loss:  2.359857 (2.3504)  Time: 0.606s,  264.22/s  (0.607s,  263.46/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+INFO:train:Train: 313 [2000/8007 ( 25%)]  Loss:  1.944528 (2.2151)  Time: 0.609s,  262.60/s  (0.606s,  263.93/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 313 [2000/8007 ( 25%)]  Loss:  1.944528 (2.2151)  Time: 0.609s,  262.60/s  (0.606s,  263.93/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 313 [3000/8007 ( 37%)]  Loss:  2.482773 (2.2820)  Time: 0.601s,  266.41/s  (0.606s,  264.12/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+Train: 313 [3000/8007 ( 37%)]  Loss:  2.482773 (2.2820)  Time: 0.601s,  266.41/s  (0.606s,  264.12/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+INFO:train:Train: 313 [4000/8007 ( 50%)]  Loss:  2.244343 (2.2745)  Time: 0.607s,  263.47/s  (0.606s,  264.19/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 313 [4000/8007 ( 50%)]  Loss:  2.244343 (2.2745)  Time: 0.607s,  263.47/s  (0.606s,  264.19/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 313 [5000/8007 ( 62%)]  Loss:  2.379090 (2.2919)  Time: 0.600s,  266.72/s  (0.606s,  264.24/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 313 [5000/8007 ( 62%)]  Loss:  2.379090 (2.2919)  Time: 0.600s,  266.72/s  (0.606s,  264.24/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 313 [6000/8007 ( 75%)]  Loss:  2.325375 (2.2967)  Time: 0.602s,  265.64/s  (0.606s,  264.24/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 313 [6000/8007 ( 75%)]  Loss:  2.325375 (2.2967)  Time: 0.602s,  265.64/s  (0.606s,  264.24/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 313 [7000/8007 ( 87%)]  Loss:  2.827406 (2.3630)  Time: 0.597s,  268.10/s  (0.605s,  264.29/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 313 [7000/8007 ( 87%)]  Loss:  2.827406 (2.3630)  Time: 0.597s,  268.10/s  (0.605s,  264.29/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 313 [8000/8007 (100%)]  Loss:  2.558190 (2.3847)  Time: 0.604s,  264.86/s  (0.605s,  264.32/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 313 [8000/8007 (100%)]  Loss:  2.558190 (2.3847)  Time: 0.604s,  264.86/s  (0.605s,  264.32/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 313 [8006/8007 (100%)]  Loss:  2.396886 (2.3859)  Time: 0.596s,  268.36/s  (0.605s,  264.33/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+Train: 313 [8006/8007 (100%)]  Loss:  2.396886 (2.3859)  Time: 0.596s,  268.36/s  (0.605s,  264.33/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+INFO:train:Test: [   0/312]  Time: 1.087 (1.087)  Loss:  0.6143 (0.6143)  Acc@1: 93.1250 (93.1250)  Acc@5: 99.3750 (99.3750)
+Test: [   0/312]  Time: 1.087 (1.087)  Loss:  0.6143 (0.6143)  Acc@1: 93.1250 (93.1250)  Acc@5: 99.3750 (99.3750)
+INFO:train:Test: [ 312/312]  Time: 0.375 (0.242)  Loss:  2.1895 (1.2055)  Acc@1: 47.5000 (78.1620)  Acc@5: 88.7500 (93.8380)
+Test: [ 312/312]  Time: 0.375 (0.242)  Loss:  2.1895 (1.2055)  Acc@1: 47.5000 (78.1620)  Acc@5: 88.7500 (93.8380)
+INFO:timm.utils.checkpoint_saver:Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-312.pth.tar', 78.296)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-313.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-311.pth.tar', 77.414)
+
+Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-312.pth.tar', 78.296)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-313.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-311.pth.tar', 77.414)
+
+INFO:train:*** Best metric: 78.296 (epoch 312)
+*** Best metric: 78.296 (epoch 312)
+INFO:train:Train: 314 [   0/8007 (  0%)]  Loss:  2.485158 (2.4852)  Time: 1.102s,  145.24/s  (1.102s,  145.24/s)  LR: 5.000e-07  Data: 0.497 (0.497)
+Train: 314 [   0/8007 (  0%)]  Loss:  2.485158 (2.4852)  Time: 1.102s,  145.24/s  (1.102s,  145.24/s)  LR: 5.000e-07  Data: 0.497 (0.497)
+INFO:train:Train: 314 [1000/8007 ( 12%)]  Loss:  2.517457 (2.5013)  Time: 0.603s,  265.14/s  (0.606s,  264.19/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 314 [1000/8007 ( 12%)]  Loss:  2.517457 (2.5013)  Time: 0.603s,  265.14/s  (0.606s,  264.19/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 314 [2000/8007 ( 25%)]  Loss:  2.134799 (2.3791)  Time: 0.604s,  265.07/s  (0.605s,  264.29/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 314 [2000/8007 ( 25%)]  Loss:  2.134799 (2.3791)  Time: 0.604s,  265.07/s  (0.605s,  264.29/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 314 [3000/8007 ( 37%)]  Loss:  2.124544 (2.3155)  Time: 0.602s,  265.59/s  (0.605s,  264.35/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 314 [3000/8007 ( 37%)]  Loss:  2.124544 (2.3155)  Time: 0.602s,  265.59/s  (0.605s,  264.35/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 314 [4000/8007 ( 50%)]  Loss:  2.344444 (2.3213)  Time: 0.605s,  264.39/s  (0.605s,  264.40/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 314 [4000/8007 ( 50%)]  Loss:  2.344444 (2.3213)  Time: 0.605s,  264.39/s  (0.605s,  264.40/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 314 [5000/8007 ( 62%)]  Loss:  2.483625 (2.3483)  Time: 0.602s,  265.61/s  (0.605s,  264.38/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+Train: 314 [5000/8007 ( 62%)]  Loss:  2.483625 (2.3483)  Time: 0.602s,  265.61/s  (0.605s,  264.38/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+INFO:train:Train: 314 [6000/8007 ( 75%)]  Loss:  2.260358 (2.3358)  Time: 0.602s,  265.76/s  (0.605s,  264.40/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 314 [6000/8007 ( 75%)]  Loss:  2.260358 (2.3358)  Time: 0.602s,  265.76/s  (0.605s,  264.40/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 314 [7000/8007 ( 87%)]  Loss:  2.473844 (2.3530)  Time: 0.604s,  264.81/s  (0.605s,  264.42/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 314 [7000/8007 ( 87%)]  Loss:  2.473844 (2.3530)  Time: 0.604s,  264.81/s  (0.605s,  264.42/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 314 [8000/8007 (100%)]  Loss:  2.022507 (2.3163)  Time: 0.600s,  266.52/s  (0.605s,  264.43/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 314 [8000/8007 (100%)]  Loss:  2.022507 (2.3163)  Time: 0.600s,  266.52/s  (0.605s,  264.43/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 314 [8006/8007 (100%)]  Loss:  2.376795 (2.3224)  Time: 0.599s,  267.29/s  (0.605s,  264.43/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+Train: 314 [8006/8007 (100%)]  Loss:  2.376795 (2.3224)  Time: 0.599s,  267.29/s  (0.605s,  264.43/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+INFO:train:Test: [   0/312]  Time: 1.095 (1.095)  Loss:  0.5103 (0.5103)  Acc@1: 93.1250 (93.1250)  Acc@5: 98.7500 (98.7500)
+Test: [   0/312]  Time: 1.095 (1.095)  Loss:  0.5103 (0.5103)  Acc@1: 93.1250 (93.1250)  Acc@5: 98.7500 (98.7500)
+INFO:train:Test: [ 312/312]  Time: 0.223 (0.242)  Loss:  2.2207 (1.1204)  Acc@1: 47.5000 (78.3220)  Acc@5: 87.5000 (93.9520)
+Test: [ 312/312]  Time: 0.223 (0.242)  Loss:  2.2207 (1.1204)  Acc@1: 47.5000 (78.3220)  Acc@5: 87.5000 (93.9520)
+INFO:timm.utils.checkpoint_saver:Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-314.pth.tar', 78.322)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-312.pth.tar', 78.296)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-313.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-311.pth.tar', 77.414)
+
+Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-314.pth.tar', 78.322)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-312.pth.tar', 78.296)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-313.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-311.pth.tar', 77.414)
+
+INFO:train:*** Best metric: 78.322 (epoch 314)
+*** Best metric: 78.322 (epoch 314)
+INFO:train:Train: 315 [   0/8007 (  0%)]  Loss:  2.212660 (2.2127)  Time: 1.570s,  101.89/s  (1.570s,  101.89/s)  LR: 5.000e-07  Data: 0.972 (0.972)
+Train: 315 [   0/8007 (  0%)]  Loss:  2.212660 (2.2127)  Time: 1.570s,  101.89/s  (1.570s,  101.89/s)  LR: 5.000e-07  Data: 0.972 (0.972)
+INFO:train:Train: 315 [1000/8007 ( 12%)]  Loss:  2.310348 (2.2615)  Time: 0.605s,  264.50/s  (0.607s,  263.54/s)  LR: 5.000e-07  Data: 0.004 (0.006)
+Train: 315 [1000/8007 ( 12%)]  Loss:  2.310348 (2.2615)  Time: 0.605s,  264.50/s  (0.607s,  263.54/s)  LR: 5.000e-07  Data: 0.004 (0.006)
+INFO:train:Train: 315 [2000/8007 ( 25%)]  Loss:  2.425859 (2.3163)  Time: 0.612s,  261.61/s  (0.606s,  263.93/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 315 [2000/8007 ( 25%)]  Loss:  2.425859 (2.3163)  Time: 0.612s,  261.61/s  (0.606s,  263.93/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 315 [3000/8007 ( 37%)]  Loss:  2.472082 (2.3552)  Time: 0.608s,  263.17/s  (0.606s,  264.03/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 315 [3000/8007 ( 37%)]  Loss:  2.472082 (2.3552)  Time: 0.608s,  263.17/s  (0.606s,  264.03/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 315 [4000/8007 ( 50%)]  Loss:  2.380379 (2.3603)  Time: 0.605s,  264.34/s  (0.606s,  264.16/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 315 [4000/8007 ( 50%)]  Loss:  2.380379 (2.3603)  Time: 0.605s,  264.34/s  (0.606s,  264.16/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 315 [5000/8007 ( 62%)]  Loss:  2.079116 (2.3134)  Time: 0.608s,  263.28/s  (0.606s,  264.17/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 315 [5000/8007 ( 62%)]  Loss:  2.079116 (2.3134)  Time: 0.608s,  263.28/s  (0.606s,  264.17/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 315 [6000/8007 ( 75%)]  Loss:  2.553119 (2.3477)  Time: 0.601s,  266.17/s  (0.606s,  264.18/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+Train: 315 [6000/8007 ( 75%)]  Loss:  2.553119 (2.3477)  Time: 0.601s,  266.17/s  (0.606s,  264.18/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+INFO:train:Train: 315 [7000/8007 ( 87%)]  Loss:  2.224375 (2.3322)  Time: 0.603s,  265.45/s  (0.606s,  264.21/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 315 [7000/8007 ( 87%)]  Loss:  2.224375 (2.3322)  Time: 0.603s,  265.45/s  (0.606s,  264.21/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 315 [8000/8007 (100%)]  Loss:  2.654135 (2.3680)  Time: 0.599s,  267.23/s  (0.606s,  264.24/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 315 [8000/8007 (100%)]  Loss:  2.654135 (2.3680)  Time: 0.599s,  267.23/s  (0.606s,  264.24/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 315 [8006/8007 (100%)]  Loss:  2.366019 (2.3678)  Time: 0.593s,  269.81/s  (0.606s,  264.24/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+Train: 315 [8006/8007 (100%)]  Loss:  2.366019 (2.3678)  Time: 0.593s,  269.81/s  (0.606s,  264.24/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+INFO:train:Test: [   0/312]  Time: 1.148 (1.148)  Loss:  0.5317 (0.5317)  Acc@1: 92.5000 (92.5000)  Acc@5: 98.7500 (98.7500)
+Test: [   0/312]  Time: 1.148 (1.148)  Loss:  0.5317 (0.5317)  Acc@1: 92.5000 (92.5000)  Acc@5: 98.7500 (98.7500)
+INFO:train:Test: [ 312/312]  Time: 0.096 (0.241)  Loss:  2.1660 (1.1280)  Acc@1: 51.2500 (78.1620)  Acc@5: 86.2500 (93.9660)
+Test: [ 312/312]  Time: 0.096 (0.241)  Loss:  2.1660 (1.1280)  Acc@1: 51.2500 (78.1620)  Acc@5: 86.2500 (93.9660)
+INFO:timm.utils.checkpoint_saver:Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-314.pth.tar', 78.322)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-312.pth.tar', 78.296)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-313.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-315.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-311.pth.tar', 77.414)
+
+Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-314.pth.tar', 78.322)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-312.pth.tar', 78.296)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-313.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-315.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-311.pth.tar', 77.414)
+
+INFO:train:*** Best metric: 78.322 (epoch 314)
+*** Best metric: 78.322 (epoch 314)
+INFO:train:Train: 316 [   0/8007 (  0%)]  Loss:  2.359127 (2.3591)  Time: 0.972s,  164.56/s  (0.972s,  164.56/s)  LR: 5.000e-07  Data: 0.370 (0.370)
+Train: 316 [   0/8007 (  0%)]  Loss:  2.359127 (2.3591)  Time: 0.972s,  164.56/s  (0.972s,  164.56/s)  LR: 5.000e-07  Data: 0.370 (0.370)
+INFO:train:Train: 316 [1000/8007 ( 12%)]  Loss:  2.395149 (2.3771)  Time: 0.604s,  265.00/s  (0.606s,  264.19/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 316 [1000/8007 ( 12%)]  Loss:  2.395149 (2.3771)  Time: 0.604s,  265.00/s  (0.606s,  264.19/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 316 [2000/8007 ( 25%)]  Loss:  2.334885 (2.3631)  Time: 0.605s,  264.64/s  (0.606s,  264.24/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 316 [2000/8007 ( 25%)]  Loss:  2.334885 (2.3631)  Time: 0.605s,  264.64/s  (0.606s,  264.24/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 316 [3000/8007 ( 37%)]  Loss:  2.202479 (2.3229)  Time: 0.601s,  266.12/s  (0.605s,  264.32/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 316 [3000/8007 ( 37%)]  Loss:  2.202479 (2.3229)  Time: 0.601s,  266.12/s  (0.605s,  264.32/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 316 [4000/8007 ( 50%)]  Loss:  2.027097 (2.2637)  Time: 0.606s,  263.90/s  (0.605s,  264.31/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 316 [4000/8007 ( 50%)]  Loss:  2.027097 (2.2637)  Time: 0.606s,  263.90/s  (0.605s,  264.31/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 316 [5000/8007 ( 62%)]  Loss:  2.585186 (2.3173)  Time: 0.611s,  261.82/s  (0.605s,  264.30/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+Train: 316 [5000/8007 ( 62%)]  Loss:  2.585186 (2.3173)  Time: 0.611s,  261.82/s  (0.605s,  264.30/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+INFO:train:Train: 316 [6000/8007 ( 75%)]  Loss:  2.340392 (2.3206)  Time: 0.605s,  264.57/s  (0.605s,  264.25/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 316 [6000/8007 ( 75%)]  Loss:  2.340392 (2.3206)  Time: 0.605s,  264.57/s  (0.605s,  264.25/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 316 [7000/8007 ( 87%)]  Loss:  2.629141 (2.3592)  Time: 0.603s,  265.38/s  (0.606s,  264.20/s)  LR: 5.000e-07  Data: 0.006 (0.005)
+Train: 316 [7000/8007 ( 87%)]  Loss:  2.629141 (2.3592)  Time: 0.603s,  265.38/s  (0.606s,  264.20/s)  LR: 5.000e-07  Data: 0.006 (0.005)
+INFO:train:Train: 316 [8000/8007 (100%)]  Loss:  2.107253 (2.3312)  Time: 0.603s,  265.47/s  (0.606s,  264.24/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 316 [8000/8007 (100%)]  Loss:  2.107253 (2.3312)  Time: 0.603s,  265.47/s  (0.606s,  264.24/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 316 [8006/8007 (100%)]  Loss:  2.211334 (2.3192)  Time: 0.593s,  269.70/s  (0.605s,  264.24/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+Train: 316 [8006/8007 (100%)]  Loss:  2.211334 (2.3192)  Time: 0.593s,  269.70/s  (0.605s,  264.24/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+INFO:train:Test: [   0/312]  Time: 1.138 (1.138)  Loss:  0.6191 (0.6191)  Acc@1: 90.0000 (90.0000)  Acc@5: 99.3750 (99.3750)
+Test: [   0/312]  Time: 1.138 (1.138)  Loss:  0.6191 (0.6191)  Acc@1: 90.0000 (90.0000)  Acc@5: 99.3750 (99.3750)
+INFO:train:Test: [ 312/312]  Time: 0.205 (0.241)  Loss:  2.1973 (1.1826)  Acc@1: 46.2500 (78.2400)  Acc@5: 87.5000 (93.9580)
+Test: [ 312/312]  Time: 0.205 (0.241)  Loss:  2.1973 (1.1826)  Acc@1: 46.2500 (78.2400)  Acc@5: 87.5000 (93.9580)
+INFO:timm.utils.checkpoint_saver:Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-314.pth.tar', 78.322)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-312.pth.tar', 78.296)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-316.pth.tar', 78.24)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-313.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-315.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-311.pth.tar', 77.414)
+
+Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-314.pth.tar', 78.322)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-312.pth.tar', 78.296)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-316.pth.tar', 78.24)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-313.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-315.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-311.pth.tar', 77.414)
+
+INFO:train:*** Best metric: 78.322 (epoch 314)
+*** Best metric: 78.322 (epoch 314)
+INFO:train:Train: 317 [   0/8007 (  0%)]  Loss:  2.611057 (2.6111)  Time: 1.137s,  140.74/s  (1.137s,  140.74/s)  LR: 5.000e-07  Data: 0.534 (0.534)
+Train: 317 [   0/8007 (  0%)]  Loss:  2.611057 (2.6111)  Time: 1.137s,  140.74/s  (1.137s,  140.74/s)  LR: 5.000e-07  Data: 0.534 (0.534)
+INFO:train:Train: 317 [1000/8007 ( 12%)]  Loss:  2.526056 (2.5686)  Time: 0.600s,  266.45/s  (0.605s,  264.33/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 317 [1000/8007 ( 12%)]  Loss:  2.526056 (2.5686)  Time: 0.600s,  266.45/s  (0.605s,  264.33/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 317 [2000/8007 ( 25%)]  Loss:  1.907901 (2.3483)  Time: 0.597s,  268.14/s  (0.605s,  264.29/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 317 [2000/8007 ( 25%)]  Loss:  1.907901 (2.3483)  Time: 0.597s,  268.14/s  (0.605s,  264.29/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 317 [3000/8007 ( 37%)]  Loss:  1.909561 (2.2386)  Time: 0.610s,  262.09/s  (0.606s,  264.24/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 317 [3000/8007 ( 37%)]  Loss:  1.909561 (2.2386)  Time: 0.610s,  262.09/s  (0.606s,  264.24/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 317 [4000/8007 ( 50%)]  Loss:  2.343792 (2.2597)  Time: 0.600s,  266.72/s  (0.606s,  264.18/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+Train: 317 [4000/8007 ( 50%)]  Loss:  2.343792 (2.2597)  Time: 0.600s,  266.72/s  (0.606s,  264.18/s)  LR: 5.000e-07  Data: 0.005 (0.005)
+INFO:train:Train: 317 [5000/8007 ( 62%)]  Loss:  2.356544 (2.2758)  Time: 0.603s,  265.41/s  (0.605s,  264.27/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 317 [5000/8007 ( 62%)]  Loss:  2.356544 (2.2758)  Time: 0.603s,  265.41/s  (0.605s,  264.27/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 317 [6000/8007 ( 75%)]  Loss:  2.304026 (2.2798)  Time: 0.604s,  265.03/s  (0.605s,  264.36/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 317 [6000/8007 ( 75%)]  Loss:  2.304026 (2.2798)  Time: 0.604s,  265.03/s  (0.605s,  264.36/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 317 [7000/8007 ( 87%)]  Loss:  2.603575 (2.3203)  Time: 0.607s,  263.56/s  (0.605s,  264.40/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 317 [7000/8007 ( 87%)]  Loss:  2.603575 (2.3203)  Time: 0.607s,  263.56/s  (0.605s,  264.40/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 317 [8000/8007 (100%)]  Loss:  2.516797 (2.3421)  Time: 0.598s,  267.39/s  (0.605s,  264.42/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 317 [8000/8007 (100%)]  Loss:  2.516797 (2.3421)  Time: 0.598s,  267.39/s  (0.605s,  264.42/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 317 [8006/8007 (100%)]  Loss:  2.023160 (2.3102)  Time: 0.604s,  264.82/s  (0.605s,  264.43/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+Train: 317 [8006/8007 (100%)]  Loss:  2.023160 (2.3102)  Time: 0.604s,  264.82/s  (0.605s,  264.43/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+INFO:train:Test: [   0/312]  Time: 1.102 (1.102)  Loss:  0.6045 (0.6045)  Acc@1: 93.1250 (93.1250)  Acc@5: 98.7500 (98.7500)
+Test: [   0/312]  Time: 1.102 (1.102)  Loss:  0.6045 (0.6045)  Acc@1: 93.1250 (93.1250)  Acc@5: 98.7500 (98.7500)
+INFO:train:Test: [ 312/312]  Time: 0.232 (0.241)  Loss:  2.2363 (1.1758)  Acc@1: 43.7500 (78.2700)  Acc@5: 86.2500 (94.0620)
+Test: [ 312/312]  Time: 0.232 (0.241)  Loss:  2.2363 (1.1758)  Acc@1: 43.7500 (78.2700)  Acc@5: 86.2500 (94.0620)
+INFO:timm.utils.checkpoint_saver:Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-314.pth.tar', 78.322)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-312.pth.tar', 78.296)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-317.pth.tar', 78.27)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-316.pth.tar', 78.24)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-313.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-315.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+
+Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-314.pth.tar', 78.322)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-312.pth.tar', 78.296)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-317.pth.tar', 78.27)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-316.pth.tar', 78.24)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-313.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-315.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-308.pth.tar', 77.898)
+
+INFO:train:*** Best metric: 78.322 (epoch 314)
+*** Best metric: 78.322 (epoch 314)
+INFO:train:Train: 318 [   0/8007 (  0%)]  Loss:  2.439188 (2.4392)  Time: 1.055s,  151.73/s  (1.055s,  151.73/s)  LR: 5.000e-07  Data: 0.448 (0.448)
+Train: 318 [   0/8007 (  0%)]  Loss:  2.439188 (2.4392)  Time: 1.055s,  151.73/s  (1.055s,  151.73/s)  LR: 5.000e-07  Data: 0.448 (0.448)
+INFO:train:Train: 318 [1000/8007 ( 12%)]  Loss:  1.846686 (2.1429)  Time: 0.604s,  264.73/s  (0.605s,  264.51/s)  LR: 5.000e-07  Data: 0.006 (0.005)
+Train: 318 [1000/8007 ( 12%)]  Loss:  1.846686 (2.1429)  Time: 0.604s,  264.73/s  (0.605s,  264.51/s)  LR: 5.000e-07  Data: 0.006 (0.005)
+INFO:train:Train: 318 [2000/8007 ( 25%)]  Loss:  2.578763 (2.2882)  Time: 0.609s,  262.56/s  (0.604s,  264.71/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 318 [2000/8007 ( 25%)]  Loss:  2.578763 (2.2882)  Time: 0.609s,  262.56/s  (0.604s,  264.71/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 318 [3000/8007 ( 37%)]  Loss:  2.315949 (2.2951)  Time: 0.596s,  268.34/s  (0.604s,  264.70/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 318 [3000/8007 ( 37%)]  Loss:  2.315949 (2.2951)  Time: 0.596s,  268.34/s  (0.604s,  264.70/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 318 [4000/8007 ( 50%)]  Loss:  2.717128 (2.3795)  Time: 0.599s,  267.19/s  (0.604s,  264.75/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 318 [4000/8007 ( 50%)]  Loss:  2.717128 (2.3795)  Time: 0.599s,  267.19/s  (0.604s,  264.75/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 318 [5000/8007 ( 62%)]  Loss:  2.378510 (2.3794)  Time: 0.602s,  265.89/s  (0.604s,  264.74/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 318 [5000/8007 ( 62%)]  Loss:  2.378510 (2.3794)  Time: 0.602s,  265.89/s  (0.604s,  264.74/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 318 [6000/8007 ( 75%)]  Loss:  2.136771 (2.3447)  Time: 0.596s,  268.63/s  (0.604s,  264.79/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 318 [6000/8007 ( 75%)]  Loss:  2.136771 (2.3447)  Time: 0.596s,  268.63/s  (0.604s,  264.79/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 318 [7000/8007 ( 87%)]  Loss:  2.634826 (2.3810)  Time: 0.600s,  266.87/s  (0.604s,  264.80/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 318 [7000/8007 ( 87%)]  Loss:  2.634826 (2.3810)  Time: 0.600s,  266.87/s  (0.604s,  264.80/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 318 [8000/8007 (100%)]  Loss:  2.273002 (2.3690)  Time: 0.608s,  263.33/s  (0.604s,  264.79/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 318 [8000/8007 (100%)]  Loss:  2.273002 (2.3690)  Time: 0.608s,  263.33/s  (0.604s,  264.79/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 318 [8006/8007 (100%)]  Loss:  1.942070 (2.3263)  Time: 0.596s,  268.39/s  (0.604s,  264.79/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+Train: 318 [8006/8007 (100%)]  Loss:  1.942070 (2.3263)  Time: 0.596s,  268.39/s  (0.604s,  264.79/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+INFO:train:Test: [   0/312]  Time: 1.211 (1.211)  Loss:  0.4802 (0.4802)  Acc@1: 95.0000 (95.0000)  Acc@5: 99.3750 (99.3750)
+Test: [   0/312]  Time: 1.211 (1.211)  Loss:  0.4802 (0.4802)  Acc@1: 95.0000 (95.0000)  Acc@5: 99.3750 (99.3750)
+INFO:train:Test: [ 312/312]  Time: 0.097 (0.241)  Loss:  2.1602 (1.0819)  Acc@1: 47.5000 (78.2920)  Acc@5: 87.5000 (94.0680)
+Test: [ 312/312]  Time: 0.097 (0.241)  Loss:  2.1602 (1.0819)  Acc@1: 47.5000 (78.2920)  Acc@5: 87.5000 (94.0680)
+INFO:timm.utils.checkpoint_saver:Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-314.pth.tar', 78.322)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-312.pth.tar', 78.296)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-318.pth.tar', 78.292)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-317.pth.tar', 78.27)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-316.pth.tar', 78.24)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-313.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-315.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+
+Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-314.pth.tar', 78.322)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-312.pth.tar', 78.296)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-318.pth.tar', 78.292)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-317.pth.tar', 78.27)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-316.pth.tar', 78.24)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-313.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-315.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-307.pth.tar', 78.042)
+
+INFO:train:*** Best metric: 78.322 (epoch 314)
+*** Best metric: 78.322 (epoch 314)
+INFO:train:Train: 319 [   0/8007 (  0%)]  Loss:  2.263763 (2.2638)  Time: 1.019s,  157.09/s  (1.019s,  157.09/s)  LR: 5.000e-07  Data: 0.420 (0.420)
+Train: 319 [   0/8007 (  0%)]  Loss:  2.263763 (2.2638)  Time: 1.019s,  157.09/s  (1.019s,  157.09/s)  LR: 5.000e-07  Data: 0.420 (0.420)
+INFO:train:Train: 319 [1000/8007 ( 12%)]  Loss:  2.725511 (2.4946)  Time: 0.606s,  264.03/s  (0.605s,  264.27/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 319 [1000/8007 ( 12%)]  Loss:  2.725511 (2.4946)  Time: 0.606s,  264.03/s  (0.605s,  264.27/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 319 [2000/8007 ( 25%)]  Loss:  2.537496 (2.5089)  Time: 0.605s,  264.25/s  (0.605s,  264.42/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 319 [2000/8007 ( 25%)]  Loss:  2.537496 (2.5089)  Time: 0.605s,  264.25/s  (0.605s,  264.42/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 319 [3000/8007 ( 37%)]  Loss:  2.436334 (2.4908)  Time: 0.604s,  265.04/s  (0.605s,  264.50/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 319 [3000/8007 ( 37%)]  Loss:  2.436334 (2.4908)  Time: 0.604s,  265.04/s  (0.605s,  264.50/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 319 [4000/8007 ( 50%)]  Loss:  2.279362 (2.4485)  Time: 0.606s,  264.05/s  (0.605s,  264.53/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 319 [4000/8007 ( 50%)]  Loss:  2.279362 (2.4485)  Time: 0.606s,  264.05/s  (0.605s,  264.53/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 319 [5000/8007 ( 62%)]  Loss:  2.472621 (2.4525)  Time: 0.602s,  265.66/s  (0.605s,  264.54/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 319 [5000/8007 ( 62%)]  Loss:  2.472621 (2.4525)  Time: 0.602s,  265.66/s  (0.605s,  264.54/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 319 [6000/8007 ( 75%)]  Loss:  2.230262 (2.4208)  Time: 0.602s,  265.70/s  (0.605s,  264.52/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 319 [6000/8007 ( 75%)]  Loss:  2.230262 (2.4208)  Time: 0.602s,  265.70/s  (0.605s,  264.52/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 319 [7000/8007 ( 87%)]  Loss:  2.654024 (2.4499)  Time: 0.597s,  268.18/s  (0.605s,  264.50/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 319 [7000/8007 ( 87%)]  Loss:  2.654024 (2.4499)  Time: 0.597s,  268.18/s  (0.605s,  264.50/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 319 [8000/8007 (100%)]  Loss:  2.362713 (2.4402)  Time: 0.601s,  266.08/s  (0.605s,  264.54/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+Train: 319 [8000/8007 (100%)]  Loss:  2.362713 (2.4402)  Time: 0.601s,  266.08/s  (0.605s,  264.54/s)  LR: 5.000e-07  Data: 0.004 (0.005)
+INFO:train:Train: 319 [8006/8007 (100%)]  Loss:  2.452569 (2.4415)  Time: 0.600s,  266.73/s  (0.605s,  264.54/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+Train: 319 [8006/8007 (100%)]  Loss:  2.452569 (2.4415)  Time: 0.600s,  266.73/s  (0.605s,  264.54/s)  LR: 5.000e-07  Data: 0.000 (0.005)
+INFO:train:Test: [   0/312]  Time: 1.155 (1.155)  Loss:  0.5791 (0.5791)  Acc@1: 90.6250 (90.6250)  Acc@5: 99.3750 (99.3750)
+Test: [   0/312]  Time: 1.155 (1.155)  Loss:  0.5791 (0.5791)  Acc@1: 90.6250 (90.6250)  Acc@5: 99.3750 (99.3750)
+INFO:train:Test: [ 312/312]  Time: 0.198 (0.241)  Loss:  2.1777 (1.1335)  Acc@1: 45.0000 (78.4620)  Acc@5: 88.7500 (94.0280)
+Test: [ 312/312]  Time: 0.198 (0.241)  Loss:  2.1777 (1.1335)  Acc@1: 45.0000 (78.4620)  Acc@5: 88.7500 (94.0280)
+INFO:timm.utils.checkpoint_saver:Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-319.pth.tar', 78.462)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-314.pth.tar', 78.322)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-312.pth.tar', 78.296)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-318.pth.tar', 78.292)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-317.pth.tar', 78.27)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-316.pth.tar', 78.24)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-313.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-315.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+
+Current checkpoints:
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-319.pth.tar', 78.462)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-314.pth.tar', 78.322)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-312.pth.tar', 78.296)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-318.pth.tar', 78.292)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-317.pth.tar', 78.27)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-316.pth.tar', 78.24)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-310.pth.tar', 78.206)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-313.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-315.pth.tar', 78.162)
+ ('./output/train/20230801-101809-vitsnn-288/checkpoint-309.pth.tar', 78.114)
+
+INFO:train:*** Best metric: 78.462 (epoch 319)
+*** Best metric: 78.462 (epoch 319)
+INFO:train:*** Best metric: 78.462 (epoch 319)
+*** Best metric: 78.462 (epoch 319)
