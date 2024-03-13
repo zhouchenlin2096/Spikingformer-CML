@@ -2,7 +2,7 @@
 # SGLFormer: Spiking Global-Local-Fusion Transformer with high performance, [This link](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2024.1371290/full)
 Our CML models achieve the state-of-the-art performance on several datasets (eg. **77.64 %** on ImageNet, **96.04 %** on CIFAR10, **80.37 %** on CIFAR100, **81.4% on** CIFAR10-DVS) in directly trained spiking neural networks in 2023/05. Our model achieves **78.46 %** on ImageNet with 288 * 288 resolution.
 
-Our newly improved model with CML, named SGLFormer, has achieved SOTA performance on several datasets (eg. **83.73 %** on ImageNet, **96.76 %** on CIFAR10, **82.26 %** on CIFAR100, **82.9%** on CIFAR10-DVS) in directly trained SNNs in 2024/03.
+Our newly improved model with CML, named [SGLFormer](https://github.com/ZhangHanN1/SGLFormer), has achieved SOTA performance on several datasets (eg. **83.73 %** on ImageNet, **96.76 %** on CIFAR10, **82.26 %** on CIFAR100, **82.9%** on CIFAR10-DVS) in directly trained SNNs in 2024/03.
 
 <br>
 <br>
