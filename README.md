@@ -8,9 +8,9 @@ Our models achieve the state-of-the-art performance on several datasets (eg. **7
 </p>
 
 ## News
-[2022.9.11] Update origin_logs.
+[2023.9.11] Update origin_logs.
 
-[2022.8.18] Update trained models.
+[2023.8.18] Update trained models.
 
 ## Reference
 If you find this repo useful, please consider citing:
