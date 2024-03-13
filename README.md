@@ -26,7 +26,6 @@ If you find this repo useful, please consider citing:
   ISSN={1662-453X}
 }
 
-
 @misc{zhou2023enhancing,
       title={Enhancing the Performance of Transformer-based Spiking Neural Networks by Improved Downsampling with Precise Gradient Backpropagation}, 
       author={Chenlin Zhou and Han Zhang and Zhaokun Zhou and Liutao Yu and Zhengyu Ma and Huihui Zhou and Xiaopeng Fan and Yonghong Tian},
