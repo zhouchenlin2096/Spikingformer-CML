@@ -8,7 +8,7 @@ Our CML models achieve the state-of-the-art performance on several datasets (eg.
 </p>
 
 ## News
-[2024.3.12] Our new work including CML has been accepted in Frontiers in Neuroscience 2024.
+[2024.3.12] Our work with CML has been accepted in Frontiers in Neuroscience 2024.
 
 [2023.9.11] Update origin_logs.
 
