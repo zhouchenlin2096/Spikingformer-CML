@@ -145,6 +145,6 @@ python train.py
 ## Acknowledgement & Contact Information
 Related project: [Spikingformer](https://github.com/zhouchenlin2096/Spikingformer), [spikformer](https://github.com/ZK-Zhou/spikformer), [pytorch-image-models](https://github.com/huggingface/pytorch-image-models), [spikingjelly](https://github.com/fangwei123456/spikingjelly).
 
-For help or issues using this git, please submit a GitHub issue.
+CML + Spikingformer-8-768 on Google Drive: [link](https://drive.google.com/drive/folders/1hSfqsah2oQu7LeElwCgaguUIrnBBxtHv?usp=drive_link)
 
-For other communications related to this git, please contact zhouchl@pcl.ac.cn or zhouchenlin19@mails.ucas.ac.cn.
+CML + Spikingformer-4-384-400E on Google Drive: [link](https://drive.google.com/drive/folders/1rwnD1hjSn9usXCltoir3__MfUCROu6Ep?usp=drive_link)
